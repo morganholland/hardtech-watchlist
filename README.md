@@ -37,6 +37,54 @@ ANTHROPIC_API_KEY=sk-... node scripts/backfill.mjs --dry-run  # report, write no
 
 The script only writes fields that are currently empty, so it never overwrites existing copy and is safe to re-run. Commit the resulting `data/companies.json` change.
 
+## Founder pedigree screen
+
+An orthogonal screen on top of theme/stage/backers: does a founder have real
+tenure **and** real ownership at an elite hard-tech company (SpaceX, Tesla,
+Anduril, Waymo, …)? The thesis: alumni who stayed long and owned something are
+a different population from alumni who badged in for eighteen months.
+**Pedigree predicts fundability, not returns** — alumni lists are
+survivorship-biased, so the score is a first-pass diligence filter and the UI
+never phrases it as a recommendation.
+
+How it works:
+
+- Each company can carry a `pedigree` object (founders, titles, tenure,
+  evidence URLs). The roster of source companies lives in the
+  `sourceCompanies` registry inside `data/companies.json` — add
+  second-generation spawners (Impulse, Varda, Castelion, Base Power…) there
+  with no code change.
+- The score is deterministic and reproducible by hand (see
+  `scripts/pedigree.mjs`): tenure (0–40, capped at 15y) + ownership tier
+  (0–40) + source-company weight (0–12) + domain fit (0–8), then confidence
+  only ever *discounts* (single-source ×0.9; unverified → no score at all).
+  Tiers: exceptional ≥78 · strong 62–77 · qualified 45–61 · weak <45 ·
+  unscreened (null).
+- `scripts/enrich-pedigree.mjs` runs in the refresh Action: Moonfire spawner
+  pages and the company's own site are fetched, Claude extracts founder facts
+  *from those documents only* (citing them by index), and the script computes
+  the score. Every evidence URL was fetched with a 200 during the run — a URL
+  nobody retrieved cannot enter the data, and LinkedIn is never scraped.
+  It runs a deeper sweep in the 4–8 weeks after SpaceX's May 15 / Nov 15
+  vesting dates, when departures cluster.
+- `scripts/validate-pedigree.mjs` + `scripts/pedigree.test.mjs` fail the
+  build on any guardrail violation (unsourced score, unreproducible number,
+  missing flags, LinkedIn evidence).
+- `scripts/seed-pedigree.mjs` backfilled the initial labelled set of ~27
+  companies (safe to re-run; `--force` recomputes existing records).
+
+In the UI: a sortable Pedigree column (`Strong · SpaceX 11y`), pedigree/source
+filter chips that compose with the existing filters and persist in the URL, a
+founder ledger in the company modal (tenure bars on a shared 20-year axis,
+evidence links, flags), and a ⚑ verification queue of unverified or
+single-source claims, earliest stage first. Records older than 180 days show
+as stale and re-enter the queue. Pedigree tier upgrades are announced in the
+Δ ledger.
+
+Out of scope for now (noted as follow-ups): automated LinkedIn enrichment,
+secondary-market/SPV access data, valuation tracking, second-generation
+spawner detection, and alerting.
+
 ## Local preview
 
 ```

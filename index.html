@@ -106,6 +106,46 @@
   .m-close:hover{color:var(--orange)}
   .m-close:focus-visible,.m-links a:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
 
+  /* Founder pedigree */
+  .glabel{font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--steel);margin-right:2px}
+  .ped{font-family:'IBM Plex Mono',monospace;font-size:12px;white-space:nowrap}
+  .ped .tier{text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+  .ped .src{color:var(--steel)}
+  .ped-un{color:var(--steel);font-style:italic}
+  .ped-note{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--steel);margin:2px 2px 0;width:100%}
+  .founder{padding:12px 0;border-bottom:1px dashed var(--grid)}
+  .founder:last-child{border-bottom:none}
+  .f-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px}
+  .f-name{font-weight:700}
+  .f-role{color:var(--steel);font-size:12.5px}
+  .f-conf{font-family:'IBM Plex Mono',monospace;font-size:10px;border:1px solid var(--line);padding:1px 5px;border-radius:2px;color:var(--steel);margin-left:auto}
+  .f-title{font-family:'IBM Plex Mono',monospace;font-size:12.5px;margin:3px 0 2px}
+  .f-title .at{color:var(--steel)}
+  /* Tenure bar — fixed 20-year axis so bars compare across every company.
+     The one decorated element in the ledger; everything around it stays quiet. */
+  .tbar{display:flex;align-items:center;gap:10px;margin:6px 0 2px}
+  .tbar .axis{flex:1;max-width:360px;height:10px;background:var(--grid);border:1px solid var(--line)}
+  .tbar .fill{height:100%;background:var(--orange)}
+  .tbar.muted .fill{background:var(--steel);opacity:.4}
+  .tbar .yrs{font-family:'IBM Plex Mono',monospace;font-size:12.5px;min-width:46px;text-align:right}
+  .f-label{font-family:'IBM Plex Mono',monospace;font-size:12px;display:inline-block;border:1px solid var(--ink);padding:2px 8px;margin:5px 0 2px;border-radius:2px}
+  .f-ev{font-size:12px;color:var(--steel);margin-top:4px}
+  .f-ev a{color:var(--ink)}
+  .f-note{font-size:12px;color:var(--steel);margin-top:4px}
+  .flag{border-left:3px solid var(--t-nuclear);background:var(--paper);padding:4px 10px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;margin-top:8px}
+  .flag.red{border-left-color:#B3261E}
+  /* Verification queue */
+  .vq{margin:14px 0 6px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--t-nuclear);padding:14px 18px}
+  .vq h2{font-family:'IBM Plex Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--t-nuclear);margin-bottom:4px}
+  .vq .sub{font-size:12.5px;color:var(--steel);margin-bottom:8px}
+  .vq ul{list-style:none}
+  .vq li{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:4px 0;border-bottom:1px dashed var(--grid)}
+  .vq li:last-child{border-bottom:none}
+  .vq li b{font-family:'Archivo',sans-serif}
+  .vq .miss{color:var(--steel)}
+  .vq a{color:var(--ink)}
+  .vq .empty{color:var(--steel);font-size:13px}
+
   @media (max-width:720px){ .hide-m{display:none} .one{max-width:none} .backdrop{padding:0} .modal{max-width:none;min-height:100vh;border-top-width:4px} }
   @media (prefers-reduced-motion:no-preference){ tbody tr{transition:background .12s} tbody tr:hover{background:#F7F9F8} }
 </style>
@@ -122,7 +162,20 @@
     <ul id="deltaList"></ul>
   </section>
 
+  <section class="vq" id="vq" aria-label="Verification queue" hidden>
+    <h2>⚑ Verification queue</h2>
+    <div class="sub">Founder claims that still need a source or a second source, earliest stage first — that's where verification pays off most. Five minutes a week compounds the dataset.</div>
+    <ul id="vqList"></ul>
+  </section>
+
   <div class="controls" id="themeChips" role="group" aria-label="Filter by theme"></div>
+  <div class="controls" aria-label="Filter by founder pedigree">
+    <span class="glabel">Pedigree</span>
+    <span id="pedChips" role="group" aria-label="Pedigree tier" style="display:contents"></span>
+    <span class="glabel" style="margin-left:10px">Source</span>
+    <span id="srcChips" role="group" aria-label="Source company" style="display:contents"></span>
+    <span class="ped-note">Pedigree screens fundability, not returns — alumni data is survivorship-biased. Tiers surface candidates for diligence; a score is never a buy signal.</span>
+  </div>
   <div class="controls">
     <select id="tier" aria-label="Filter by tier">
       <option value="">All stages</option>
@@ -136,6 +189,7 @@
       <option value="acquired">Acquired</option>
     </select>
     <button class="chip" id="starredOnly" aria-pressed="false">★ Starred</button>
+    <button class="chip" id="vqToggle" aria-pressed="false">⚑ Verify queue <span class="n" id="vqCount">0</span></button>
     <span class="spacer"></span>
     <input type="search" id="q" placeholder="Search name / investor…" aria-label="Search">
   </div>
@@ -147,6 +201,7 @@
       <th data-sort="name">Company</th>
       <th data-sort="theme">Theme</th>
       <th data-sort="stage">Stage</th>
+      <th data-sort="pedigree">Pedigree</th>
       <th class="hide-m">What they do</th>
       <th class="hide-m" data-sort="investors">Backers</th>
     </tr></thead>
@@ -168,7 +223,14 @@
 
 <script>
 const THEMES = { space:"Space", nuclear:"Nuclear", defense:"Defense", energy:"Energy", semis:"Semis/DC", robotics:"Robotics" };
+// Pedigree tiers, weakest→strongest; "+" filters mean "this tier or better".
+const TIER_RANK = { unscreened:0, weak:1, qualified:2, strong:3, exceptional:4 };
+const PED_FILTERS = [["","All"],["exceptional","Exceptional"],["strong","Strong+"],["qualified","Qualified+"],["unscreened","Unscreened"]];
+const SRC_FILTERS = ["spacex","tesla","anduril","waymo","palantir","neuralink","other"];
+const TENURE_AXIS_YEARS = 20;      // fixed axis so bars compare across companies
+const STALE_DAYS = 180;
 let db = null, activeThemes = new Set(), sortKey = "name", sortDir = 1;
+let pedFilter = "", srcFilter = "";
 let shown = [], lastFocus = null;   // `shown` mirrors the rendered rows so data-idx resolves
 const stars = new Set(JSON.parse(localStorage.getItem("stars") || "[]"));
 
@@ -181,14 +243,18 @@ fetch("./data/companies.json").then(r => { if (!r.ok) throw 0; return r.json(); 
 
 function init(){
   document.getElementById("refreshed").textContent = new Date(db.lastRefresh).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
+  restoreFromURL();
 
-  // Delta ledger from the two most recent changelog entries
+  // Delta ledger from the two most recent changelog entries. Pedigree tier
+  // upgrades (↑) are announced alongside adds — new evidence on a company
+  // already listed is often more actionable than a genuinely new company.
   const dl = document.getElementById("deltaList");
   const entries = (db.changelog||[]).slice(0,2);
   let any = false;
   for (const e of entries){
     for (const a of (e.added||[])){ dl.insertAdjacentHTML("beforeend", `<li><span class="d">${e.date}</span> + ${esc(a)}</li>`); any = true; }
     for (const u of (e.updated||[])){ dl.insertAdjacentHTML("beforeend", `<li><span class="d">${e.date}</span> ~ ${esc(u)}</li>`); any = true; }
+    for (const p of (e.pedigree||[])){ dl.insertAdjacentHTML("beforeend", `<li><span class="d">${e.date}</span> ↑ ${esc(p)} (pedigree)</li>`); any = true; }
   }
   if (!any) dl.innerHTML = '<li class="empty">No changes in the last refresh cycles.</li>';
 
@@ -197,15 +263,45 @@ function init(){
   for (const [k,label] of Object.entries(THEMES)){
     const n = db.companies.filter(c=>c.theme===k).length;
     const b = document.createElement("button");
-    b.className = "chip"; b.dataset.theme = k; b.setAttribute("aria-pressed","false");
+    b.className = "chip"; b.dataset.theme = k; b.setAttribute("aria-pressed", String(activeThemes.has(k)));
     b.innerHTML = `${label} <span class="n">${n}</span>`;
     b.onclick = () => { b.getAttribute("aria-pressed")==="true" ? (activeThemes.delete(k), b.setAttribute("aria-pressed","false")) : (activeThemes.add(k), b.setAttribute("aria-pressed","true")); render(); };
     chips.appendChild(b);
   }
 
+  // Pedigree + source chips — single-select groups, same chip pattern
+  const pedWrap = document.getElementById("pedChips");
+  for (const [val,label] of PED_FILTERS){
+    const n = val==="" ? db.companies.length : db.companies.filter(c=>matchesPed(c,val)).length;
+    const b = document.createElement("button");
+    b.className = "chip"; b.dataset.ped = val; b.setAttribute("aria-pressed", String(pedFilter===val));
+    b.innerHTML = `${label} <span class="n">${n}</span>`;
+    b.onclick = () => { pedFilter = val; syncGroup(pedWrap,"ped",val); render(); };
+    pedWrap.appendChild(b);
+  }
+  const srcWrap = document.getElementById("srcChips");
+  for (const val of ["", ...SRC_FILTERS]){
+    const label = val==="" ? "All" : val==="other" ? "Other" : (db.sourceCompanies?.[val]?.label ?? val);
+    const n = val==="" ? db.companies.length : db.companies.filter(c=>matchesSrc(c,val)).length;
+    const b = document.createElement("button");
+    b.className = "chip"; b.dataset.src = val; b.setAttribute("aria-pressed", String(srcFilter===val));
+    b.innerHTML = `${label} <span class="n">${n}</span>`;
+    b.onclick = () => { srcFilter = val; syncGroup(srcWrap,"src",val); render(); };
+    srcWrap.appendChild(b);
+  }
+
+  // Verification queue
+  renderQueue();
+  document.getElementById("vqToggle").onclick = (e) => {
+    const open = e.currentTarget.getAttribute("aria-pressed")==="true";
+    e.currentTarget.setAttribute("aria-pressed", String(!open));
+    document.getElementById("vq").hidden = open;
+  };
+
   for (const id of ["tier","status","q"]) document.getElementById(id).addEventListener("input", render);
   document.getElementById("starredOnly").onclick = (e) => { const p = e.currentTarget.getAttribute("aria-pressed")==="true"; e.currentTarget.setAttribute("aria-pressed", String(!p)); render(); };
-  document.querySelectorAll("th[data-sort]").forEach(th => th.onclick = () => { const k = th.dataset.sort; sortDir = (sortKey===k) ? -sortDir : 1; sortKey = k; render(); });
+  // Pedigree sorts descending on first click (best first); null scores always last.
+  document.querySelectorAll("th[data-sort]").forEach(th => th.onclick = () => { const k = th.dataset.sort; sortDir = (sortKey===k) ? -sortDir : (k==="pedigree" ? -1 : 1); sortKey = k; render(); });
 
   // Row → modal. Delegated so it survives re-render; star and links keep their own behaviour.
   const rows = document.getElementById("rows");
@@ -271,6 +367,7 @@ function openModal(c){
       ${(c.investors||[]).length ? `<div class="m-inv">${c.investors.map(i=>`<span>${esc(i)}</span>`).join("")}</div>`
                                  : `<p class="m-none">No investors recorded.</p>`}
     </div>
+    ${pedigreeSection(c)}
     <div class="m-sec">
       <h3>Links</h3>
       ${links ? `<div class="m-links">${links}</div>` : `<p class="m-none">No links recorded yet.</p>`}
@@ -279,6 +376,120 @@ function openModal(c){
   document.getElementById("backdrop").hidden = false;
   document.body.style.overflow = "hidden";
   document.getElementById("mClose").focus();
+}
+
+// What each pedigree flag means, and whether it renders red (data integrity)
+// or amber (data quality).
+const FLAG_TEXT = {
+  "founder-detail-unverified": ["red",  "a founder on this record has no retrievable source — see the verification queue"],
+  "source-company-unconfirmed":["red",  "a claimed source company is not in the registry"],
+  "tenure-estimated":          ["amber","a tenure figure is estimated or unknown, not reported"],
+  "title-inflation-risk":      ["amber","title seniority may not match company size at the time"],
+  "short-tenure":              ["amber","the scoring founder spent under 3 years at the source company"],
+};
+const CONF_LABEL = { "verified":"VERIFIED", "single-source":"1 SOURCE", "unverified":"UNVERIFIED" };
+
+// Mirrors the screen definition in scripts/pedigree.mjs: ownership tiers 1-3
+// pass; senior-ic passes only with 8+ years.
+function screenPasses(f){
+  if (!f || f.confidence==="unverified") return false;
+  if (["cofounder-exec","program-owner","functional-head"].includes(f.ownership)) return true;
+  return f.ownership==="senior-ic" && (Number(f.years)||0) >= 8;
+}
+
+function founderRow(f, isCarrier){
+  const title = f.title ? `${esc(f.title)} <span class="at">@ ${esc(srcLabel(f.source))}</span>`
+                        : `<span class="at">@ ${esc(srcLabel(f.source))} — title unverified</span>`;
+  // The tenure bar sits on a fixed 20-year axis so bars are comparable across
+  // every company. Where the title matters more than a duration (an early
+  // engineer, a co-founder-level exit with no recorded years), render the
+  // label instead of inventing a number.
+  let tenure = "";
+  if (f.years != null){
+    const w = Math.min(f.years, TENURE_AXIS_YEARS) / TENURE_AXIS_YEARS * 100;
+    tenure = `<div class="tbar${isCarrier ? "" : " muted"}" title="${fmtYears(f.years)} of a ${TENURE_AXIS_YEARS}-year axis">
+      <div class="axis"><div class="fill" style="width:${w.toFixed(1)}%"></div></div>
+      <span class="yrs">${fmtYears(f.years)}y</span></div>`;
+  } else if (f.title){
+    tenure = `<span class="f-label">${esc(f.title)}</span>`;
+  }
+  const evidence = (f.evidence||[]).map(e => {
+    const url = safeUrl(e.url);
+    return url ? `<div class="f-ev">→ <a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(e.claim||e.publisher||"source")} ↗</a> <span>(${esc(e.publisher||"")}, retrieved ${esc(e.retrievedAt||"")})</span></div>` : "";
+  }).join("");
+  return `<div class="founder">
+    <div class="f-head"><span class="f-name">${esc(f.name||"Unnamed founder")}</span><span class="f-role">${esc(f.roleAtCompany||"")}</span><span class="f-conf">${CONF_LABEL[f.confidence]||""}</span></div>
+    <div class="f-title">${title}</div>
+    ${tenure}
+    ${evidence}
+    ${f.note ? `<div class="f-note">${esc(f.note)}</div>` : ""}
+  </div>`;
+}
+
+function pedigreeSection(c){
+  const p = c.pedigree;
+  if (!p) return "";
+  const best = bestFounder(p);
+  const head = p.score != null
+    ? `<p><span class="ped"><span class="tier">${p.tier[0].toUpperCase()+p.tier.slice(1)}</span> · score ${p.score}</span> — ${(p.founders||[]).some(screenPasses)
+        ? "passes the tenure screen. A first-pass filter for diligence, never a recommendation."
+        : "scored, but no founder passes the tenure screen (ownership tiers 1–3, or senior IC with 8+ years)."}</p>`
+    : `<p class="m-none">Unscreened — founder details need verification before a score exists.</p>`;
+  const rows = (p.founders||[]).map(f => founderRow(f, f===best)).join("");
+  const flags = (p.flags||[]).map(fl => {
+    const [sev, text] = FLAG_TEXT[fl] || ["amber", fl];
+    return `<div class="flag ${sev==="red"?"red":""}">${esc(fl)} — ${esc(text)}</div>`;
+  }).join("");
+  const stale = isStalePed(p) ? `<div class="flag">stale — last verified ${esc(p.lastVerified)}, more than ${STALE_DAYS} days ago; re-queued for verification</div>` : "";
+  return `<div class="m-sec">
+    <h3>Founder pedigree — tenure screen</h3>
+    ${head}
+    ${rows}
+    ${flags}${stale}
+    <p class="ped-note" style="margin-top:10px">Tenure bars share a fixed ${TENURE_AXIS_YEARS}-year axis. Pedigree predicts fundability, not returns — every alumni list is survivorship-biased.</p>
+  </div>`;
+}
+
+// Verification queue (§6.4): every founder record that is unverified or
+// single-source, plus stale pedigrees, earliest company stage first.
+function stageRank(c){
+  const s = (c.stage||"").toLowerCase();
+  if (/stealth|pre-seed/.test(s)) return 0;
+  if (/\byc\b|batch|spring|w2\d|s2\d|x2\d/.test(s)) return 0.5;
+  if (/seed/.test(s)) return 1;
+  const m = s.match(/series\s+([a-h])/);
+  if (m) return 2 + (m[1].charCodeAt(0) - 97);
+  if (/growth|late/.test(s)) return 10;
+  if (/public|ipo/.test(s)) return 11;
+  if (/acquired/.test(s)) return 12;
+  return 9;
+}
+
+function queueItems(){
+  const items = [];
+  for (const c of db.companies){
+    const p = c.pedigree;
+    if (!p) continue;
+    for (const f of (p.founders||[])){
+      if (f.confidence === "unverified")
+        items.push({ c, f, miss: f.name ? "no retrievable source for title/tenure" : "founder names & titles unknown" });
+      else if (f.confidence === "single-source")
+        items.push({ c, f, miss: `needs a second source for “${f.title||"title"}”` });
+    }
+    if (isStalePed(p)) items.push({ c, f:null, miss: `stale — last verified ${p.lastVerified}` });
+  }
+  return items.sort((x,y) => stageRank(x.c) - stageRank(y.c) || x.c.name.localeCompare(y.c.name));
+}
+
+function renderQueue(){
+  const items = queueItems();
+  document.getElementById("vqCount").textContent = items.length;
+  const list = document.getElementById("vqList");
+  if (!items.length){ list.innerHTML = '<li class="empty">Queue is clear — every founder claim has two sources.</li>'; return; }
+  list.innerHTML = items.map(({c,f,miss}) => {
+    const closest = safeUrl(f?.evidence?.[0]?.url || c.website || c.sourceUrl);
+    return `<li><b>${esc(c.name)}</b> <span class="miss">(${esc(c.stage||"stage unknown")})</span> · ${esc(f?.name || f?.roleAtCompany || "record")} · <span class="miss">${esc(miss)}</span>${closest ? ` · <a href="${esc(closest)}" target="_blank" rel="noopener noreferrer">closest source ↗</a>` : ' · <span class="miss">no source yet</span>'}</li>`;
+  }).join("");
 }
 
 function closeModal(){
@@ -312,20 +523,97 @@ function isNew(c){
   return (Date.now() - new Date(c.addedOn).getTime()) < 14*86400e3;
 }
 
+function matchesPed(c, val){
+  if (!val) return true;
+  const t = c.pedigree?.tier ?? "unscreened";
+  if (val==="unscreened") return t==="unscreened";
+  if (val==="exceptional") return t==="exceptional";
+  return TIER_RANK[t] >= TIER_RANK[val];   // strong / qualified mean "or better"
+}
+function matchesSrc(c, val){
+  if (!val) return true;
+  const srcs = c.pedigree?.sourceCompanies ?? [];
+  const main = SRC_FILTERS.filter(s=>s!=="other");
+  if (val==="other") return srcs.some(s=>!main.includes(s));
+  return srcs.includes(val);
+}
+function syncGroup(wrap, key, val){
+  wrap.querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", String(b.dataset[key]===val)));
+}
+
+// Filters live in the URL so a filtered view is linkable and survives reload.
+function restoreFromURL(){
+  const p = new URLSearchParams(location.search);
+  activeThemes = new Set((p.get("theme")||"").split(",").filter(t=>t in THEMES));
+  document.getElementById("tier").value = p.get("tier")||"";
+  document.getElementById("status").value = p.get("status")||"";
+  document.getElementById("q").value = p.get("q")||"";
+  document.getElementById("starredOnly").setAttribute("aria-pressed", String(p.get("star")==="1"));
+  pedFilter = PED_FILTERS.some(([v])=>v===p.get("ped")) ? p.get("ped") : "";
+  srcFilter = SRC_FILTERS.includes(p.get("src")) ? p.get("src") : "";
+}
+function writeURL(state){
+  const p = new URLSearchParams();
+  if (activeThemes.size) p.set("theme", [...activeThemes].join(","));
+  if (state.tier) p.set("tier", state.tier);
+  if (state.status) p.set("status", state.status);
+  if (state.q) p.set("q", state.q);
+  if (state.starOnly) p.set("star","1");
+  if (pedFilter) p.set("ped", pedFilter);
+  if (srcFilter) p.set("src", srcFilter);
+  const qs = p.toString();
+  history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
+}
+
+function bestFounder(p){
+  let best = null;
+  for (const f of (p?.founders||[])) if (f.score!=null && (best==null || f.score>best.score)) best = f;
+  return best;
+}
+function srcLabel(key){ return db.sourceCompanies?.[key]?.label ?? key ?? ""; }
+function fmtYears(y){ return Number.isInteger(y) ? y : y.toFixed(1); }
+function isStalePed(p){
+  if (!p?.lastVerified) return false;
+  return (Date.now() - new Date(p.lastVerified).getTime()) > STALE_DAYS*86400e3;
+}
+
+function pedCell(c){
+  const p = c.pedigree;
+  if (!p) return '<span class="ped ped-un">—</span>';
+  if (p.tier==="unscreened" || p.score==null) return '<span class="ped ped-un">needs verification</span>';
+  const best = bestFounder(p);
+  const src = best ? esc(srcLabel(best.source)) : "";
+  const yrs = best?.years!=null ? ` ${fmtYears(best.years)}y` : "";
+  const stale = isStalePed(p) ? ' <span class="src">· stale</span>' : "";
+  const tier = p.tier[0].toUpperCase()+p.tier.slice(1);
+  return `<span class="ped"><span class="tier">${tier}</span><span class="src"> · ${src}${yrs}</span>${stale}</span>`;
+}
+
 function render(){
   const tier = document.getElementById("tier").value;
   const status = document.getElementById("status").value;
   const q = document.getElementById("q").value.trim().toLowerCase();
   const starOnly = document.getElementById("starredOnly").getAttribute("aria-pressed")==="true";
+  writeURL({tier, status, q, starOnly});
 
   let list = db.companies.filter(c =>
     (!activeThemes.size || activeThemes.has(c.theme)) &&
     (!tier || c.tier===tier) && (!status || c.status===status) &&
     (!starOnly || stars.has(c.name)) &&
-    (!q || (c.name+" "+(c.investors||[]).join(" ")+" "+(c.oneLiner||"")).toLowerCase().includes(q))
+    matchesPed(c, pedFilter) && matchesSrc(c, srcFilter) &&
+    (!q || (c.name+" "+(c.investors||[]).join(" ")+" "+(c.oneLiner||"")+" "+(c.pedigree?.founders||[]).map(f=>f.name||"").join(" ")).toLowerCase().includes(q))
   );
 
   list.sort((a,b) => {
+    if (sortKey==="pedigree"){
+      // numeric by score; null scores sort last regardless of direction
+      const sa = a.pedigree?.score ?? null, sb = b.pedigree?.score ?? null;
+      if (sa==null && sb==null) return (a.name||"").localeCompare(b.name||"");
+      if (sa==null) return 1;
+      if (sb==null) return -1;
+      if (sa!==sb) return (sb-sa) * (sortDir===-1 ? 1 : -1);
+      return (a.name||"").localeCompare(b.name||"");
+    }
     if (isNew(a)!==isNew(b)) return isNew(a) ? -1 : 1;   // new entries float to top
     const va = sortKey==="investors" ? (a.investors||[]).join() : (a[sortKey]||"");
     const vb = sortKey==="investors" ? (b.investors||[]).join() : (b[sortKey]||"");
@@ -340,6 +628,7 @@ function render(){
       <td class="co">${esc(c.name)}${isNew(c) ? '<span class="new">NEW</span>' : ""}</td>
       <td class="tag" style="color:var(--t-${c.theme})">${THEMES[c.theme]||c.theme}</td>
       <td class="stage">${esc(c.stage||"")}</td>
+      <td>${pedCell(c)}</td>
       <td class="one hide-m">${esc(c.oneLiner||"")}</td>
       <td class="inv hide-m">${(c.investors||[]).map(esc).join(", ")}</td>
     </tr>`).join("");
