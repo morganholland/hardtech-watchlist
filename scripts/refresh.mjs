@@ -28,10 +28,16 @@ const RSS_FEEDS = [
   "https://www.tectonicdefense.com/feed/",
 ];
 
-// yc-oss/api — community-maintained static JSON mirror of the YC directory
+// yc-oss/api — community-maintained static JSON mirror of the YC directory.
+// Slugs must exist in https://yc-oss.github.io/api/meta.json ("industries" map);
+// there is no "hard-tech" industry, so the six themes are covered by these.
 const YC_ENDPOINTS = [
   "https://yc-oss.github.io/api/industries/industrials.json",
-  "https://yc-oss.github.io/api/industries/hard-tech.json",
+  "https://yc-oss.github.io/api/industries/aviation-and-space.json",
+  "https://yc-oss.github.io/api/industries/defense.json",
+  "https://yc-oss.github.io/api/industries/drones.json",
+  "https://yc-oss.github.io/api/industries/energy.json",
+  "https://yc-oss.github.io/api/industries/manufacturing-and-robotics.json",
 ];
 
 async function fetchText(url) {
@@ -77,12 +83,15 @@ async function gatherCandidates(existingNames) {
     }
   }
 
+  const seenYc = new Set();                                     // endpoints overlap; don't send dupes to the classifier
   for (const url of YC_ENDPOINTS) {
     const json = await fetchText(url);
     if (!json) continue;
     try {
       for (const c of JSON.parse(json)) {
         if (existingNames.has(normName(c.name))) continue;
+        if (seenYc.has(normName(c.name))) continue;
+        seenYc.add(normName(c.name));
         if (!KEYWORDS.test(`${c.name} ${c.one_liner ?? ""} ${(c.tags ?? []).join(" ")}`)) continue;
         candidates.push({ source: "yc", title: c.name, description: c.one_liner ?? "", link: c.url ?? "", batch: c.batch ?? "" });
       }
