@@ -117,8 +117,8 @@ Candidate items (news headlines and YC directory entries):
 ${JSON.stringify(candidates, null, 1)}
 
 Return ONLY a JSON array, no prose, no markdown fences. For each RELEVANT item emit one object:
-{"action":"add"|"update","name":"Company","theme":"space|nuclear|defense|energy|semis|robotics","tier":"growth|seed","stage":"e.g. Series B ($100M, Aug 2026)","oneLiner":"what they do, <=15 words","investors":["Lead VC"],"status":"private|public|acquired","sourceUrl":"link"}
-Rules: skip items that are not clearly a hard-tech company in one of the six themes (AI apps, SaaS, biotech, fintech = skip). tier "seed" = pre-seed/seed/YC; "growth" = Series A+. For "update", only include fields that changed (name + changed fields). If nothing is relevant, return [].`;
+{"action":"add"|"update","name":"Company","theme":"space|nuclear|defense|energy|semis|robotics","tier":"growth|seed","stage":"e.g. Series B ($100M, Aug 2026)","oneLiner":"what they do, <=15 words","description":"2-3 sentences: what they build, how it works, where they are","whyListed":"1-2 sentences: why this belongs on a hard-tech investing watchlist — the thesis, not a restatement of what they do","investors":["Lead VC"],"status":"private|public|acquired","website":"company homepage URL","sourceUrl":"link to the news item or directory entry"}
+Rules: skip items that are not clearly a hard-tech company in one of the six themes (AI apps, SaaS, biotech, fintech = skip). tier "seed" = pre-seed/seed/YC; "growth" = Series A+. For "update", only include fields that changed (name + changed fields). "website" and "sourceUrl" must be absolute URLs starting with https:// (or http://) — a bare domain is dropped by the site. Omit "website" if you don't know the real homepage; do not guess a URL. If nothing is relevant, return [].`;
 
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -156,12 +156,14 @@ async function main() {
     if (r.action === "add" && !existing) {
       db.companies.push({
         name: r.name, theme: r.theme, tier: r.tier ?? "seed", stage: r.stage ?? "",
-        oneLiner: r.oneLiner ?? "", investors: r.investors ?? [], status: r.status ?? "private",
-        sourceUrl: r.sourceUrl ?? "", addedOn: new Date().toISOString().slice(0, 10),
+        oneLiner: r.oneLiner ?? "", description: r.description ?? "", whyListed: r.whyListed ?? "",
+        investors: r.investors ?? [], status: r.status ?? "private",
+        website: r.website ?? "", sourceUrl: r.sourceUrl ?? "",
+        addedOn: new Date().toISOString().slice(0, 10),
       });
       added.push(r.name);
     } else if (existing) {
-      for (const f of ["stage", "oneLiner", "status", "tier"]) if (r[f]) existing[f] = r[f];
+      for (const f of ["stage", "oneLiner", "description", "whyListed", "website", "status", "tier"]) if (r[f]) existing[f] = r[f];
       if (r.investors?.length) existing.investors = [...new Set([...(existing.investors ?? []), ...r.investors])];
       if (r.stage || r.status) updated.push(`${r.name} → ${r.stage ?? r.status}`);
     }

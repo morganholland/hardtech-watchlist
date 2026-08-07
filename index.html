@@ -79,7 +79,34 @@
   .star[aria-pressed="true"]{color:var(--orange)}
   .count{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--steel);margin:10px 2px}
   .err{margin:30px 0;padding:16px;border:1px solid var(--orange);background:var(--card);font-family:'IBM Plex Mono',monospace;font-size:13px}
-  @media (max-width:720px){ .hide-m{display:none} .one{max-width:none} }
+  tbody tr[data-idx]{cursor:pointer}
+  tbody tr[data-idx]:focus-visible{outline:2px solid var(--orange);outline-offset:-2px}
+
+  /* Company detail modal */
+  .backdrop{position:fixed;inset:0;background:rgba(20,27,25,.55);z-index:50;display:flex;align-items:flex-start;justify-content:center;padding:6vh 20px 40px;overflow-y:auto}
+  .backdrop[hidden]{display:none}
+  .modal{background:var(--card);border:1px solid var(--ink);border-top:5px solid var(--orange);width:100%;max-width:620px;position:relative}
+  .modal h2{font-variation-settings:'wdth' 112,'wght' 800;font-size:23px;line-height:1.2;padding-right:34px}
+  .m-head{padding:18px 22px 14px;border-bottom:1px solid var(--grid)}
+  .m-sub{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--steel);margin-top:7px;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+  .m-sub .sep{color:var(--line)}
+  .m-body{padding:6px 22px 18px}
+  .m-sec{padding:14px 0;border-bottom:1px solid var(--grid)}
+  .m-sec:last-child{border-bottom:none}
+  .m-sec h3{font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--steel);margin-bottom:6px}
+  .m-sec p{font-size:14.5px}
+  .m-why{border-left:3px solid var(--orange);padding-left:12px;margin-left:-2px}
+  .m-inv{display:flex;flex-wrap:wrap;gap:6px}
+  .m-inv span{font-family:'IBM Plex Mono',monospace;font-size:12px;border:1px solid var(--line);padding:3px 8px;border-radius:2px}
+  .m-links{display:flex;flex-wrap:wrap;gap:10px}
+  .m-links a{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink);border:1px solid var(--ink);padding:6px 12px;text-decoration:none;border-radius:2px}
+  .m-links a:hover{background:var(--ink);color:var(--paper)}
+  .m-none{color:var(--steel);font-size:13.5px;font-style:italic}
+  .m-close{position:absolute;top:10px;right:12px;background:none;border:none;font-size:22px;line-height:1;color:var(--steel);cursor:pointer;padding:4px 8px}
+  .m-close:hover{color:var(--orange)}
+  .m-close:focus-visible,.m-links a:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+
+  @media (max-width:720px){ .hide-m{display:none} .one{max-width:none} .backdrop{padding:0} .modal{max-width:none;min-height:100vh;border-top-width:4px} }
   @media (prefers-reduced-motion:no-preference){ tbody tr{transition:background .12s} tbody tr:hover{background:#F7F9F8} }
 </style>
 </head>
@@ -128,9 +155,21 @@
   <div id="fail"></div>
 </div>
 
+<div class="backdrop" id="backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mName" id="modal">
+    <button class="m-close" id="mClose" aria-label="Close">&times;</button>
+    <div class="m-head">
+      <h2 id="mName"></h2>
+      <div class="m-sub" id="mSub"></div>
+    </div>
+    <div class="m-body" id="mBody"></div>
+  </div>
+</div>
+
 <script>
 const THEMES = { space:"Space", nuclear:"Nuclear", defense:"Defense", energy:"Energy", semis:"Semis/DC", robotics:"Robotics" };
 let db = null, activeThemes = new Set(), sortKey = "name", sortDir = 1;
+let shown = [], lastFocus = null;   // `shown` mirrors the rendered rows so data-idx resolves
 const stars = new Set(JSON.parse(localStorage.getItem("stars") || "[]"));
 
 fetch("./data/companies.json").then(r => { if (!r.ok) throw 0; return r.json(); })
@@ -167,7 +206,105 @@ function init(){
   for (const id of ["tier","status","q"]) document.getElementById(id).addEventListener("input", render);
   document.getElementById("starredOnly").onclick = (e) => { const p = e.currentTarget.getAttribute("aria-pressed")==="true"; e.currentTarget.setAttribute("aria-pressed", String(!p)); render(); };
   document.querySelectorAll("th[data-sort]").forEach(th => th.onclick = () => { const k = th.dataset.sort; sortDir = (sortKey===k) ? -sortDir : 1; sortKey = k; render(); });
+
+  // Row → modal. Delegated so it survives re-render; star and links keep their own behaviour.
+  const rows = document.getElementById("rows");
+  rows.addEventListener("click", (e) => {
+    if (e.target.closest(".star") || e.target.closest("a")) return;
+    const tr = e.target.closest("tr[data-idx]");
+    if (tr) openModal(shown[+tr.dataset.idx]);
+  });
+  rows.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    const tr = e.target.closest("tr[data-idx]");
+    if (!tr || e.target.closest(".star")) return;
+    e.preventDefault();                      // stop Space from scrolling
+    openModal(shown[+tr.dataset.idx]);
+  });
+
+  document.getElementById("mClose").onclick = closeModal;
+  document.getElementById("backdrop").addEventListener("mousedown", (e) => {
+    if (e.target.id === "backdrop") closeModal();   // click-outside, but not a drag ending outside
+  });
+  document.addEventListener("keydown", (e) => {
+    const open = !document.getElementById("backdrop").hidden;
+    if (!open) return;
+    if (e.key === "Escape") closeModal();
+    else if (e.key === "Tab") trapFocus(e);
+  });
+
   render();
+}
+
+function openModal(c){
+  if (!c) return;
+  lastFocus = document.activeElement;
+
+  document.getElementById("mName").textContent = c.name;
+  document.getElementById("mSub").innerHTML = [
+    `<span style="color:var(--t-${c.theme})">${esc(THEMES[c.theme]||c.theme)}</span>`,
+    esc(c.stage || "Stage unknown"),
+    esc((c.status||"private").toUpperCase()),
+    c.addedOn ? `Added ${esc(c.addedOn)}` : null,
+  ].filter(Boolean).join('<span class="sep">/</span>');
+
+  const website = safeUrl(c.website), source = safeUrl(c.sourceUrl);
+  const links = [
+    website ? `<a href="${esc(website)}" target="_blank" rel="noopener noreferrer">Website ↗</a>` : "",
+    source  ? `<a href="${esc(source)}"  target="_blank" rel="noopener noreferrer">Source ↗</a>`  : "",
+  ].join("");
+
+  document.getElementById("mBody").innerHTML = `
+    <div class="m-sec">
+      <h3>What they do</h3>
+      ${c.description ? `<p>${esc(c.description)}</p>`
+                      : c.oneLiner ? `<p>${esc(c.oneLiner)}</p>`
+                      : `<p class="m-none">No description yet.</p>`}
+    </div>
+    <div class="m-sec">
+      <h3>Why it's on the list</h3>
+      ${c.whyListed ? `<p class="m-why">${esc(c.whyListed)}</p>`
+                    : `<p class="m-none">Not recorded yet — added by the next refresh or a backfill run.</p>`}
+    </div>
+    <div class="m-sec">
+      <h3>Known backers</h3>
+      ${(c.investors||[]).length ? `<div class="m-inv">${c.investors.map(i=>`<span>${esc(i)}</span>`).join("")}</div>`
+                                 : `<p class="m-none">No investors recorded.</p>`}
+    </div>
+    <div class="m-sec">
+      <h3>Links</h3>
+      ${links ? `<div class="m-links">${links}</div>` : `<p class="m-none">No links recorded yet.</p>`}
+    </div>`;
+
+  document.getElementById("backdrop").hidden = false;
+  document.body.style.overflow = "hidden";
+  document.getElementById("mClose").focus();
+}
+
+function closeModal(){
+  document.getElementById("backdrop").hidden = true;
+  document.body.style.overflow = "";
+  if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
+  lastFocus = null;
+}
+
+// Keep Tab inside the dialog while it's open.
+function trapFocus(e){
+  const f = document.getElementById("modal").querySelectorAll("button, a[href]");
+  if (!f.length) return;
+  const first = f[0], last = f[f.length-1];
+  if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+}
+
+// Company data is LLM-generated, so never let it reach href unvalidated —
+// a "javascript:" URL would otherwise execute on click. Parsed with no base
+// so a scheme-less value ("hadrian.co") is dropped rather than resolving
+// against our own origin into a broken same-site link.
+function safeUrl(u){
+  if (!u) return "";
+  try { const p = new URL(u); return (p.protocol === "http:" || p.protocol === "https:") ? p.href : ""; }
+  catch { return ""; }
 }
 
 function isNew(c){
@@ -195,11 +332,12 @@ function render(){
     return va.localeCompare(vb) * sortDir;
   });
 
+  shown = list;
   document.getElementById("count").textContent = `${list.length} companies`;
-  document.getElementById("rows").innerHTML = list.map(c => `
-    <tr data-theme="${c.theme}" class="status-${c.status}">
+  document.getElementById("rows").innerHTML = list.map((c, i) => `
+    <tr data-theme="${c.theme}" class="status-${c.status}" data-idx="${i}" tabindex="0" role="button" aria-label="Details for ${esc(c.name)}">
       <td><button class="star" aria-pressed="${stars.has(c.name)}" aria-label="Star ${esc(c.name)}" onclick="toggleStar('${esc(c.name).replace(/'/g,"\\'")}')">★</button></td>
-      <td class="co">${c.sourceUrl ? `<a href="${esc(c.sourceUrl)}" target="_blank" rel="noopener">${esc(c.name)}</a>` : esc(c.name)}${isNew(c) ? '<span class="new">NEW</span>' : ""}</td>
+      <td class="co">${esc(c.name)}${isNew(c) ? '<span class="new">NEW</span>' : ""}</td>
       <td class="tag" style="color:var(--t-${c.theme})">${THEMES[c.theme]||c.theme}</td>
       <td class="stage">${esc(c.stage||"")}</td>
       <td class="one hide-m">${esc(c.oneLiner||"")}</td>
