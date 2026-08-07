@@ -23,6 +23,20 @@ The site will be at `https://<you>.github.io/<repo>/`.
 
 Schedule: Mon & Thu ~7am ET (`.github/workflows/refresh.yml`). Note GitHub cron is best-effort; runs can be delayed ~15–60 min.
 
+## Company detail modal
+
+Clicking any row opens a modal with a fuller description, why the company is on the list, its known backers, and links out to its website and source. Rows are keyboard-accessible (Tab to a row, Enter to open, Escape to close).
+
+Three fields back it: `description`, `whyListed`, and `website`. New companies get them from the refresh classifier automatically. Companies added before those fields existed show empty-state placeholders until backfilled:
+
+```
+ANTHROPIC_API_KEY=sk-... node scripts/backfill.mjs            # fill every company missing detail
+ANTHROPIC_API_KEY=sk-... node scripts/backfill.mjs --limit 10 # first 10 only, to sample quality
+ANTHROPIC_API_KEY=sk-... node scripts/backfill.mjs --dry-run  # report, write nothing
+```
+
+The script only writes fields that are currently empty, so it never overwrites existing copy and is safe to re-run. Commit the resulting `data/companies.json` change.
+
 ## Local preview
 
 ```
