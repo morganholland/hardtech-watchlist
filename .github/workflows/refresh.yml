@@ -30,6 +30,20 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/refresh.mjs
 
+      # Founder-pedigree enrichment. Picks its own --limit: 6 normally, 16 in
+      # the 4-8 weeks after SpaceX's May 15 / Nov 15 vesting dates, when
+      # departures (and therefore new founders) cluster.
+      - name: Enrich founder pedigree
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/enrich-pedigree.mjs
+
+      # Guardrails fail the build rather than shipping bad pedigree data: no
+      # unsourced or LinkedIn-sourced claims, no unfetched evidence URLs, no
+      # score a human can't reproduce from the stored fields.
+      - name: Validate pedigree guardrails
+        run: node scripts/validate-pedigree.mjs && node scripts/pedigree.test.mjs
+
       - name: Commit if changed
         run: |
           if git diff --quiet -- data/companies.json; then
