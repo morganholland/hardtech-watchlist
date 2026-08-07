@@ -19,7 +19,11 @@ The site will be at `https://<you>.github.io/<repo>/`.
 2. Keyword-screens items so only plausible hard-tech news reaches the classifier
 3. Sends survivors to Claude (Sonnet) → returns adds/updates as structured JSON
 4. Merges + dedupes into `data/companies.json`, appends a changelog entry
-5. The Action commits only if the file changed → Pages redeploys automatically
+5. `scripts/enrich-pedigree.mjs` screens a few unscreened (or stale) companies
+   per run for founder pedigree — see "Founder pedigree screen" below
+6. `scripts/validate-pedigree.mjs` + `scripts/pedigree.test.mjs` enforce the
+   pedigree guardrails; any violation fails the run before the commit
+7. The Action commits only if the file changed → Pages redeploys automatically
 
 Schedule: Mon & Thu ~7am ET (`.github/workflows/refresh.yml`). Note GitHub cron is best-effort; runs can be delayed ~15–60 min.
 

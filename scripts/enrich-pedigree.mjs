@@ -111,23 +111,29 @@ async function main() {
   const registryKeys = Object.keys(registry);
   if (!registryKeys.length) { console.log("no sourceCompanies registry — run scripts/seed-pedigree.mjs first"); return; }
 
-  // Unscreened companies first (earliest-stage data pays off most), then the
-  // stalest screened ones for re-verification.
-  const queue = db.companies
-    .filter((c) => !c.pedigree || isStale(c.pedigree))
-    .sort((a, b) => (a.pedigree ? 1 : 0) - (b.pedigree ? 1 : 0))
-    .slice(0, LIMIT);
-  console.log(`${queue.length} companies to enrich (limit ${LIMIT}${SWEEP ? ", post-vesting deep sweep window" : ""})`);
-  if (!queue.length) return;
-
   // Cheapest, most reliable source first: Moonfire's Spawners Explorer pages,
-  // fetched once per run and shared across companies.
+  // fetched once per run and shared across companies. Fetched before queue
+  // selection because their availability decides who is worth queueing.
   const moonfire = [];
   for (const key of registryKeys) {
     const doc = await fetchDoc(`https://www.moonfire.com/spawners/${key}`);
     if (doc) moonfire.push(doc);
   }
   console.log(`${moonfire.length} Moonfire spawner pages retrieved`);
+
+  // Unscreened companies first (earliest-stage data pays off most), then the
+  // stalest screened ones for re-verification. A company with no website and
+  // no sourceUrl can only yield documents via Moonfire — when Moonfire is
+  // unreachable, don't burn the per-run limit skipping the same source-less
+  // companies forever.
+  const pending = db.companies.filter((c) => !c.pedigree || isStale(c.pedigree));
+  const reachable = pending.filter((c) => moonfire.length > 0 || c.website || c.sourceUrl);
+  const queue = reachable
+    .sort((a, b) => (a.pedigree ? 1 : 0) - (b.pedigree ? 1 : 0))
+    .slice(0, LIMIT);
+  console.log(`${queue.length} companies to enrich (limit ${LIMIT}${SWEEP ? ", post-vesting deep sweep window" : ""}); ` +
+              `${pending.length - reachable.length} pending companies have no retrievable source and were not queued`);
+  if (!queue.length) return;
 
   const upgrades = [];
   for (const company of queue) {
