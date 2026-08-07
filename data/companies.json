@@ -1,6 +1,74 @@
 {
-  "lastRefresh": "2026-08-07T18:17:09.973Z",
+  "lastRefresh": "2026-08-07T20:59:47.178Z",
   "changelog": [
+    {
+      "date": "2026-08-07",
+      "added": [
+        "Atlas Motion",
+        "Aurelius",
+        "Vatn Systems",
+        "Baud",
+        "Rownd",
+        "Impossible Metals",
+        "Albedo",
+        "Inversion Space",
+        "TransAstra Corporation",
+        "HEO Robotics",
+        "AstroForge",
+        "Hubble Network",
+        "Ferveret",
+        "Inversion Semiconductor",
+        "Orbital Operations",
+        "Reditus Space",
+        "Instinct Space",
+        "Almond",
+        "The Robot Learning Company",
+        "Null Labs",
+        "Albacore Inc.",
+        "Perseus Defense",
+        "Wardstone",
+        "Cortex AI",
+        "Icarus",
+        "One Robot",
+        "Asimov",
+        "Beyond Reach Labs",
+        "Terranox AI",
+        "Seeing Systems",
+        "AxionOrbital Space",
+        "Dispatch",
+        "Applied Electrodynamics",
+        "Twolabs",
+        "Discovered Materials",
+        "General Instinct",
+        "IMPACT Drones",
+        "Exosat",
+        "Greypoint Industries",
+        "Neuromorphic",
+        "Isengard Industries",
+        "Hop Aero",
+        "Salem Robotics",
+        "Atomarine",
+        "Maritime Fusion",
+        "Pivot Robotics",
+        "Basalt",
+        "Elodin",
+        "Theseus",
+        "Spaceium",
+        "Ares Industries",
+        "Guardian RF",
+        "Starcloud",
+        "Apolink",
+        "Piggy Robotics",
+        "Degla Inc",
+        "Libra Robotics"
+      ],
+      "updated": [
+        "Hadrian → Series D ($1.37B, Aug 2026)",
+        "Commonwealth Fusion → Series C ($1B, Jul 2026)",
+        "Valar Atomics → Series B ($1B, Aug 2026)",
+        "Mariana Minerals → Series B ($310M, Aug 2026)"
+      ]
+    },
     {
       "date": "2026-08-07",
       "added": [
@@ -23,14 +91,16 @@
       "name": "Hadrian",
       "theme": "space",
       "tier": "growth",
-      "stage": "Series C",
+      "stage": "Series D ($1.37B, Aug 2026)",
       "oneLiner": "Automated precision machining factories for aerospace & defense",
       "investors": [
         "Founders Fund",
         "Lux",
-        "a16z"
+        "a16z",
+        "undisclosed"
       ],
-      "status": "private"
+      "status": "private",
+      "description": "Hadrian raised a $1.37B Series D at an $8B valuation, quintupling its previous valuation. The round will fund massive expansion of its automated defense manufacturing footprint and capabilities."
     },
     {
       "name": "Rocket Lab",
@@ -371,9 +441,11 @@
         "Sequoia",
         "Riot",
         "Atreides",
-        "Valor"
+        "Valor",
+        "Sequoia Capital"
       ],
-      "status": "private"
+      "status": "private",
+      "description": "Valar Atomics raised a $1B Series B led by Sequoia Capital. The raise follows the company's microreactor achieving criticality in the Department of Energy's Reactor Pilot Program, marking a significant technical milestone for the three-year-old startup."
     },
     {
       "name": "Radiant",
@@ -468,7 +540,7 @@
       "name": "Commonwealth Fusion",
       "theme": "nuclear",
       "tier": "growth",
-      "stage": "Series C ($2B+)",
+      "stage": "Series C ($1B, Jul 2026)",
       "oneLiner": "SPARC tokamak; most-funded fusion company",
       "investors": [
         "Gates",
@@ -760,7 +832,8 @@
           "tenure-estimated",
           "short-tenure"
         ]
-      }
+      },
+      "description": "Harbinger has been selected as part of the Rheinmetall-led team (alongside Forterra and Primordial Labs) to develop autonomous logistics ground vehicles for the U.S. Army's Project Sustainment initiative."
     },
     {
       "name": "Allen Control Systems",
@@ -1044,13 +1117,15 @@
       "name": "Mariana Minerals",
       "theme": "energy",
       "tier": "growth",
-      "stage": "Series B ($310M, 2026)",
+      "stage": "Series B ($310M, Aug 2026)",
       "oneLiner": "AI-powered mining & refining (copper, lithium)",
       "investors": [
         "Khosla",
-        "Pax Ventures"
+        "Pax Ventures",
+        "Khosla Ventures"
       ],
-      "status": "private"
+      "status": "private",
+      "description": "Mariana Minerals raised a $310M Series B led by Khosla Ventures, bringing total funding to ~$400M. The company will use the funding to scale up current mining operations including its Copper One site."
     },
     {
       "name": "Redwood Materials",
@@ -2546,6 +2621,918 @@
           "founder-detail-unverified"
         ]
       }
+    },
+    {
+      "name": "Atlas Motion",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed ($11.5M, Aug 2026)",
+      "oneLiner": "Motors and actuators for drones, robotics, and defense platforms.",
+      "description": "Atlas Motion emerged from stealth with $11.5M to build motors and actuators for drones, robotics, and other defense platforms. The company is targeting the critical supply chain layer underpinning the broader defense autonomy ecosystem. Funding was led by Greycroft.",
+      "whyListed": "Purpose-built defense-grade motion hardware is a key bottleneck in scaling autonomous platforms; Atlas Motion addresses a deep supply chain gap in the drone and robotics defense stack.",
+      "investors": [
+        "Greycroft"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/atlas-motion-emerges-from-stealth-with-11-5m-in-funding/",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Aurelius",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Series A ($40M, Aug 2026)",
+      "oneLiner": "Directed energy laser weapons for counter-UAS defense.",
+      "description": "Aurelius raised a $40M Series A to scale production of its Archimedes laser counter-UAS platform. The company is expanding manufacturing capacity, headcount, and infrastructure to meet growing demand for directed energy weapons. It is targeting the rapidly growing c-UAS market.",
+      "whyListed": "Directed energy is increasingly seen as the cost-effective, high-capacity answer to drone swarm threats; Aurelius is an emerging pure-play laser c-UAS hardware company scaling at a critical inflection point.",
+      "investors": [
+        "undisclosed"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/aurelius-raises-40m-series-a-for-laser-weapons/",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Vatn Systems",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "undisclosed",
+      "oneLiner": "Autonomous defense systems expanding into Taiwan via NCSIST deal.",
+      "description": "Vatn Systems has signed a deal with Taiwan's NCSIST (National Chung-Shan Institute of Science and Technology) coinciding with the formation of a Taiwanese subsidiary. The company is expanding its autonomous defense platform footprint into the Indo-Pacific. CEO Nelson Mills confirmed the details exclusively to Tectonic Defense.",
+      "whyListed": "Vatn's expansion into Taiwan via a government defense institute partnership signals strong product-market fit in autonomous defense at a geopolitically critical theater.",
+      "investors": [
+        "undisclosed"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/exclusive-vatn-touches-down-in-taiwan/",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Baud",
+      "theme": "semis",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "AI chips for ultra-fast model training and inference.",
+      "description": "Baud is building AI chips targeting ultra-fast model training and inference workloads. The company is a YC Summer 2026 batch company operating in the increasingly competitive AI silicon market. It aims to offer performance advantages over existing GPU-centric solutions.",
+      "whyListed": "Custom AI silicon is a massive opportunity as hyperscalers and enterprises seek alternatives to Nvidia; Baud represents a next-generation entrant in a field where chip startups are attracting multi-billion dollar outcomes.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/baud",
+      "sourceUrl": "https://www.ycombinator.com/companies/baud",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Rownd",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2022)",
+      "oneLiner": "Fully autonomous defense solutions for the global edge.",
+      "description": "Rownd builds fully autonomous defense solutions designed for edge deployment globally. The company focuses on defense autonomy at the tactical edge where connectivity and human oversight are limited. It emerged from the YC Winter 2022 batch.",
+      "whyListed": "Edge-deployed autonomous defense systems are a critical capability gap as militaries push autonomy to the front lines; Rownd addresses this with a software-forward approach.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/rownd",
+      "sourceUrl": "https://www.ycombinator.com/companies/rownd",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Impossible Metals",
+      "theme": "energy",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2022)",
+      "oneLiner": "Underwater robots that collect battery metals from the ocean floor.",
+      "description": "Impossible Metals develops underwater robotic vehicles that selectively harvest polymetallic nodules containing critical battery metals from the deep seafloor. Its approach uses precision robotics to minimize environmental disruption compared to traditional seafloor mining. The company targets the growing demand for nickel, cobalt, and manganese for EV and grid batteries.",
+      "whyListed": "Deep-sea critical mineral extraction is a compelling alternative supply chain to land-based mining; Impossible Metals sits at the intersection of robotics and critical minerals, two high-conviction hard-tech themes.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://impossiblemetals.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/impossible-metals",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Albedo",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2021)",
+      "oneLiner": "Full-stack VLEO satellite missions for ultra-high-resolution imaging.",
+      "description": "Albedo is building satellites that operate in Very Low Earth Orbit (VLEO) to capture imagery at significantly higher resolution than traditional commercial satellites. Operating closer to Earth allows smaller, cheaper satellites to achieve resolutions previously only available to government reconnaissance assets. The company targets defense, intelligence, and commercial geospatial markets.",
+      "whyListed": "Sub-30cm commercial satellite imagery is a strategic capability gap; Albedo's VLEO approach is a technically differentiated bet on democratizing reconnaissance-grade imagery.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://albedo.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/albedo",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Inversion Space",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2021)",
+      "oneLiner": "Space-based cargo return vehicles for rapid Earth delivery.",
+      "description": "Inversion Space is building reusable re-entry vehicles that can store cargo in orbit and rapidly deliver it to any point on Earth on demand. The concept turns space into a logistics layer enabling hours-long point-to-point delivery of high-value payloads. The company targets both commercial and defense logistics markets.",
+      "whyListed": "On-demand global cargo delivery from orbit addresses a unique defense and commercial logistics need; Inversion Space is pioneering a new category of orbital infrastructure with strong DoD relevance.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.inversionspace.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/inversion-space",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "TransAstra Corporation",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2021)",
+      "oneLiner": "Orbital logistics and asteroid resource utilization infrastructure.",
+      "description": "TransAstra is developing orbital logistics systems including space tugs and asteroid mining technology to enable large-scale space industry. Their Worker Bee space tug uses solar thermal propulsion for efficient in-space transportation. The company targets the emerging cislunar economy and in-space propellant market.",
+      "whyListed": "In-space logistics and resource utilization are foundational to any sustained orbital or cislunar economy; TransAstra's solar thermal approach is technically differentiated with long-term strategic value.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://transastra.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/transastra-corporation",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "HEO Robotics",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2021)",
+      "oneLiner": "Visual monitoring of space objects for governments and defense.",
+      "description": "HEO Robotics provides space domain awareness by hosting imaging payloads on third-party satellites to photograph other objects in orbit. This hosted payload model allows rapid, low-cost deployment of monitoring capability without dedicated spacecraft. Customers include government and defense agencies needing to track satellites and debris.",
+      "whyListed": "Space domain awareness is a top DoD priority as orbital congestion and adversarial satellite activity increase; HEO's hosted payload model is a capital-efficient approach to a high-value defense market.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://heorobotics.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/heo-robotics",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "AstroForge",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2022)",
+      "oneLiner": "Asteroid mining for platinum-group and critical metals.",
+      "description": "AstroForge is developing technology to mine and refine platinum-group metals from asteroids in space. The company plans to process asteroid material in orbit and return refined metals to Earth, targeting the high-value platinum-group metals market. It is one of the few asteroid mining companies with active mission plans.",
+      "whyListed": "Asteroid mining represents the ultimate critical minerals supply chain play; AstroForge is among the most credible near-term entrants with a technically grounded mission architecture.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://astroforge.io",
+      "sourceUrl": "https://www.ycombinator.com/companies/astroforge",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Hubble Network",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2022)",
+      "oneLiner": "Satellite constellation enabling direct Bluetooth connectivity from space.",
+      "description": "Hubble Network is building a satellite constellation that receives standard Bluetooth signals directly from Earth, enabling global IoT connectivity without custom hardware. This approach could connect billions of existing Bluetooth-enabled devices to satellite networks. The company targets asset tracking, supply chain, and environmental monitoring markets.",
+      "whyListed": "Extending Bluetooth to space without hardware modification is a massive IoT connectivity unlock; Hubble Network's approach could create a new category of low-cost global satellite connectivity.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://hubblenetwork.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/hubble-network",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Ferveret",
+      "theme": "semis",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2021)",
+      "oneLiner": "Nuclear-inspired cooling that converts wasted power into more AI compute.",
+      "description": "Ferveret is developing advanced cooling technology inspired by nuclear engineering principles that captures waste heat from data center chips and converts it into usable power or additional compute capacity. The system aims to dramatically improve the energy efficiency of AI compute infrastructure. It targets hyperscale and edge AI data center markets.",
+      "whyListed": "Data center cooling and power efficiency are critical bottlenecks for AI compute scaling; Ferveret's nuclear-inspired thermal management approach is a differentiated hard-tech solution to a massive infrastructure problem.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/ferveret-inc",
+      "sourceUrl": "https://www.ycombinator.com/companies/ferveret-inc",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Inversion Semiconductor",
+      "theme": "semis",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2025)",
+      "oneLiner": "Manufacturing the most powerful chips 15x faster.",
+      "description": "Inversion Semiconductor is building a novel semiconductor manufacturing process that promises to produce high-performance chips 15x faster than existing methods. The company targets the critical bottleneck of chip fabrication cycle time, which limits the pace of AI silicon development. It is positioned to serve fabless chip designers and emerging AI hardware companies.",
+      "whyListed": "Semiconductor manufacturing speed is a strategic chokepoint for AI and defense chip supply chains; a 15x cycle time reduction would be a significant competitive moat in an increasingly constrained market.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/inversion-semiconductor",
+      "sourceUrl": "https://www.ycombinator.com/companies/inversion-semiconductor",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Orbital Operations",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2025)",
+      "oneLiner": "High-thrust space vehicles for satellite defense missions.",
+      "description": "Orbital Operations is building high-thrust space vehicles specifically designed for satellite defense missions in orbit. The company targets the emerging space domain awareness and active defense market, providing maneuvering capabilities to protect friendly satellites. It is part of a growing set of companies building the orbital defense stack.",
+      "whyListed": "Active satellite defense is a DoD priority as adversarial anti-satellite capabilities grow; Orbital Operations occupies a critical niche in the orbital warfare infrastructure stack.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/orbital-operations",
+      "sourceUrl": "https://www.ycombinator.com/companies/orbital-operations",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Reditus Space",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2025)",
+      "oneLiner": "Reusable satellites that return to Earth for refurbishment and relaunch.",
+      "description": "Reditus Space is developing reusable satellites that can return from orbit to Earth, be refurbished, and relaunched, dramatically reducing the lifecycle cost of satellite hardware. The company applies the reusability model pioneered in launch vehicles to the satellite bus itself. This approach targets markets where satellite hardware costs are a major barrier.",
+      "whyListed": "Satellite reusability is an unexplored frontier that could fundamentally change the economics of orbital infrastructure, analogous to what reusable launch did for access to space.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/reditus-space",
+      "sourceUrl": "https://www.ycombinator.com/companies/reditus-space",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Instinct Space",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2025)",
+      "oneLiner": "Building commercial lunar landers for the emerging Moon economy.",
+      "description": "Instinct Space is developing commercial lunar landers to deliver payloads to the Moon's surface. The company targets the growing NASA CLPS program and commercial lunar economy as demand for lunar surface access accelerates. It is part of the next generation of commercial lunar surface delivery companies.",
+      "whyListed": "Lunar surface access is becoming a major commercial and government market; Instinct Space is an early mover in building the lander infrastructure for the cislunar economy.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/instinct-space",
+      "sourceUrl": "https://www.ycombinator.com/companies/instinct-space",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Almond",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Spring 2025)",
+      "oneLiner": "Dual-arm robot platform built for physical AI applications.",
+      "description": "Almond is building a dual-arm robot designed as a hardware platform for physical AI development and deployment. The system targets manipulation tasks requiring two-handed dexterity in industrial and research settings. The company positions itself at the intersection of robot hardware and foundation model deployment.",
+      "whyListed": "Dual-arm manipulation is the critical unsolved hardware problem for general-purpose robotics; Almond's physical AI-first design philosophy aligns with where the robotics industry is heading.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/almond-2",
+      "sourceUrl": "https://www.ycombinator.com/companies/almond-2",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "The Robot Learning Company",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Spring 2025)",
+      "oneLiner": "Tools enabling the next era of physical automation and robot learning.",
+      "description": "The Robot Learning Company builds tooling and infrastructure to accelerate physical automation through improved robot learning methods. The company targets the data, simulation, and training pipeline bottlenecks that slow deployment of capable robots in real-world environments. It operates at the foundation model and tooling layer of the robotics stack.",
+      "whyListed": "Robot learning infrastructure is a key leverage point for the entire physical AI industry; enabling better and faster robot training unlocks value across every downstream robotics application.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/the-robot-learning-company",
+      "sourceUrl": "https://www.ycombinator.com/companies/the-robot-learning-company",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Null Labs",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Fall 2025)",
+      "oneLiner": "End-to-end simulation platform for defense autonomy development.",
+      "description": "Null Labs builds end-to-end simulation environments specifically designed for developing and testing defense autonomous systems. The platform addresses the critical need for safe, realistic testing of autonomous defense platforms before field deployment. It targets the growing defense autonomy market across air, ground, and maritime domains.",
+      "whyListed": "Simulation is the critical infrastructure layer for defense autonomy development; Null Labs addresses a bottleneck that affects every autonomous defense program and scales with the entire market.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/null-labs",
+      "sourceUrl": "https://www.ycombinator.com/companies/null-labs",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Albacore Inc.",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2025)",
+      "oneLiner": "Autonomous drone submarines for maritime defense.",
+      "description": "Albacore builds autonomous underwater drone submarines for defense applications. The company targets the rapidly growing market for unmanned underwater vehicles used in maritime domain awareness, mine countermeasures, and offensive operations. It is part of the broader undersea autonomy wave driven by lessons from modern naval warfare.",
+      "whyListed": "Undersea drone warfare is an emerging priority for naval defense, with autonomous submarine drones representing a new and largely uncontested category for startups.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/albacore-inc",
+      "sourceUrl": "https://www.ycombinator.com/companies/albacore-inc",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Perseus Defense",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2025)",
+      "oneLiner": "Layered drone defense system — America's Golden Dome for drones.",
+      "description": "Perseus Defense is building a layered counter-drone defense system analogous to the Golden Dome concept applied to drone threats. The company targets both military and critical infrastructure protection markets as drone threats proliferate globally. Its approach emphasizes scalable, integrated detection and defeat capabilities.",
+      "whyListed": "Counter-drone is one of the highest-urgency defense procurement priorities globally; Perseus Defense is building toward the integrated, layered solution architecture that the market is converging on.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/perseus-defense",
+      "sourceUrl": "https://www.ycombinator.com/companies/perseus-defense",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Wardstone",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Fall 2025)",
+      "oneLiner": "Modular interceptor platform for layered missile and drone defense.",
+      "description": "Wardstone is building a modular interceptor platform designed to provide flexible, scalable defense against missiles and drones. The modular architecture allows rapid adaptation to different threat classes and operational environments. The company targets the growing market for cost-effective interceptor solutions as munitions costs dominate modern defense budgets.",
+      "whyListed": "Affordable, modular interceptors are a critical capability gap as adversaries scale cheap drone and missile threats; Wardstone's platform approach could serve as infrastructure for the broader integrated air defense stack.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/wardstone",
+      "sourceUrl": "https://www.ycombinator.com/companies/wardstone",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Cortex AI",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Fall 2025)",
+      "oneLiner": "Large-scale real-world robot and human data for embodied AI training.",
+      "description": "Cortex AI collects and curates large-scale real-world data from robots and humans to train embodied AI foundation models. The company addresses the data scarcity problem that is the primary bottleneck for general-purpose robot learning. Its datasets target robotics companies and researchers developing physical AI systems.",
+      "whyListed": "Embodied AI data is to robotics what internet data was to LLMs — a foundational resource that determines who wins; Cortex AI is building the data infrastructure layer for the physical AI era.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/cortex-ai",
+      "sourceUrl": "https://www.ycombinator.com/companies/cortex-ai",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Icarus",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Fall 2025)",
+      "oneLiner": "Stratospheric autonomous aircraft for defense ISR and communications.",
+      "description": "Icarus builds stratospheric aircraft designed for persistent defense applications including intelligence, surveillance, reconnaissance, and communications relay. Operating in the stratosphere provides a unique vantage point between satellites and conventional aircraft. The company targets defense customers needing long-endurance, wide-area coverage platforms.",
+      "whyListed": "Stratospheric persistence is an underexploited domain for defense ISR and communications; Icarus occupies a distinct altitude band that offers advantages neither satellites nor conventional drones can match.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/icarus",
+      "sourceUrl": "https://www.ycombinator.com/companies/icarus",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "One Robot",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2026)",
+      "oneLiner": "World models for robot evaluation and training.",
+      "description": "One Robot builds world models used for evaluating and training robot systems in simulation. The company targets the critical gap in robot foundation model development where lack of standardized evaluation and training environments slows progress. Its tools are designed to work across different robot embodiments and task types.",
+      "whyListed": "World models and evaluation infrastructure are the missing layer in robot AI development; One Robot's tools could become standard infrastructure for the entire robotics industry similar to what benchmarks did for LLMs.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/one-robot",
+      "sourceUrl": "https://www.ycombinator.com/companies/one-robot",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Asimov",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2026)",
+      "oneLiner": "Real-world human movement data collection for humanoid robot training.",
+      "description": "Asimov captures real-world human movement data at scale to train humanoid robot systems. The company addresses the fundamental data bottleneck for humanoid robot learning by providing high-quality motion capture and teleoperation datasets. Its data pipeline targets humanoid robot companies developing general-purpose manipulation and locomotion capabilities.",
+      "whyListed": "Human motion data is the training fuel for humanoid robots; Asimov is building critical data infrastructure that every humanoid robot company needs but few are building at scale.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/asimov",
+      "sourceUrl": "https://www.ycombinator.com/companies/asimov",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Beyond Reach Labs",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2026)",
+      "oneLiner": "Space solar arrays that self-deploy to football-field scale in orbit.",
+      "description": "Beyond Reach Labs is developing space-based solar power arrays that autonomously deploy to the size of a football field once in orbit. The company targets the growing demand for space solar power as an always-on energy source beamed to Earth. Its self-deploying structure technology is key to making large-scale space solar economically viable.",
+      "whyListed": "Space solar power is becoming a serious energy theme as launch costs fall; Beyond Reach Labs' deployable structure technology addresses the core engineering challenge that has historically made space solar impractical.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/beyond-reach-labs",
+      "sourceUrl": "https://www.ycombinator.com/companies/beyond-reach-labs",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Terranox AI",
+      "theme": "nuclear",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2026)",
+      "oneLiner": "AI-powered uranium discovery and exploration company.",
+      "description": "Terranox AI uses artificial intelligence to identify and characterize uranium deposits more efficiently than traditional exploration methods. The company targets the growing uranium supply gap driven by nuclear power renaissance and SMR buildout. Its AI models integrate geological, geophysical, and geochemical data to prioritize high-probability exploration targets.",
+      "whyListed": "Uranium supply is a critical bottleneck for the nuclear energy renaissance; Terranox AI addresses the exploration efficiency problem that must be solved to meet growing demand from SMRs and existing reactors.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/terranox-ai",
+      "sourceUrl": "https://www.ycombinator.com/companies/terranox-ai",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Seeing Systems",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2026)",
+      "oneLiner": "Modular AI-commanded drone systems for defence missions.",
+      "description": "Seeing Systems builds modular drone systems commanded by AI for defense applications. The company's architecture allows rapid configuration of autonomous drone capabilities across different mission profiles. It targets defense customers seeking AI-native drone solutions that can be adapted to evolving operational requirements.",
+      "whyListed": "AI-commanded drone modularity is a key design principle for scalable military autonomy; Seeing Systems' approach aligns with DoD's shift toward software-defined, adaptable autonomous platforms.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/seeing-systems",
+      "sourceUrl": "https://www.ycombinator.com/companies/seeing-systems",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "AxionOrbital Space",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2026)",
+      "oneLiner": "Foundation models for 24/7 Earth observation from space.",
+      "description": "AxionOrbital Space is building foundation models trained on satellite Earth observation data to enable continuous, intelligent monitoring of the planet. The company sits at the intersection of satellite imagery and AI, targeting intelligence, defense, and commercial geospatial analytics markets. Its 24/7 coverage model aims to make persistent Earth monitoring accessible.",
+      "whyListed": "Foundation models for Earth observation are emerging as a major value layer above raw satellite imagery; AxionOrbital is positioned to capture significant value in the intelligence and commercial geospatial market.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/axionorbital-space",
+      "sourceUrl": "https://www.ycombinator.com/companies/axionorbital-space",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Dispatch",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Spring 2026)",
+      "oneLiner": "Satellites purpose-built for manufacturing in space.",
+      "description": "Dispatch is building satellite platforms specifically designed to enable manufacturing operations in the space environment. The company targets the emerging in-space manufacturing market that leverages microgravity and vacuum conditions to produce materials impossible to make on Earth. It aims to provide the orbital infrastructure layer for the space manufacturing economy.",
+      "whyListed": "In-space manufacturing is an emerging high-value application for orbital infrastructure, following companies like Varda; Dispatch is building the dedicated satellite platform layer to enable this market at scale.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/dispatch",
+      "sourceUrl": "https://www.ycombinator.com/companies/dispatch",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Applied Electrodynamics",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "Novel camera technology that can see through walls.",
+      "description": "Applied Electrodynamics is developing a new type of imaging system capable of seeing through walls using electromagnetic principles. The technology targets defense, security, and search-and-rescue applications where situational awareness through physical barriers is critical. The company's approach represents a novel hardware solution to a longstanding detection challenge.",
+      "whyListed": "Through-wall sensing is a significant military and law enforcement capability gap; Applied Electrodynamics' electromagnetic imaging approach could unlock a new category of sensing hardware for defense and security markets.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/applied-electrodynamics-inc",
+      "sourceUrl": "https://www.ycombinator.com/companies/applied-electrodynamics-inc",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Twolabs",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Spring 2026)",
+      "oneLiner": "Open humanoid robot platform for developers and builders.",
+      "description": "Twolabs is building a humanoid robot platform designed to be accessible to developers and robotics builders. The company takes a developer-first approach to humanoid hardware, aiming to accelerate the ecosystem around physical AI by lowering barriers to building on capable humanoid hardware. It targets research institutions, robotics companies, and industrial automation customers.",
+      "whyListed": "A developer platform for humanoid robots could become the foundational hardware layer for the physical AI ecosystem, analogous to what Arduino or Raspberry Pi did for electronics prototyping.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/twolabs",
+      "sourceUrl": "https://www.ycombinator.com/companies/twolabs",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Discovered Materials",
+      "theme": "semis",
+      "tier": "seed",
+      "stage": "Seed (YC Spring 2026)",
+      "oneLiner": "AI scientists discovering new materials for the semiconductor industry.",
+      "description": "Discovered Materials uses AI-driven scientific discovery to identify and develop novel materials for semiconductor manufacturing and devices. The company targets the materials innovation gap that increasingly constrains semiconductor performance scaling. Its AI scientists accelerate the traditional multi-year materials discovery and characterization process.",
+      "whyListed": "Materials discovery is a fundamental bottleneck for next-generation semiconductors; AI-accelerated materials science could unlock new performance regimes for chips and directly enable the AI compute buildout.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/discovered-materials",
+      "sourceUrl": "https://www.ycombinator.com/companies/discovered-materials",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "General Instinct",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Spring 2026)",
+      "oneLiner": "Inference infrastructure purpose-built for physical AI deployment.",
+      "description": "General Instinct is building inference infrastructure specifically optimized for physical AI systems like robots and autonomous vehicles. The company addresses the unique compute requirements of real-time embodied AI, where latency and reliability constraints differ fundamentally from cloud inference. Its hardware and software stack targets edge deployment in robotics and autonomy applications.",
+      "whyListed": "Physical AI inference infrastructure is a distinct and underserved market compared to cloud AI; as robot deployments scale, dedicated edge inference hardware will become critical infrastructure.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/general-instinct",
+      "sourceUrl": "https://www.ycombinator.com/companies/general-instinct",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "IMPACT Drones",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "Air defense as a service protecting civilian infrastructure from drones.",
+      "description": "IMPACT Drones provides air defense as a service specifically designed to protect civilian infrastructure from drone threats. The company's service model lowers the barrier for critical infrastructure operators to deploy counter-drone protection without building in-house expertise. It targets airports, power plants, stadiums, and other high-value civilian sites.",
+      "whyListed": "Civilian critical infrastructure is increasingly threatened by drones with minimal existing protection; IMPACT Drones' as-a-service model could scale counter-drone deployment far faster than hardware sales alone.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/impact-drones",
+      "sourceUrl": "https://www.ycombinator.com/companies/impact-drones",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Exosat",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "Building sovereign Starlink-equivalent satellite constellations for nations.",
+      "description": "Exosat is building sovereign satellite broadband constellations for nations seeking communications independence from US-controlled networks. The company targets governments and defense establishments that need assured, sovereign access to satellite connectivity. Its approach packages constellation hardware, software, and operations into a turnkey sovereign solution.",
+      "whyListed": "Sovereign satellite communications is a major geopolitical and defense market driver; Exosat addresses the growing demand from allied and partner nations for Starlink-equivalent capability under national control.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/exosat",
+      "sourceUrl": "https://www.ycombinator.com/companies/exosat",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Greypoint Industries",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "Manufacturing autonomous swarm warfare systems at scale.",
+      "description": "Greypoint Industries is building manufacturing infrastructure for autonomous drone swarm systems. The company focuses on the production scalability challenge of swarm warfare, where the ability to manufacture large quantities of autonomous systems is as important as the technology itself. It targets DoD and allied defense customers pursuing swarm capabilities.",
+      "whyListed": "Swarm manufacturing capacity is the critical bottleneck for realizing autonomous swarm warfare at operational scale; Greypoint addresses the production problem that limits deployment of otherwise mature swarm concepts.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/greypoint-industries",
+      "sourceUrl": "https://www.ycombinator.com/companies/greypoint-industries",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Neuromorphic",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "Embodiment-agnostic robot brain hardware for physical AI.",
+      "description": "Neuromorphic is building robot brain hardware designed to work across different robot embodiments, providing a universal compute and intelligence layer for physical AI systems. The company's neuromorphic computing approach offers potential advantages in energy efficiency and real-time processing for robotic applications. It targets the growing market for robot compute as humanoids and industrial robots scale.",
+      "whyListed": "Neuromorphic computing for robotics could solve the power and latency constraints that limit current robot AI; an embodiment-agnostic brain positions Neuromorphic as potential horizontal infrastructure for the entire robotics industry.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/neuromorphic",
+      "sourceUrl": "https://www.ycombinator.com/companies/neuromorphic",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Isengard Industries",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "Mass-producing AI strike systems and counter-UAS platforms.",
+      "description": "Isengard Industries is building mass production capability for AI-guided strike systems and counter-UAS platforms. The company targets the production scale problem for autonomous weapons, where manufacturing throughput rather than unit capability is the limiting factor for military effectiveness. It serves DoD and allied defense customers.",
+      "whyListed": "Production scale for autonomous strike systems is the defining defense manufacturing challenge of this decade; Isengard Industries is building the factory capacity that turns promising defense tech into operational capability.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/isengard-industries-inc",
+      "sourceUrl": "https://www.ycombinator.com/companies/isengard-industries-inc",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Hop Aero",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "Rocket-powered cargo delivery to contested military environments.",
+      "description": "Hop Aero is developing rocket-powered vehicles for delivering cargo to contested operational environments where conventional logistics are denied or degraded. The company targets the military rapid logistics resupply mission, enabling delivery of critical supplies to forward positions under threat. Its approach combines rocket propulsion with precision landing for point-to-point contested delivery.",
+      "whyListed": "Contested logistics is one of the hardest operational problems in modern warfare; Hop Aero's rocket cargo approach addresses a mission the military has long sought but lacked the technology to execute.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/hop-aero",
+      "sourceUrl": "https://www.ycombinator.com/companies/hop-aero",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Salem Robotics",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "Robots for inspection and operations in nuclear and hazardous spaces.",
+      "description": "Salem Robotics deploys robotic systems for inspection and operations in hazardous environments, with a focus on nuclear facilities. The company addresses the safety, liability, and efficiency challenges of putting humans in radioactive or otherwise dangerous industrial spaces. Its robots target nuclear power plants, decommissioning sites, and other high-hazard industrial environments.",
+      "whyListed": "Nuclear facility robotics is a high-value, safety-critical market that grows directly with the nuclear power renaissance; Salem Robotics sits at the intersection of two strong hard-tech themes — robotics and nuclear.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/salem-robotics-inc",
+      "sourceUrl": "https://www.ycombinator.com/companies/salem-robotics-inc",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Atomarine",
+      "theme": "nuclear",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "Offshore nuclear-powered floating data centers at sea.",
+      "description": "Atomarine is building offshore, nuclear-powered floating data centers deployed at sea to provide massive compute capacity without land or grid constraints. The concept combines small modular reactor technology with floating platform engineering to create energy-independent data center infrastructure. It targets hyperscalers and AI compute customers facing land and power constraints.",
+      "whyListed": "Offshore nuclear data centers represent a compelling solution to the land and power bottlenecks constraining AI compute buildout; Atomarine combines two major hard-tech investment themes — nuclear and semiconductor/DC infrastructure — in one platform.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/atomarine",
+      "sourceUrl": "https://www.ycombinator.com/companies/atomarine",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Maritime Fusion",
+      "theme": "nuclear",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2025)",
+      "oneLiner": "Compact fusion reactors designed for ship propulsion and power.",
+      "description": "Maritime Fusion is developing fusion reactors specifically sized and optimized for naval and commercial maritime applications. The company targets the massive market for ship propulsion, where nuclear power offers unlimited range and zero-emission operation. Defense applications include powering naval vessels with unlimited endurance without the complexity of traditional fission systems.",
+      "whyListed": "Maritime fusion propulsion would be a transformative capability for naval warfare and commercial shipping; Maritime Fusion is an early mover in applying fusion to a concrete, high-value propulsion market rather than grid power.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/maritime-fusion",
+      "sourceUrl": "https://www.ycombinator.com/companies/maritime-fusion",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Pivot Robotics",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2024)",
+      "oneLiner": "AI software enabling robot arms to learn and operate in factories.",
+      "description": "Pivot Robotics develops AI software that allows robotic arms to learn and perform complex tasks in factory environments. The company targets the industrial automation market where traditional robot programming is too rigid and expensive for flexible manufacturing. Its AI-first approach enables faster deployment and adaptation of robot arms to changing production needs.",
+      "whyListed": "AI-native robot arm software is the key unlock for flexible industrial automation; Pivot Robotics addresses the programming and adaptation bottleneck that has historically limited robot deployment in manufacturing.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/pivot-robotics",
+      "sourceUrl": "https://www.ycombinator.com/companies/pivot-robotics",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Basalt",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2024)",
+      "oneLiner": "Constellations as a Service — turnkey satellite constellation deployment.",
+      "description": "Basalt offers Constellations as a Service, providing end-to-end capability to design, build, launch, and operate satellite constellations for customers. The company abstracts the complexity of constellation deployment, enabling organizations to access custom orbital capabilities without building internal space expertise. It targets government, defense, and commercial customers needing dedicated constellation assets.",
+      "whyListed": "Constellation-as-a-service is a natural evolution of the commercial space stack as demand for custom orbital capabilities grows beyond what shared infrastructure can serve.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/basalt",
+      "sourceUrl": "https://www.ycombinator.com/companies/basalt",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Elodin",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Winter 2024)",
+      "oneLiner": "Unified flight software and hardware for next-generation aerospace missions.",
+      "description": "Elodin develops integrated flight software and hardware platforms designed for the complex mission profiles of next-generation spacecraft and aerospace vehicles. The company targets the growing market for capable, flexible flight systems that can be deployed across launch vehicles, satellites, and other aerospace platforms. Its unified approach reduces integration complexity for aerospace developers.",
+      "whyListed": "Flexible, unified flight software is critical infrastructure for the expanding commercial space stack; Elodin's platform approach could become standard tooling for a new generation of aerospace companies.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/elodin",
+      "sourceUrl": "https://www.ycombinator.com/companies/elodin",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Theseus",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2024)",
+      "oneLiner": "GPS-denied navigation systems for drones operating in contested environments.",
+      "description": "Theseus builds navigation technology that allows drones to operate accurately in GPS-denied environments, a critical capability for military operations where adversaries jam or spoof GPS signals. The company's solution uses alternative positioning techniques to maintain navigation accuracy without reliance on satellite signals. It targets defense and dual-use drone markets.",
+      "whyListed": "GPS denial is a standard tactic in modern warfare, making GPS-independent navigation a must-have for any operationally relevant drone system; Theseus addresses a fundamental capability gap in the defense autonomy stack.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/theseus",
+      "sourceUrl": "https://www.ycombinator.com/companies/theseus",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Spaceium",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2024)",
+      "oneLiner": "In-space refueling infrastructure for the orbital economy.",
+      "description": "Spaceium is building in-space refueling depots and services to extend the operational life and range of satellites and spacecraft. The company targets the growing demand for propellant in orbit as satellite operators seek to extend mission durations and reach new orbits economically. In-space refueling is a foundational infrastructure layer for the cislunar economy.",
+      "whyListed": "In-space refueling is critical infrastructure for sustainable orbital operations; Spaceium is attacking a market that scales with every new satellite launched and becomes more valuable as the space economy grows.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/spaceium-inc",
+      "sourceUrl": "https://www.ycombinator.com/companies/spaceium-inc",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Ares Industries",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2024)",
+      "oneLiner": "Building low-cost cruise missiles for affordable precision strike.",
+      "description": "Ares Industries is developing low-cost cruise missiles to make precision strike capabilities affordable at scale for the US military and allies. The company addresses the munitions affordability crisis exposed by high consumption rates in modern conflicts. Its designs aim to achieve meaningful precision strike capability at a fraction of the cost of legacy systems.",
+      "whyListed": "Affordable precision munitions is one of the most urgent defense procurement challenges of this decade; Ares Industries is applying startup manufacturing principles to solve a problem that legacy primes have failed to crack.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/ares-industries",
+      "sourceUrl": "https://www.ycombinator.com/companies/ares-industries",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Guardian RF",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2024)",
+      "oneLiner": "RF-based drone detection for US defense and national security.",
+      "description": "Guardian RF builds radio frequency-based drone detection systems for US defense and national security applications. The company's RF sensing approach detects and classifies drone threats using their electromagnetic emissions, enabling detection even when visual or radar methods fail. It targets military installations, critical infrastructure, and national security customers.",
+      "whyListed": "RF-based drone detection fills critical gaps in counter-UAS sensor stacks where radar and optical methods are insufficient; Guardian RF is building a pure-play sensor layer for the growing c-UAS market.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/guardian-rf",
+      "sourceUrl": "https://www.ycombinator.com/companies/guardian-rf",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Starcloud",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2024)",
+      "oneLiner": "Data centers in space providing orbital compute infrastructure.",
+      "description": "Starcloud is building data centers deployed in space to provide compute infrastructure in orbit. The company targets applications that benefit from space-based compute including satellite data processing, in-space manufacturing support, and latency-sensitive space applications. It aims to create a cloud computing layer native to the space environment.",
+      "whyListed": "Space-based compute is an emerging infrastructure category as orbital activity scales; Starcloud is pioneering the data center model for space, a logical extension of both the cloud computing and commercial space industries.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/starcloud",
+      "sourceUrl": "https://www.ycombinator.com/companies/starcloud",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Apolink",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "Seed (YC Fall 2024)",
+      "oneLiner": "24/7 satellite connectivity constellation in low Earth orbit.",
+      "description": "Apolink is building a LEO satellite constellation designed to provide continuous, 24/7 connectivity coverage globally. The company targets the persistent connectivity gap that remains even as commercial LEO constellations expand, particularly for applications requiring guaranteed uptime. It competes in the growing sovereign and enterprise satellite communications market.",
+      "whyListed": "Persistent LEO connectivity is a high-value market with defense and enterprise applications; Apolink is building dedicated constellation infrastructure at a time when demand for assured satellite communications is accelerating.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/apolink",
+      "sourceUrl": "https://www.ycombinator.com/companies/apolink",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Piggy Robotics",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Fall 2025)",
+      "oneLiner": "Consumer-priced humanoid robots for household chores.",
+      "description": "Piggy Robotics is developing humanoid robots priced at consumer levels to perform household chores and tasks. The company targets mass-market humanoid deployment by aggressively targeting cost, aiming to make capable humanoid robots accessible at the price point of a premium consumer device. It competes in the emerging consumer humanoid market.",
+      "whyListed": "Consumer-priced humanoids represent the mass-market unlock for physical AI; if achieved at scale, Piggy Robotics' cost target would trigger mainstream humanoid robot adoption orders of magnitude larger than enterprise markets alone.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/piggy-robotics",
+      "sourceUrl": "https://www.ycombinator.com/companies/piggy-robotics",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Degla Inc",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (YC Fall 2026)",
+      "oneLiner": "Fully autonomous intelligence layer deployed in the sky.",
+      "description": "Degla Inc is building a fully autonomous intelligence layer operated from aerial platforms, providing persistent AI-driven surveillance and intelligence gathering from the sky. The company targets defense and national security customers needing continuous autonomous ISR capabilities. Its system processes and acts on intelligence autonomously without requiring constant human oversight.",
+      "whyListed": "Autonomous airborne intelligence layers represent the future of ISR, replacing costly manned systems and slow human analysis cycles; Degla Inc is building toward persistent, AI-native aerial intelligence infrastructure.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/degla-inc",
+      "sourceUrl": "https://www.ycombinator.com/companies/degla-inc",
+      "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Libra Robotics",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "Seed (YC Summer 2026)",
+      "oneLiner": "Autonomous robots for constructing solar farms at scale.",
+      "description": "Libra Robotics develops autonomous robotic systems that construct solar farms, addressing the labor bottleneck that limits renewable energy deployment speed. The company's robots automate the physical installation of solar panels and associated infrastructure, enabling faster and cheaper utility-scale solar buildout. It targets solar developers and EPC contractors.",
+      "whyListed": "Solar construction automation is a critical enabler for the energy transition; Libra Robotics addresses a real labor constraint that is slowing renewable deployment at exactly the moment when grid-scale solar demand is surging.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/libra-robotics",
+      "sourceUrl": "https://www.ycombinator.com/companies/libra-robotics",
+      "addedOn": "2026-08-07"
     }
   ],
   "sourceCompanies": {
