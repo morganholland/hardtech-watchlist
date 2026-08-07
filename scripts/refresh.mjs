@@ -123,13 +123,17 @@ Rules: skip items that are not clearly a hard-tech company in one of the six the
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: { "content-type": "application/json", "x-api-key": API_KEY, "anthropic-version": "2023-06-01" },
-    body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: 4000, messages: [{ role: "user", content: prompt }] }),
+    body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: 16000, messages: [{ role: "user", content: prompt }] }),
   });
   // Throw rather than return [] — a silent [] is indistinguishable from
   // "nothing relevant found", so a broken key would commit a no-op refresh
   // and leave the Action green.
   if (!res.ok) throw new Error(`Anthropic API ${res.status}: ${(await res.text()).slice(0, 500)}`);
   const data = await res.json();
+  // A response cut off at the token cap parses as broken JSON; name the real
+  // cause instead of failing as "unparseable output".
+  if (data.stop_reason === "max_tokens")
+    throw new Error(`classifier output truncated at max_tokens with ${candidates.length} candidates — raise max_tokens or tighten the keyword screen`);
   const text = (data.content ?? []).filter((b) => b.type === "text").map((b) => b.text).join("\n");
   try {
     return JSON.parse(text.replace(/```json|```/g, "").trim());
