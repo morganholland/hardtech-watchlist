@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hard Tech Watchlist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEF1F0; --grid:#DFE4E2; --ink:#141B19; --steel:#66736E;
+    --orange:#FF4F00; --line:#C9D0CD; --card:#FFFFFF;
+    --t-space:#2B5FAE; --t-nuclear:#B0620A; --t-defense:#5A4FA0;
+    --t-energy:#1C7A4C; --t-semis:#A03358; --t-robotics:#3A7C86;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:'Archivo',sans-serif; color:var(--ink); background:var(--paper);
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:28px 28px; font-size:15px; line-height:1.45;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px 80px}
+
+  header{padding:34px 0 10px;display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;border-bottom:3px solid var(--ink)}
+  h1{font-variation-settings:'wdth' 122,'wght' 850;text-transform:uppercase;font-size:clamp(26px,4.5vw,40px);letter-spacing:.01em}
+  h1 .sl{color:var(--orange)}
+  .meta{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--steel);margin-left:auto}
+  .meta b{color:var(--ink)}
+
+  /* Delta ledger — signature element */
+  .delta{margin:22px 0 6px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--orange);padding:14px 18px}
+  .delta h2{font-family:'IBM Plex Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--orange);margin-bottom:8px}
+  .delta ul{list-style:none}
+  .delta li{font-family:'IBM Plex Mono',monospace;font-size:13px;padding:3px 0;display:flex;gap:10px}
+  .delta li .d{color:var(--steel);flex:none}
+  .delta .empty{color:var(--steel);font-size:13px}
+
+  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:20px 0 14px}
+  .chip{
+    font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:6px 12px;border:1px solid var(--ink);
+    background:var(--card);cursor:pointer;user-select:none;border-radius:2px
+  }
+  .chip[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+  .chip .n{color:var(--steel)}
+  .chip[aria-pressed="true"] .n{color:#B9C2BE}
+  .spacer{flex:1}
+  select,input[type=search]{
+    font-family:'IBM Plex Mono',monospace;font-size:13px;padding:6px 10px;border:1px solid var(--ink);
+    background:var(--card);border-radius:2px;color:var(--ink)
+  }
+  input[type=search]{min-width:170px}
+  .chip:focus-visible,select:focus-visible,input:focus-visible,.star:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line)}
+  thead th{
+    font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;
+    text-align:left;color:var(--steel);padding:10px 12px;border-bottom:2px solid var(--ink);cursor:pointer;white-space:nowrap
+  }
+  tbody td{padding:10px 12px;border-bottom:1px solid var(--grid);vertical-align:top}
+  tbody tr{border-left:4px solid transparent}
+  tbody tr[data-theme=space]{border-left-color:var(--t-space)}
+  tbody tr[data-theme=nuclear]{border-left-color:var(--t-nuclear)}
+  tbody tr[data-theme=defense]{border-left-color:var(--t-defense)}
+  tbody tr[data-theme=energy]{border-left-color:var(--t-energy)}
+  tbody tr[data-theme=semis]{border-left-color:var(--t-semis)}
+  tbody tr[data-theme=robotics]{border-left-color:var(--t-robotics)}
+  .co{font-weight:700;font-variation-settings:'wdth' 108,'wght' 700}
+  .co a{color:inherit;text-decoration:none}
+  .co a:hover{text-decoration:underline}
+  .new{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--orange);border:1px solid var(--orange);padding:1px 5px;margin-left:8px;vertical-align:2px;border-radius:2px}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+  .stage,.inv{font-family:'IBM Plex Mono',monospace;font-size:12.5px}
+  .inv{color:var(--steel)}
+  .one{font-size:13.5px;max-width:340px}
+  .status-public .co::after{content:" ▲";color:var(--t-energy);font-size:11px}
+  .status-acquired{opacity:.55}
+  .star{cursor:pointer;background:none;border:none;font-size:16px;color:var(--line);padding:2px 4px}
+  .star[aria-pressed="true"]{color:var(--orange)}
+  .count{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--steel);margin:10px 2px}
+  .err{margin:30px 0;padding:16px;border:1px solid var(--orange);background:var(--card);font-family:'IBM Plex Mono',monospace;font-size:13px}
+  @media (max-width:720px){ .hide-m{display:none} .one{max-width:none} }
+  @media (prefers-reduced-motion:no-preference){ tbody tr{transition:background .12s} tbody tr:hover{background:#F7F9F8} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Hard Tech<span class="sl">/</span>Watchlist</h1>
+    <div class="meta">LAST REFRESH <b id="refreshed">—</b></div>
+  </header>
+
+  <section class="delta" id="delta" aria-label="New since last refresh">
+    <h2>Δ New since last refresh</h2>
+    <ul id="deltaList"></ul>
+  </section>
+
+  <div class="controls" id="themeChips" role="group" aria-label="Filter by theme"></div>
+  <div class="controls">
+    <select id="tier" aria-label="Filter by tier">
+      <option value="">All stages</option>
+      <option value="growth">Growth (A–D+)</option>
+      <option value="seed">Seed / YC</option>
+    </select>
+    <select id="status" aria-label="Filter by status">
+      <option value="">Any status</option>
+      <option value="private">Private</option>
+      <option value="public">Public</option>
+      <option value="acquired">Acquired</option>
+    </select>
+    <button class="chip" id="starredOnly" aria-pressed="false">★ Starred</button>
+    <span class="spacer"></span>
+    <input type="search" id="q" placeholder="Search name / investor…" aria-label="Search">
+  </div>
+
+  <div class="count" id="count"></div>
+  <table id="tbl">
+    <thead><tr>
+      <th aria-hidden="true"></th>
+      <th data-sort="name">Company</th>
+      <th data-sort="theme">Theme</th>
+      <th data-sort="stage">Stage</th>
+      <th class="hide-m">What they do</th>
+      <th class="hide-m" data-sort="investors">Backers</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <div id="fail"></div>
+</div>
+
+<script>
+const THEMES = { space:"Space", nuclear:"Nuclear", defense:"Defense", energy:"Energy", semis:"Semis/DC", robotics:"Robotics" };
+let db = null, activeThemes = new Set(), sortKey = "name", sortDir = 1;
+const stars = new Set(JSON.parse(localStorage.getItem("stars") || "[]"));
+
+fetch("./data/companies.json").then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(d => { db = d; init(); })
+  .catch(() => {
+    document.getElementById("fail").innerHTML =
+      '<div class="err">Could not load data/companies.json. If you opened this file directly, serve it instead: <b>python3 -m http.server</b> in the repo folder, then open localhost:8000.</div>';
+  });
+
+function init(){
+  document.getElementById("refreshed").textContent = new Date(db.lastRefresh).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
+
+  // Delta ledger from the two most recent changelog entries
+  const dl = document.getElementById("deltaList");
+  const entries = (db.changelog||[]).slice(0,2);
+  let any = false;
+  for (const e of entries){
+    for (const a of (e.added||[])){ dl.insertAdjacentHTML("beforeend", `<li><span class="d">${e.date}</span> + ${esc(a)}</li>`); any = true; }
+    for (const u of (e.updated||[])){ dl.insertAdjacentHTML("beforeend", `<li><span class="d">${e.date}</span> ~ ${esc(u)}</li>`); any = true; }
+  }
+  if (!any) dl.innerHTML = '<li class="empty">No changes in the last refresh cycles.</li>';
+
+  // Theme chips with counts
+  const chips = document.getElementById("themeChips");
+  for (const [k,label] of Object.entries(THEMES)){
+    const n = db.companies.filter(c=>c.theme===k).length;
+    const b = document.createElement("button");
+    b.className = "chip"; b.dataset.theme = k; b.setAttribute("aria-pressed","false");
+    b.innerHTML = `${label} <span class="n">${n}</span>`;
+    b.onclick = () => { b.getAttribute("aria-pressed")==="true" ? (activeThemes.delete(k), b.setAttribute("aria-pressed","false")) : (activeThemes.add(k), b.setAttribute("aria-pressed","true")); render(); };
+    chips.appendChild(b);
+  }
+
+  for (const id of ["tier","status","q"]) document.getElementById(id).addEventListener("input", render);
+  document.getElementById("starredOnly").onclick = (e) => { const p = e.currentTarget.getAttribute("aria-pressed")==="true"; e.currentTarget.setAttribute("aria-pressed", String(!p)); render(); };
+  document.querySelectorAll("th[data-sort]").forEach(th => th.onclick = () => { const k = th.dataset.sort; sortDir = (sortKey===k) ? -sortDir : 1; sortKey = k; render(); });
+  render();
+}
+
+function isNew(c){
+  if (!c.addedOn) return false;
+  return (Date.now() - new Date(c.addedOn).getTime()) < 14*86400e3;
+}
+
+function render(){
+  const tier = document.getElementById("tier").value;
+  const status = document.getElementById("status").value;
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const starOnly = document.getElementById("starredOnly").getAttribute("aria-pressed")==="true";
+
+  let list = db.companies.filter(c =>
+    (!activeThemes.size || activeThemes.has(c.theme)) &&
+    (!tier || c.tier===tier) && (!status || c.status===status) &&
+    (!starOnly || stars.has(c.name)) &&
+    (!q || (c.name+" "+(c.investors||[]).join(" ")+" "+(c.oneLiner||"")).toLowerCase().includes(q))
+  );
+
+  list.sort((a,b) => {
+    if (isNew(a)!==isNew(b)) return isNew(a) ? -1 : 1;   // new entries float to top
+    const va = sortKey==="investors" ? (a.investors||[]).join() : (a[sortKey]||"");
+    const vb = sortKey==="investors" ? (b.investors||[]).join() : (b[sortKey]||"");
+    return va.localeCompare(vb) * sortDir;
+  });
+
+  document.getElementById("count").textContent = `${list.length} companies`;
+  document.getElementById("rows").innerHTML = list.map(c => `
+    <tr data-theme="${c.theme}" class="status-${c.status}">
+      <td><button class="star" aria-pressed="${stars.has(c.name)}" aria-label="Star ${esc(c.name)}" onclick="toggleStar('${esc(c.name).replace(/'/g,"\\'")}')">★</button></td>
+      <td class="co">${c.sourceUrl ? `<a href="${esc(c.sourceUrl)}" target="_blank" rel="noopener">${esc(c.name)}</a>` : esc(c.name)}${isNew(c) ? '<span class="new">NEW</span>' : ""}</td>
+      <td class="tag" style="color:var(--t-${c.theme})">${THEMES[c.theme]||c.theme}</td>
+      <td class="stage">${esc(c.stage||"")}</td>
+      <td class="one hide-m">${esc(c.oneLiner||"")}</td>
+      <td class="inv hide-m">${(c.investors||[]).map(esc).join(", ")}</td>
+    </tr>`).join("");
+}
+
+function toggleStar(name){
+  stars.has(name) ? stars.delete(name) : stars.add(name);
+  localStorage.setItem("stars", JSON.stringify([...stars]));
+  render();
+}
+function esc(s){ return String(s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m])); }
+</script>
+</body>
+</html>
