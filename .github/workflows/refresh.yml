@@ -17,9 +17,11 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      # v5 runs on Node 24. node-version below is the runtime for
+      # scripts/refresh.mjs and is independent of the action's own runtime.
+      - uses: actions/setup-node@v5
         with:
           node-version: "20"
 
