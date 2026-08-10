@@ -1,6 +1,26 @@
 {
-  "lastRefresh": "2026-08-07T20:59:47.178Z",
+  "lastRefresh": "2026-08-10T13:03:03.620Z",
   "changelog": [
+    {
+      "date": "2026-08-10",
+      "added": [
+        "Source Foundry",
+        "Nine Fives",
+        "Pacific",
+        "Cosmic Robotics",
+        "Nori"
+      ],
+      "updated": [
+        "Valar Atomics → Series B ($1B, Aug 2026)",
+        "Hadrian → Series D ($1.37B, Aug 2026)",
+        "Aurelius → Series A ($40M, Aug 2026)",
+        "Mariana Minerals → Series B ($310M, Aug 2026)",
+        "Surtr → YC Spring 2026",
+        "Isengard Industries → YC Summer 2026",
+        "Salem Robotics → YC Summer 2026",
+        "Atlas Motion → Seed ($11.5M, Aug 2026)"
+      ]
+    },
     {
       "date": "2026-08-07",
       "added": [
@@ -833,7 +853,7 @@
           "short-tenure"
         ]
       },
-      "description": "Harbinger has been selected as part of the Rheinmetall-led team (alongside Forterra and Primordial Labs) to develop autonomous logistics ground vehicles for the U.S. Army's Project Sustainment initiative."
+      "description": "Harbinger builds autonomous ground vehicles for defense logistics. The company is part of a Rheinmetall-led team alongside Forterra and Primordial Labs selected by the Army for Project Sustainment, developing autonomous logistics UGVs for military supply chain operations."
     },
     {
       "name": "Allen Control Systems",
@@ -967,7 +987,7 @@
       "name": "Surtr",
       "theme": "defense",
       "tier": "seed",
-      "stage": "YC Spring 26",
+      "stage": "YC Spring 2026",
       "oneLiner": "ParallaxOS — open counter-UAS operating system, any sensor hardware",
       "investors": [
         "YC"
@@ -2628,15 +2648,24 @@
       "tier": "seed",
       "stage": "Seed ($11.5M, Aug 2026)",
       "oneLiner": "Motors and actuators for drones, robotics, and defense platforms.",
-      "description": "Atlas Motion emerged from stealth with $11.5M to build motors and actuators for drones, robotics, and other defense platforms. The company is targeting the critical supply chain layer underpinning the broader defense autonomy ecosystem. Funding was led by Greycroft.",
-      "whyListed": "Purpose-built defense-grade motion hardware is a key bottleneck in scaling autonomous platforms; Atlas Motion addresses a deep supply chain gap in the drone and robotics defense stack.",
+      "description": "Atlas Motion builds high-performance motors and actuators purpose-built for drones, robotics, and defense platforms. The company emerged from stealth with $11.5M led by Greycroft, targeting the underserved actuation layer of the defense supply chain. Their components are designed to meet the demanding size, weight, and power requirements of modern autonomous systems.",
+      "whyListed": "Defense actuation is a critical bottleneck in drone and robotics scaling; a focused supplier here sits at the intersection of defense manufacturing and autonomy themes.",
       "investors": [
         "Greycroft"
       ],
       "status": "private",
       "website": "",
       "sourceUrl": "https://www.tectonicdefense.com/atlas-motion-emerges-from-stealth-with-11-5m-in-funding/",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-10",
+        "flags": []
+      }
     },
     {
       "name": "Aurelius",
@@ -2652,7 +2681,16 @@
       "status": "private",
       "website": "",
       "sourceUrl": "https://www.tectonicdefense.com/aurelius-raises-40m-series-a-for-laser-weapons/",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-10",
+        "flags": []
+      }
     },
     {
       "name": "Vatn Systems",
@@ -2660,7 +2698,7 @@
       "tier": "growth",
       "stage": "undisclosed",
       "oneLiner": "Autonomous defense systems expanding into Taiwan via NCSIST deal.",
-      "description": "Vatn Systems has signed a deal with Taiwan's NCSIST (National Chung-Shan Institute of Science and Technology) coinciding with the formation of a Taiwanese subsidiary. The company is expanding its autonomous defense platform footprint into the Indo-Pacific. CEO Nelson Mills confirmed the details exclusively to Tectonic Defense.",
+      "description": "Vatn Systems builds autonomous maritime vessels for defense applications. The company has formed a Taiwanese subsidiary and signed a deal with NCSIST (Taiwan's defense R&D agency), marking a significant international expansion. CEO Nelson Mills confirmed the partnership coincides with Vatn's formal establishment in Taiwan.",
       "whyListed": "Vatn's expansion into Taiwan via a government defense institute partnership signals strong product-market fit in autonomous defense at a geopolitically critical theater.",
       "investors": [
         "undisclosed"
@@ -2668,7 +2706,16 @@
       "status": "private",
       "website": "",
       "sourceUrl": "https://www.tectonicdefense.com/exclusive-vatn-touches-down-in-taiwan/",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-10",
+        "flags": []
+      }
     },
     {
       "name": "Baud",
@@ -2684,7 +2731,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/baud",
       "sourceUrl": "https://www.ycombinator.com/companies/baud",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-10",
+        "flags": []
+      }
     },
     {
       "name": "Rownd",
@@ -2700,7 +2756,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/rownd",
       "sourceUrl": "https://www.ycombinator.com/companies/rownd",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-10",
+        "flags": []
+      }
     },
     {
       "name": "Impossible Metals",
@@ -2716,7 +2781,16 @@
       "status": "private",
       "website": "https://impossiblemetals.com",
       "sourceUrl": "https://www.ycombinator.com/companies/impossible-metals",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-10",
+        "flags": []
+      }
     },
     {
       "name": "Albedo",
@@ -3266,7 +3340,7 @@
       "name": "Isengard Industries",
       "theme": "defense",
       "tier": "seed",
-      "stage": "Seed (YC Summer 2026)",
+      "stage": "YC Summer 2026",
       "oneLiner": "Mass-producing AI strike systems and counter-UAS platforms.",
       "description": "Isengard Industries is building mass production capability for AI-guided strike systems and counter-UAS platforms. The company targets the production scale problem for autonomous weapons, where manufacturing throughput rather than unit capability is the limiting factor for military effectiveness. It serves DoD and allied defense customers.",
       "whyListed": "Production scale for autonomous strike systems is the defining defense manufacturing challenge of this decade; Isengard Industries is building the factory capacity that turns promising defense tech into operational capability.",
@@ -3298,7 +3372,7 @@
       "name": "Salem Robotics",
       "theme": "robotics",
       "tier": "seed",
-      "stage": "Seed (YC Summer 2026)",
+      "stage": "YC Summer 2026",
       "oneLiner": "Robots for inspection and operations in nuclear and hazardous spaces.",
       "description": "Salem Robotics deploys robotic systems for inspection and operations in hazardous environments, with a focus on nuclear facilities. The company addresses the safety, liability, and efficiency challenges of putting humans in radioactive or otherwise dangerous industrial spaces. Its robots target nuclear power plants, decommissioning sites, and other high-hazard industrial environments.",
       "whyListed": "Nuclear facility robotics is a high-value, safety-critical market that grows directly with the nuclear power renaissance; Salem Robotics sits at the intersection of two strong hard-tech themes — robotics and nuclear.",
@@ -3533,6 +3607,86 @@
       "website": "https://www.ycombinator.com/companies/libra-robotics",
       "sourceUrl": "https://www.ycombinator.com/companies/libra-robotics",
       "addedOn": "2026-08-07"
+    },
+    {
+      "name": "Source Foundry",
+      "theme": "semis",
+      "tier": "growth",
+      "stage": "Growth ($400M, Aug 2026)",
+      "oneLiner": "AI chip startup backed by $400M from Situational Awareness hedge fund.",
+      "description": "Source Foundry is an AI-focused chip startup that has raised $400M from hedge fund Situational Awareness. While technical details are limited, the company operates in the AI semiconductor space. The scale of the investment signals significant ambition in custom silicon for AI workloads.",
+      "whyListed": "A $400M bet on a chip startup from a high-profile AI-focused investor signals a potentially significant new entrant in the AI silicon race worth monitoring.",
+      "investors": [
+        "Situational Awareness"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
+      "addedOn": "2026-08-10"
+    },
+    {
+      "name": "Nine Fives",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "YC Spring 2026",
+      "oneLiner": "RF test equipment for next-gen spacecraft, drones, and cellphones.",
+      "description": "Nine Fives builds RF test and measurement equipment tailored for next-generation spacecraft, drones, and mobile devices. Their tools address the testing gap as RF complexity grows across space and defense platforms. The company is a YC Spring 2026 graduate targeting a critical but often overlooked segment of the hardware supply chain.",
+      "whyListed": "RF test infrastructure is a foundational enabler for both the satellite and defense drone ecosystems; a focused startup here has strong B2B pull from multiple hard-tech verticals.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/nine-fives",
+      "sourceUrl": "https://www.ycombinator.com/companies/nine-fives",
+      "addedOn": "2026-08-10"
+    },
+    {
+      "name": "Pacific",
+      "theme": "semis",
+      "tier": "seed",
+      "stage": "YC Summer 2026",
+      "oneLiner": "Ruggedized micro data centers for extreme environments on Earth and space.",
+      "description": "Pacific designs and deploys micro data centers hardened for the harshest environments on Earth and in space. Their systems bring compute closer to the edge in conditions where conventional data center infrastructure cannot operate. The company is a YC Summer 2026 graduate addressing the DC power and compute deployment challenge in austere settings.",
+      "whyListed": "Edge compute and ruggedized DC infrastructure is a growing need for both defense forward-deployment and orbital computing; Pacific addresses a real gap at the intersection of semis and space.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/pacific",
+      "sourceUrl": "https://www.ycombinator.com/companies/pacific",
+      "addedOn": "2026-08-10"
+    },
+    {
+      "name": "Cosmic Robotics",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "YC Summer 2026",
+      "oneLiner": "Autonomous construction robots for Earth and space environments.",
+      "description": "Cosmic Robotics develops autonomous construction systems designed to operate on Earth and eventually in space. Their robots aim to automate the physical construction process in environments where human labor is constrained or impossible. The company is a YC Summer 2026 graduate with a dual-use thesis spanning terrestrial and orbital infrastructure.",
+      "whyListed": "Autonomous construction robotics is a key enabler for both in-space infrastructure buildout and defense forward basing; the space-capable angle makes this a distinctive hard-tech bet.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/cosmic-robotics",
+      "sourceUrl": "https://www.ycombinator.com/companies/cosmic-robotics",
+      "addedOn": "2026-08-10"
+    },
+    {
+      "name": "Nori",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "YC Summer 2026",
+      "oneLiner": "Affordable teachable robot arm for general-purpose tasks.",
+      "description": "Nori builds an affordable robot that users can teach to perform a wide variety of tasks through demonstration. The system targets the democratization of physical automation by lowering cost and programming barriers. As a YC Summer 2026 company, Nori competes in the growing teachable/general-purpose robot arm space.",
+      "whyListed": "Low-cost teachable robotics with a general-purpose foundation model approach is a key vector in the humanoid and industrial automation race worth tracking.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.ycombinator.com/companies/noril1",
+      "sourceUrl": "https://www.ycombinator.com/companies/noril1",
+      "addedOn": "2026-08-10"
     }
   ],
   "sourceCompanies": {
