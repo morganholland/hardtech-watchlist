@@ -1,6 +1,31 @@
 {
-  "lastRefresh": "2026-08-10T13:03:03.620Z",
+  "lastRefresh": "2026-08-13T13:06:04.998Z",
   "changelog": [
+    {
+      "date": "2026-08-13",
+      "added": [
+        "Heaviside",
+        "Swarm Aero",
+        "Cambridge Aerospace",
+        "Helion Energy",
+        "Relativity Space",
+        "Astranis",
+        "Maple Materials",
+        "Wyvern",
+        "Orangewood Labs",
+        "Singularity",
+        "Voxel Energy",
+        "Fermi"
+      ],
+      "updated": [
+        "Form Energy → Series E+ ($750M, Aug 2026)",
+        "Neros → Growth ($250M, Aug 2026)",
+        "Epirus → Contract ($11M USMC, Aug 2026)",
+        "Surtr → YC Spring 2026",
+        "Isengard Industries → YC Summer 2026",
+        "Salem Robotics → YC Summer 2026"
+      ]
+    },
     {
       "date": "2026-08-10",
       "added": [
@@ -870,11 +895,12 @@
       "name": "Neros",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Series B",
+      "stage": "Growth ($250M, Aug 2026)",
       "oneLiner": "Low-cost FPV attack drones at scale",
       "investors": [
         "Sequoia",
-        "Vy"
+        "Vy",
+        "American Strategic"
       ],
       "status": "private"
     },
@@ -894,7 +920,7 @@
       "name": "Epirus",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Series D ($250M)",
+      "stage": "Contract ($11M USMC, Aug 2026)",
       "oneLiner": "High-power microwave directed energy (counter-drone swarms)",
       "investors": [
         "8VC",
@@ -2187,12 +2213,14 @@
       "name": "Form Energy",
       "oneLiner": "Iron-air batteries for 100-hour grid storage",
       "investors": [
-        "Breakthrough"
+        "Breakthrough",
+        "Google",
+        "Crusoe"
       ],
       "status": "private",
       "theme": "energy",
       "tier": "growth",
-      "stage": "Series F ($405M)",
+      "stage": "Series E+ ($750M, Aug 2026)",
       "website": "https://formenergy.com/",
       "pedigree": {
         "screened": true,
@@ -2806,7 +2834,16 @@
       "status": "private",
       "website": "https://albedo.com",
       "sourceUrl": "https://www.ycombinator.com/companies/albedo",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-13",
+        "flags": []
+      }
     },
     {
       "name": "Inversion Space",
@@ -2822,7 +2859,16 @@
       "status": "private",
       "website": "https://www.inversionspace.com",
       "sourceUrl": "https://www.ycombinator.com/companies/inversion-space",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-13",
+        "flags": []
+      }
     },
     {
       "name": "TransAstra Corporation",
@@ -2838,7 +2884,16 @@
       "status": "private",
       "website": "https://transastra.com",
       "sourceUrl": "https://www.ycombinator.com/companies/transastra-corporation",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-13",
+        "flags": []
+      }
     },
     {
       "name": "HEO Robotics",
@@ -2854,7 +2909,16 @@
       "status": "private",
       "website": "https://heorobotics.com",
       "sourceUrl": "https://www.ycombinator.com/companies/heo-robotics",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-13",
+        "flags": []
+      }
     },
     {
       "name": "AstroForge",
@@ -2870,7 +2934,16 @@
       "status": "private",
       "website": "https://astroforge.io",
       "sourceUrl": "https://www.ycombinator.com/companies/astroforge",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-13",
+        "flags": []
+      }
     },
     {
       "name": "Hubble Network",
@@ -2886,7 +2959,16 @@
       "status": "private",
       "website": "https://hubblenetwork.com",
       "sourceUrl": "https://www.ycombinator.com/companies/hubble-network",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-13",
+        "flags": []
+      }
     },
     {
       "name": "Ferveret",
@@ -3687,6 +3769,195 @@
       "website": "https://www.ycombinator.com/companies/noril1",
       "sourceUrl": "https://www.ycombinator.com/companies/noril1",
       "addedOn": "2026-08-10"
+    },
+    {
+      "name": "Heaviside",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Series B ($60M, Aug 2026)",
+      "oneLiner": "Precision munitions startup partnering with Nammo for warhead integration.",
+      "description": "Heaviside is building precision-guided munitions designed for mass production and battlefield scalability. The company recently partnered with Norwegian defense giant Nammo to integrate a warhead into its system. It raised a $60M Series B at a $600M valuation just three months after emerging from stealth with a $28M Series A.",
+      "whyListed": "Rapid capital formation and early prime-contractor partnerships signal strong product-market fit in the surging precision munitions market; the Nammo deal de-risks warhead development.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/heaviside-raises-60m-at-a-600m-valuation/",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Swarm Aero",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "AFRL Contract ($10M, Aug 2026)",
+      "oneLiner": "Mass-manufacturable Group 5 autonomous drone for swarm operations.",
+      "description": "Swarm Aero is building a Reaper-sized Group 5 drone designed for swarm operations with in-house autonomy software and mass manufacturability. Unlike traditional large drones, it is engineered from the ground up to be produced at scale and operate cooperatively. The California-based startup just won a $10M Air Force Research Lab contract.",
+      "whyListed": "Large autonomous UAS with organic swarm autonomy addresses a critical DoD capability gap; AFRL contract validates the technical approach and provides non-dilutive development funding.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/exclusive-swarm-aero-wins-10m-air-force-research-lab-contract/",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Cambridge Aerospace",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Growth Round ($300M at $3.4B, Aug 2026)",
+      "oneLiner": "Defense aerospace company raising at a $3.4B valuation.",
+      "description": "Cambridge Aerospace has raised a $300M round led by DFJ Growth at a $3.4B valuation, with participation from Lux, Accel, Lakestar, Never Lift, Ora Global, and Elad Gil. The company operates in the defense aerospace sector, though specific product details remain limited publicly. The substantial valuation and marquee investor syndicate indicate significant commercial and government traction.",
+      "whyListed": "A $3.4B valuation with a blue-chip investor syndicate including Lux and Accel signals one of the largest emerging defense aerospace platforms worth tracking closely.",
+      "investors": [
+        "DFJ Growth",
+        "Lux Capital",
+        "Accel",
+        "Lakestar",
+        "Never Lift",
+        "Ora Global"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/cambridge-aerospace-raises-300m-at-a-3-4b-valuation/",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Helion Energy",
+      "theme": "nuclear",
+      "tier": "growth",
+      "stage": "Series E+ (YC S2014 alumni)",
+      "oneLiner": "Building the world's first commercial fusion power plant.",
+      "description": "Helion Energy is developing a fusion power plant using a field-reversed configuration approach that aims to directly convert fusion energy to electricity. The company has raised over $570M, including a large round from Sam Altman, and has a power purchase agreement with Microsoft. It is one of the most advanced private fusion ventures globally.",
+      "whyListed": "Helion has the most credible near-term fusion commercialization timeline, a signed PPA with a hyperscaler, and a differentiated direct-electricity conversion approach that bypasses traditional thermal cycles.",
+      "investors": [
+        "Sam Altman",
+        "Mithril Capital"
+      ],
+      "status": "private",
+      "website": "https://www.helionenergy.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/helion-energy",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Relativity Space",
+      "theme": "space",
+      "tier": "growth",
+      "stage": "Series E ($650M+)",
+      "oneLiner": "3D-printed rockets for small and medium satellite launch.",
+      "description": "Relativity Space is developing fully 3D-printed orbital launch vehicles, aiming to radically reduce part count and manufacturing time. Its Terran R medium-lift rocket is in development after the smaller Terran 1 completed a partial success test. The company is pivoting toward a reusable medium-lift vehicle to compete in the growing commercial launch market.",
+      "whyListed": "Additive manufacturing applied to rockets represents a step-change in production economics; if Terran R succeeds, Relativity becomes a viable third major Western commercial launch provider.",
+      "investors": [
+        "Tiger Global",
+        "Baillie Gifford",
+        "Fidelity"
+      ],
+      "status": "private",
+      "website": "https://www.relativityspace.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/relativity-space",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Astranis",
+      "theme": "space",
+      "tier": "growth",
+      "stage": "Series C ($200M+)",
+      "oneLiner": "Small geostationary satellites delivering broadband to underserved regions.",
+      "description": "Astranis builds small, low-cost GEO communications satellites that lease capacity on existing rocket rideshares to deliver broadband internet. Their MicroGEO platform is a fraction of the size and cost of traditional GEO birds, enabling smaller operators and governments to access dedicated satellite connectivity. They have multiple satellites in orbit and active commercial customers.",
+      "whyListed": "MicroGEO democratizes dedicated geostationary broadband capacity; a differentiated niche between LEO constellations and legacy large-GEO that has real commercial traction.",
+      "investors": [
+        "Andreessen Horowitz",
+        "BlackRock"
+      ],
+      "status": "private",
+      "website": "https://www.astranis.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/astranis",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Maple Materials",
+      "theme": "semis",
+      "tier": "seed",
+      "stage": "YC Winter 2019",
+      "oneLiner": "Converts CO2 into battery-grade graphite and oxygen using clean energy.",
+      "description": "Maple Materials uses electrochemical processes powered by renewable energy to convert CO2 into battery-grade graphite, simultaneously producing oxygen as a byproduct. This addresses both carbon capture and the critical need for domestic graphite supply for lithium-ion batteries. The process could reduce reliance on Chinese graphite imports for battery manufacturing.",
+      "whyListed": "Domestic battery-grade graphite production is a national security priority; a CO2-to-graphite pathway could simultaneously solve critical mineral supply chain and carbon sequestration challenges.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/maple-materials",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Wyvern",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "YC Winter 2022",
+      "oneLiner": "High-resolution hyperspectral Earth imaging from low-cost small satellites.",
+      "description": "Wyvern is building small satellites capable of capturing high-resolution hyperspectral imagery of Earth, enabling detailed analysis across agriculture, mining, environmental monitoring, and defense applications. Their approach uses starshade optics to achieve large aperture performance from a small satellite form factor. The company is commercially deploying its first satellites.",
+      "whyListed": "Hyperspectral at high resolution from a small-sat platform unlocks analytics previously only available from expensive large government satellites, with broad dual-use commercial and defense applications.",
+      "investors": [],
+      "status": "private",
+      "website": "https://www.wyvern.space",
+      "sourceUrl": "https://www.ycombinator.com/companies/wyvern",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Orangewood Labs",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "YC Winter 2018",
+      "oneLiner": "Affordable AI-powered robot arms for industrial automation.",
+      "description": "Orangewood Labs builds cost-effective robotic arms paired with AI software to make industrial automation accessible to small and medium manufacturers. Their platform uses vision and AI to enable robots to perform tasks without complex programming. The company targets the large underserved SMB manufacturing market.",
+      "whyListed": "Lowering the cost and complexity barrier to industrial robot deployment addresses a massive labor shortage problem in manufacturing, with a software-first AI differentiation.",
+      "investors": [],
+      "status": "private",
+      "website": "https://www.orangewood.co",
+      "sourceUrl": "https://www.ycombinator.com/companies/orangewood-labs",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Singularity",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "YC Summer 2023",
+      "oneLiner": "Building and protecting critical future technology infrastructure.",
+      "description": "Singularity is a YC-backed company focused on building and protecting an exciting future, with a defense-oriented mandate based on its description. Specific product details are limited publicly. The company appears to be operating in the defense or dual-use technology space.",
+      "whyListed": "YC-backed defense-oriented hard-tech company at early stage worth monitoring for product clarity as the company emerges from stealth.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/singularity",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Voxel Energy",
+      "theme": "energy",
+      "tier": "seed",
+      "stage": "YC Winter 2026",
+      "oneLiner": "Energy-independent data centers using solar and repurposed batteries.",
+      "description": "Voxel Energy is building energy-independent data centers that combine on-site solar generation with repurposed second-life batteries to reduce grid dependence and energy costs. The system is designed to provide reliable, low-cost power for compute-intensive workloads without requiring expensive grid interconnection. This addresses the critical bottleneck of power availability for AI data center deployment.",
+      "whyListed": "Off-grid or islanded data center power is a $100B+ problem as grid interconnection queues stretch to 5-10 years; second-life battery economics could make this highly capital efficient.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/voxel-energy",
+      "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Fermi",
+      "theme": "nuclear",
+      "tier": "growth",
+      "stage": "CEO transition (Aug 2026)",
+      "oneLiner": "AI-enabled nuclear power development company.",
+      "description": "Fermi is an AI nuclear power company that uses artificial intelligence to accelerate nuclear plant design, siting, and operations. The company has been navigating a leadership transition after firing co-founder Toby Neugebauer, and has now appointed board member Lee McIntire as CEO. It represents the intersection of AI tooling and nuclear energy development.",
+      "whyListed": "AI-accelerated nuclear development could compress the decade-long timeline for plant commissioning; leadership stabilization is a key milestone to watch for this company.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/",
+      "addedOn": "2026-08-13"
     }
   ],
   "sourceCompanies": {
