@@ -1,6 +1,28 @@
 {
-  "lastRefresh": "2026-08-13T13:06:04.998Z",
+  "lastRefresh": "2026-08-17T12:39:28.471Z",
   "changelog": [
+    {
+      "date": "2026-08-17",
+      "added": [
+        "Riven",
+        "Mass Magnetics",
+        "Aerogen Systems",
+        "Vernius Systems",
+        "Terra Industries",
+        "VXB"
+      ],
+      "updated": [
+        "Heaviside → Series B ($60M, Aug 2026)",
+        "Neros → Series C ($250M, Aug 2026)",
+        "Epirus → $11M USMC contract (Aug 2026)",
+        "Surtr → Spring 2026 (YC)",
+        "Isengard Industries → Summer 2026 (YC)",
+        "Salem Robotics → Summer 2026 (YC)"
+      ],
+      "pedigree": [
+        "Orbital Operations → weak"
+      ]
+    },
     {
       "date": "2026-08-13",
       "added": [
@@ -895,7 +917,7 @@
       "name": "Neros",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Growth ($250M, Aug 2026)",
+      "stage": "Series C ($250M, Aug 2026)",
       "oneLiner": "Low-cost FPV attack drones at scale",
       "investors": [
         "Sequoia",
@@ -920,7 +942,7 @@
       "name": "Epirus",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Contract ($11M USMC, Aug 2026)",
+      "stage": "$11M USMC contract (Aug 2026)",
       "oneLiner": "High-power microwave directed energy (counter-drone swarms)",
       "investors": [
         "8VC",
@@ -1013,8 +1035,8 @@
       "name": "Surtr",
       "theme": "defense",
       "tier": "seed",
-      "stage": "YC Spring 2026",
-      "oneLiner": "ParallaxOS — open counter-UAS operating system, any sensor hardware",
+      "stage": "Spring 2026 (YC)",
+      "oneLiner": "Hardware-agnostic operating system for drone defense",
       "investors": [
         "YC"
       ],
@@ -2984,7 +3006,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/ferveret-inc",
       "sourceUrl": "https://www.ycombinator.com/companies/ferveret-inc",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-17",
+        "flags": []
+      }
     },
     {
       "name": "Inversion Semiconductor",
@@ -3000,7 +3031,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/inversion-semiconductor",
       "sourceUrl": "https://www.ycombinator.com/companies/inversion-semiconductor",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-17",
+        "flags": []
+      }
     },
     {
       "name": "Orbital Operations",
@@ -3016,7 +3056,41 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/orbital-operations",
       "sourceUrl": "https://www.ycombinator.com/companies/orbital-operations",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "weak",
+        "score": 31,
+        "sourceCompanies": [
+          "spacex"
+        ],
+        "founders": [
+          {
+            "name": "Ben Schleuniger",
+            "roleAtCompany": "Co-founder & CEO",
+            "source": "spacex",
+            "title": "unknown",
+            "ownership": "senior-ic",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Document states Ben 'moved on to SpaceX' after NASA, then became an early employee at Relativity Space. No title or duration at SpaceX is specified.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "He started his career at NASA in propulsion before moving on to SpaceX and then as an early employee at Relativity Space.",
+                "url": "https://www.ycombinator.com/companies/orbital-operations",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-17"
+              }
+            ],
+            "score": 30.6
+          }
+        ],
+        "lastVerified": "2026-08-17",
+        "flags": [
+          "tenure-estimated"
+        ]
+      }
     },
     {
       "name": "Reditus Space",
@@ -3032,7 +3106,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/reditus-space",
       "sourceUrl": "https://www.ycombinator.com/companies/reditus-space",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-17",
+        "flags": []
+      }
     },
     {
       "name": "Instinct Space",
@@ -3048,7 +3131,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/instinct-space",
       "sourceUrl": "https://www.ycombinator.com/companies/instinct-space",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-17",
+        "flags": []
+      }
     },
     {
       "name": "Almond",
@@ -3064,7 +3156,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/almond-2",
       "sourceUrl": "https://www.ycombinator.com/companies/almond-2",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-17",
+        "flags": []
+      }
     },
     {
       "name": "The Robot Learning Company",
@@ -3422,8 +3523,8 @@
       "name": "Isengard Industries",
       "theme": "defense",
       "tier": "seed",
-      "stage": "YC Summer 2026",
-      "oneLiner": "Mass-producing AI strike systems and counter-UAS platforms.",
+      "stage": "Summer 2026 (YC)",
+      "oneLiner": "Mass-produced AI strike systems and counter-UAS",
       "description": "Isengard Industries is building mass production capability for AI-guided strike systems and counter-UAS platforms. The company targets the production scale problem for autonomous weapons, where manufacturing throughput rather than unit capability is the limiting factor for military effectiveness. It serves DoD and allied defense customers.",
       "whyListed": "Production scale for autonomous strike systems is the defining defense manufacturing challenge of this decade; Isengard Industries is building the factory capacity that turns promising defense tech into operational capability.",
       "investors": [
@@ -3454,8 +3555,8 @@
       "name": "Salem Robotics",
       "theme": "robotics",
       "tier": "seed",
-      "stage": "YC Summer 2026",
-      "oneLiner": "Robots for inspection and operations in nuclear and hazardous spaces.",
+      "stage": "Summer 2026 (YC)",
+      "oneLiner": "Robots for inspections in hazardous spaces including nuclear",
       "description": "Salem Robotics deploys robotic systems for inspection and operations in hazardous environments, with a focus on nuclear facilities. The company addresses the safety, liability, and efficiency challenges of putting humans in radioactive or otherwise dangerous industrial spaces. Its robots target nuclear power plants, decommissioning sites, and other high-hazard industrial environments.",
       "whyListed": "Nuclear facility robotics is a high-value, safety-critical market that grows directly with the nuclear power renaissance; Salem Robotics sits at the intersection of two strong hard-tech themes — robotics and nuclear.",
       "investors": [
@@ -3778,7 +3879,9 @@
       "oneLiner": "Precision munitions startup partnering with Nammo for warhead integration.",
       "description": "Heaviside is building precision-guided munitions designed for mass production and battlefield scalability. The company recently partnered with Norwegian defense giant Nammo to integrate a warhead into its system. It raised a $60M Series B at a $600M valuation just three months after emerging from stealth with a $28M Series A.",
       "whyListed": "Rapid capital formation and early prime-contractor partnerships signal strong product-market fit in the surging precision munitions market; the Nammo deal de-risks warhead development.",
-      "investors": [],
+      "investors": [
+        "Nammo (strategic)"
+      ],
       "status": "private",
       "website": "",
       "sourceUrl": "https://www.tectonicdefense.com/heaviside-raises-60m-at-a-600m-valuation/",
@@ -3958,6 +4061,103 @@
       "website": "",
       "sourceUrl": "https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/",
       "addedOn": "2026-08-13"
+    },
+    {
+      "name": "Riven",
+      "theme": "energy",
+      "tier": "seed",
+      "stage": "Pre-seed ($7.9M, Aug 2026)",
+      "oneLiner": "AI and autonomy for critical minerals processing",
+      "description": "Riven applies AI and autonomous systems to critical minerals processing, targeting the bottleneck of extracting and refining materials essential to the energy transition and defense supply chains. The company emerged from stealth with a $7.9M pre-seed round. It plans to scale its team and build out its processing platform.",
+      "whyListed": "Critical minerals processing is a strategic chokepoint for energy and defense supply chains; AI-driven automation here is a high-leverage hard-tech bet.",
+      "investors": [
+        "Cerberus Ventures",
+        "Scout Ventures",
+        "Alumni Ventures",
+        "Lightscape Partners",
+        "CLAI",
+        "New System Ventures"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/icymi-riven-emerges-from-stealth/",
+      "addedOn": "2026-08-17"
+    },
+    {
+      "name": "Mass Magnetics",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Summer 2026 (YC)",
+      "oneLiner": "USA-made magnetics for aerospace, robotics, and defense",
+      "description": "Mass Magnetics manufactures domestically produced magnetic components targeting aerospace, robotics, and defense applications where supply-chain security is critical. The company addresses the US dependency on foreign-sourced rare-earth magnets by building onshore manufacturing capacity. It is part of YC's Summer 2026 batch.",
+      "whyListed": "Domestic magnetics manufacturing is a critical supply-chain resilience play across defense, robotics, and energy hardware — a strategic hard-tech gap.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/mass-magnetics",
+      "addedOn": "2026-08-17"
+    },
+    {
+      "name": "Aerogen Systems",
+      "theme": "semis",
+      "tier": "seed",
+      "stage": "Summer 2026 (YC)",
+      "oneLiner": "Advanced chip manufacturing equipment and processes",
+      "description": "Aerogen Systems is building next-generation advanced chip manufacturing technology, targeting the equipment and process layers that enable leading-edge semiconductor production. The company is part of YC's Summer 2026 batch. Details remain limited but the focus is on foundational manufacturing capability for advanced nodes.",
+      "whyListed": "Advanced semiconductor manufacturing equipment is a critical bottleneck in the AI chip supply chain and a key national security priority.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/aerogen-systems",
+      "addedOn": "2026-08-17"
+    },
+    {
+      "name": "Vernius Systems",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Summer 2026 (YC)",
+      "oneLiner": "Autonomous radar guidance systems for interceptor missiles",
+      "description": "Vernius Systems develops autonomous radar guidance for interceptors, enabling more precise and reliable missile defense engagement without dependence on external data links. The company is in YC's Summer 2026 batch, addressing a key gap in terminal-phase missile defense. Onboard autonomous radar guidance reduces latency and vulnerability to jamming.",
+      "whyListed": "Autonomous seeker and guidance technology is a critical enabler for next-generation interceptors and a high-priority area for US missile defense investment.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/vernius-systems-inc",
+      "addedOn": "2026-08-17"
+    },
+    {
+      "name": "Terra Industries",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Seed ($52M, Aug 2026)",
+      "oneLiner": "Nigerian defense tech company scaling munitions and contract revenue",
+      "description": "Terra Industries is a Nigeria-based defense technology company that has closed a $52M seed round and opened a London office to expand its reach. The company is on track to record over $100M in contract bookings and eight figures in revenue this year. It operates in defense manufacturing and supply, with growing international ambitions.",
+      "whyListed": "Terra's rapid contract bookings growth and large seed round signal a credible emerging defense manufacturer with potential to serve NATO-aligned and allied markets.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/exclusive-nigerias-terra-industries-raises-another-18m-to-close-52m-seed-round-opens-london-office/",
+      "addedOn": "2026-08-17"
+    },
+    {
+      "name": "VXB",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Stealth (Aug 2026)",
+      "oneLiner": "Generative design software for defense hardware development",
+      "description": "VXB is an LA-based generative design startup focused on accelerating how defense companies design complex hardware. The company announced a major platform upgrade to its generative design tool, which automates and optimizes the physical design of defense kit. It targets the speed gap between hardware iteration cycles and fast-moving threat environments.",
+      "whyListed": "Generative design tooling for defense hardware could dramatically compress development timelines for munitions and platforms — a key bottleneck in defense manufacturing.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/exclusive-vxb-unveils-mega-platform-upgrade/",
+      "addedOn": "2026-08-17"
     }
   ],
   "sourceCompanies": {
