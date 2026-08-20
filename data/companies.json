@@ -1,6 +1,34 @@
 {
-  "lastRefresh": "2026-08-17T12:39:28.471Z",
+  "lastRefresh": "2026-08-20T12:43:59.737Z",
   "changelog": [
+    {
+      "date": "2026-08-20",
+      "added": [
+        "Elroy Air",
+        "Smack",
+        "X-Bow Systems",
+        "NODA AI",
+        "Per Vices",
+        "Velontra",
+        "Radical",
+        "GRU Space",
+        "NODI Energy",
+        "Consus",
+        "Forerunner AI",
+        "Skymerse"
+      ],
+      "updated": [
+        "TerraPower → Strategic update (Aug 2026)",
+        "Terra Industries → Seed ($52M, Aug 2026)",
+        "Riven → Pre-seed ($7.9M, Aug 2026)",
+        "Surtr → YC Spring 2026",
+        "Isengard Industries → YC Summer 2026",
+        "Salem Robotics → YC Summer 2026"
+      ],
+      "pedigree": [
+        "Wardstone → weak"
+      ]
+    },
     {
       "date": "2026-08-17",
       "added": [
@@ -574,14 +602,16 @@
       "name": "TerraPower",
       "theme": "nuclear",
       "tier": "growth",
-      "stage": "Growth",
+      "stage": "Strategic update (Aug 2026)",
       "oneLiner": "Natrium sodium-cooled reactor; Wyoming build underway",
       "investors": [
         "Gates",
         "SK",
         "NVentures"
       ],
-      "status": "private"
+      "status": "private",
+      "description": "TerraPower's reactor design includes a molten salt energy storage system that allows it to dispatch power on demand, giving it a unique advantage in data center power purchase agreements where reliability and dispatchability are critical.",
+      "whyListed": "The data center power demand angle validates TerraPower's commercial strategy and differentiates its reactor design from competitors in the nuclear-for-AI-infrastructure race."
     },
     {
       "name": "X-energy",
@@ -1035,12 +1065,13 @@
       "name": "Surtr",
       "theme": "defense",
       "tier": "seed",
-      "stage": "Spring 2026 (YC)",
+      "stage": "YC Spring 2026",
       "oneLiner": "Hardware-agnostic operating system for drone defense",
       "investors": [
         "YC"
       ],
-      "status": "private"
+      "status": "private",
+      "description": "YC directory confirms Surtr Defense Systems is building a hardware-agnostic operating system for drone defense, now listed under the Spring 2026 batch."
     },
     {
       "name": "Arlo Industries",
@@ -3181,7 +3212,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/the-robot-learning-company",
       "sourceUrl": "https://www.ycombinator.com/companies/the-robot-learning-company",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-20",
+        "flags": []
+      }
     },
     {
       "name": "Null Labs",
@@ -3197,7 +3237,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/null-labs",
       "sourceUrl": "https://www.ycombinator.com/companies/null-labs",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-20",
+        "flags": []
+      }
     },
     {
       "name": "Albacore Inc.",
@@ -3213,7 +3262,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/albacore-inc",
       "sourceUrl": "https://www.ycombinator.com/companies/albacore-inc",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-20",
+        "flags": []
+      }
     },
     {
       "name": "Perseus Defense",
@@ -3229,7 +3287,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/perseus-defense",
       "sourceUrl": "https://www.ycombinator.com/companies/perseus-defense",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-20",
+        "flags": []
+      }
     },
     {
       "name": "Wardstone",
@@ -3245,7 +3312,47 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/wardstone",
       "sourceUrl": "https://www.ycombinator.com/companies/wardstone",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "weak",
+        "score": 7,
+        "sourceCompanies": [
+          "astranis"
+        ],
+        "founders": [
+          {
+            "name": "Tobias Fischer",
+            "roleAtCompany": "Co-founder",
+            "source": "astranis",
+            "title": "unknown",
+            "ownership": "ic",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Document states he 'worked at Astranis, building, launching, and operating geostationary communication satellites' but does not specify his title or tenure duration.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Previously I worked at Astranis, building, launching, and operating geostationary communication satellites.",
+                "url": "https://www.ycombinator.com/companies/wardstone",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-20"
+              },
+              {
+                "claim": "Tobias studied Mechanical Engineering at Cornell and worked at Astranis.",
+                "url": "https://www.ycombinator.com/companies/wardstone",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-20"
+              }
+            ],
+            "score": 7
+          }
+        ],
+        "lastVerified": "2026-08-20",
+        "flags": [
+          "tenure-estimated"
+        ]
+      }
     },
     {
       "name": "Cortex AI",
@@ -3261,7 +3368,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/cortex-ai",
       "sourceUrl": "https://www.ycombinator.com/companies/cortex-ai",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-20",
+        "flags": []
+      }
     },
     {
       "name": "Icarus",
@@ -3523,9 +3639,9 @@
       "name": "Isengard Industries",
       "theme": "defense",
       "tier": "seed",
-      "stage": "Summer 2026 (YC)",
+      "stage": "YC Summer 2026",
       "oneLiner": "Mass-produced AI strike systems and counter-UAS",
-      "description": "Isengard Industries is building mass production capability for AI-guided strike systems and counter-UAS platforms. The company targets the production scale problem for autonomous weapons, where manufacturing throughput rather than unit capability is the limiting factor for military effectiveness. It serves DoD and allied defense customers.",
+      "description": "YC directory confirms Isengard Industries is in the Summer 2026 batch, focused on mass-produced AI strike systems and counter-UAS.",
       "whyListed": "Production scale for autonomous strike systems is the defining defense manufacturing challenge of this decade; Isengard Industries is building the factory capacity that turns promising defense tech into operational capability.",
       "investors": [
         "Y Combinator"
@@ -3555,9 +3671,9 @@
       "name": "Salem Robotics",
       "theme": "robotics",
       "tier": "seed",
-      "stage": "Summer 2026 (YC)",
+      "stage": "YC Summer 2026",
       "oneLiner": "Robots for inspections in hazardous spaces including nuclear",
-      "description": "Salem Robotics deploys robotic systems for inspection and operations in hazardous environments, with a focus on nuclear facilities. The company addresses the safety, liability, and efficiency challenges of putting humans in radioactive or otherwise dangerous industrial spaces. Its robots target nuclear power plants, decommissioning sites, and other high-hazard industrial environments.",
+      "description": "YC directory confirms Salem Robotics is in the Summer 2026 batch, deploying robots for inspections in hazardous spaces including nuclear facilities.",
       "whyListed": "Nuclear facility robotics is a high-value, safety-critical market that grows directly with the nuclear power renaissance; Salem Robotics sits at the intersection of two strong hard-tech themes — robotics and nuclear.",
       "investors": [
         "Y Combinator"
@@ -4068,8 +4184,8 @@
       "tier": "seed",
       "stage": "Pre-seed ($7.9M, Aug 2026)",
       "oneLiner": "AI and autonomy for critical minerals processing",
-      "description": "Riven applies AI and autonomous systems to critical minerals processing, targeting the bottleneck of extracting and refining materials essential to the energy transition and defense supply chains. The company emerged from stealth with a $7.9M pre-seed round. It plans to scale its team and build out its processing platform.",
-      "whyListed": "Critical minerals processing is a strategic chokepoint for energy and defense supply chains; AI-driven automation here is a high-leverage hard-tech bet.",
+      "description": "Riven emerged from stealth with a $7.9M pre-seed led by Cerberus Ventures to scale its AI and autonomy platform for critical minerals processing.",
+      "whyListed": "Pre-seed funding and stealth emergence confirms Riven is an active company applying autonomy to the critical minerals bottleneck.",
       "investors": [
         "Cerberus Ventures",
         "Scout Ventures",
@@ -4137,8 +4253,8 @@
       "tier": "growth",
       "stage": "Seed ($52M, Aug 2026)",
       "oneLiner": "Nigerian defense tech company scaling munitions and contract revenue",
-      "description": "Terra Industries is a Nigeria-based defense technology company that has closed a $52M seed round and opened a London office to expand its reach. The company is on track to record over $100M in contract bookings and eight figures in revenue this year. It operates in defense manufacturing and supply, with growing international ambitions.",
-      "whyListed": "Terra's rapid contract bookings growth and large seed round signal a credible emerging defense manufacturer with potential to serve NATO-aligned and allied markets.",
+      "description": "Nigeria-based Terra Industries closed a $52M seed round and opened a London office, reporting it is on track to record over $100M in contract bookings and eight figures in revenue this year.",
+      "whyListed": "Rapid revenue traction and international expansion at seed stage signals strong product-market fit in an underserved defense manufacturing geography.",
       "investors": [],
       "status": "private",
       "website": "",
@@ -4158,6 +4274,184 @@
       "website": "",
       "sourceUrl": "https://www.tectonicdefense.com/exclusive-vxb-unveils-mega-platform-upgrade/",
       "addedOn": "2026-08-17"
+    },
+    {
+      "name": "Elroy Air",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Contract ($46M Army, Aug 2026)",
+      "oneLiner": "Heavy-lift autonomous VTOL drone for military logistics.",
+      "description": "Elroy Air builds heavy-lift hybrid-electric VTOL uncrewed aircraft systems designed for autonomous logistics in contested environments. The company won a $46M multi-year US Army contract for development of its modular cargo UAS. The platform targets distributed and contested logistics missions where manned aircraft access is limited.",
+      "whyListed": "A $46M Army contract validates Elroy Air's technology for a critical and underserved military logistics mission; autonomous heavy-lift cargo drones are a key enabler of contested logistics doctrine.",
+      "investors": [],
+      "status": "private",
+      "website": "https://www.elroyair.com",
+      "sourceUrl": "https://www.tectonicdefense.com/elroy-air-wins-46m-army-contract/",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "Smack",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Series A ($61M, Aug 2026)",
+      "oneLiner": "AI inference at the tactical edge for defense applications.",
+      "description": "Smack raised $61M to deploy AI processing capabilities at the tactical edge, enabling autonomous decision-making in communications-degraded environments. The company focuses on edge AI hardware and software for defense use cases where cloud connectivity is unavailable. Its funding underscores growing demand for on-device AI in military platforms.",
+      "whyListed": "Edge AI for defense is a critical enabler of autonomous weapons and ISR systems; $61M raise signals serious institutional backing for this capability.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/smack-raises-61m-for-ai-at-the-edge/",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "X-Bow Systems",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Contract ($11M MDA, Aug 2026)",
+      "oneLiner": "Low-cost solid rocket motors and interceptors for missile defense.",
+      "description": "X-Bow Systems received an $11M Missile Defense Agency contract for low-cost interceptor development targeting Group 3 and larger UAS and cruise missile threats. The company uses additive manufacturing to produce solid rocket motors at scale, reducing cost and lead time. Its approach addresses the critical interceptor cost and production rate gap exposed by recent conflicts.",
+      "whyListed": "MDA funding for low-cost interceptors directly addresses one of the most urgent capability gaps in US and allied missile defense; additive manufacturing for propulsion is a key hard-tech thesis.",
+      "investors": [],
+      "status": "private",
+      "website": "https://www.x-bow.com",
+      "sourceUrl": "https://www.tectonicdefense.com/exclusive-mda-awards-x-bow-11m-for-low-cost-interceptor-development/",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "NODA AI",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Contract ($100M Joint Force, Aug 2026)",
+      "oneLiner": "AI orchestration platform for joint military command and control.",
+      "description": "NODA AI won a $100M Joint Force contract to deploy its AI-enabled orchestration system for multi-domain command and control. The platform integrates with existing defense systems to coordinate autonomous and manned assets across domains. The award follows an earlier $10M contract to integrate with the LUCAS system.",
+      "whyListed": "A $100M joint force contract for AI-driven C2 orchestration confirms NODA as a serious player in the defense autonomy stack; multi-domain coordination software is a high-value category.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/noda-ai-scores-100m-joint-force-contract/",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "Per Vices",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "YC Winter 2012",
+      "oneLiner": "Mission-critical software defined radio hardware for defense and comms.",
+      "description": "Per Vices builds high-performance software defined radio (SDR) products targeting mission-critical applications in defense and communications. Their hardware enables flexible, reprogrammable radio frequency systems that can adapt to changing spectrum environments. SDR is foundational to electronic warfare, signals intelligence, and communications in contested environments.",
+      "whyListed": "Software defined radio is core infrastructure for electronic warfare and tactical communications; SDR flexibility is critical for spectrum-contested defense environments.",
+      "investors": [],
+      "status": "private",
+      "website": "https://pervices.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/per-vices",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "Velontra",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "YC Summer 2022",
+      "oneLiner": "Hypersonic spaceplane launching from any location and weather.",
+      "description": "Velontra is developing a hypersonic spaceplane capable of taking off from any location regardless of weather conditions, targeting flexible and responsive access to space. The vehicle aims to combine hypersonic speed with operationally flexible basing, relevant to both commercial and military rapid-response missions. Hypersonic platforms have significant defense applications in strike, ISR, and responsive launch.",
+      "whyListed": "Hypersonic platforms sit at the intersection of space launch and defense strike capabilities; operationally flexible hypersonic vehicles are a top DoD priority.",
+      "investors": [],
+      "status": "private",
+      "website": "https://www.velontra.com",
+      "sourceUrl": "https://www.ycombinator.com/companies/velontra",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "Radical",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "YC Winter 2023",
+      "oneLiner": "Persistent high-performance infrastructure platforms in the stratosphere.",
+      "description": "Radical is building persistent, high-performance infrastructure platforms designed to operate in the stratosphere, targeting applications that benefit from long-endurance near-space presence. The company aims to provide a persistent layer between satellites and ground assets for communications, ISR, and other services. Stratospheric persistence offers lower latency and higher revisit rates than low Earth orbit for many applications.",
+      "whyListed": "Stratospheric persistent platforms address a gap between drones and satellites for ISR and communications; near-space infrastructure is an emerging and high-value orbital-adjacent category.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/radical",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "GRU Space",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "YC Winter 2026",
+      "oneLiner": "In-space construction company starting with lunar infrastructure.",
+      "description": "Galactic Resource Utilization Space (GRU Space) is building what it describes as the intergalactic construction company of Earth, starting with lunar hotel and habitat infrastructure. The company aims to develop construction capabilities and resource utilization systems for the Moon and beyond. Lunar infrastructure is a key enabling layer for sustained human presence and cislunar commerce.",
+      "whyListed": "Cislunar construction and resource utilization is a foundational capability for the emerging space economy; YC Winter 2026 backing signals current momentum.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/galactic-resource-utilization-space-inc-gru-space",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "NODI Energy",
+      "theme": "energy",
+      "tier": "seed",
+      "stage": "YC Spring 2025",
+      "oneLiner": "Distributed energy infrastructure connecting grid power to data centers.",
+      "description": "NODI Energy is building distributed energy infrastructure to unlock grid power for data centers, addressing the growing mismatch between data center power demand and grid capacity. The company develops systems that aggregate and deliver grid electricity to compute facilities in a distributed fashion. Their approach targets the critical bottleneck of power availability constraining AI infrastructure buildout.",
+      "whyListed": "Data center power infrastructure is one of the highest-urgency hard-tech problems as AI buildout accelerates; distributed grid-to-DC solutions are a key enabling layer.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/nodi-energy",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "Consus",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "YC Fall 2024",
+      "oneLiner": "Secure AI deployment for ITAR and CUI-classified defense data.",
+      "description": "Consus provides the fastest and most cost-effective way to deploy AI with ITAR or CUI-controlled data, enabling defense and aerospace companies to use AI without compliance risk. The platform handles the complex data security and regulatory requirements that prevent standard AI tools from being used on sensitive government and defense information. This removes a key friction point in defense AI adoption.",
+      "whyListed": "Compliance infrastructure for AI in defense is a critical enabler for the broader defense tech ecosystem; ITAR/CUI-safe AI is a real and underserved gap in the defense software stack.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/consus",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "Forerunner AI",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "YC Fall 2024",
+      "oneLiner": "AI platform to accelerate aircraft certification and flight readiness.",
+      "description": "Forerunner AI builds AI tools that accelerate the process of getting aircraft certified and flying faster, targeting the aerospace and defense sector where certification timelines are a major bottleneck. The platform automates and streamlines documentation, compliance, and engineering workflows required for airworthiness. Faster aircraft certification is critical for both commercial aviation and defense procurement timelines.",
+      "whyListed": "Certification bottlenecks are one of the biggest constraints on defense aerospace programs; AI-driven acceleration of this process has significant leverage across the entire sector.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/forerunner-ai",
+      "addedOn": "2026-08-20"
+    },
+    {
+      "name": "Skymerse",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "YC Summer 2026",
+      "oneLiner": "AI autopilot software platform for flight operations management.",
+      "description": "Skymerse is building an autopilot system for flight operations, automating the planning, scheduling, and management workflows that govern aircraft operations. The platform targets the operational complexity of managing large fleets of manned or unmanned aircraft. Automated flight operations management is increasingly relevant to both commercial aviation and military UAV fleet operations.",
+      "whyListed": "Autonomous flight operations software is foundational infrastructure for scaling drone and UAV fleets in defense and commercial contexts; Summer 2026 YC batch signals current momentum.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/skymerse",
+      "addedOn": "2026-08-20"
     }
   ],
   "sourceCompanies": {
