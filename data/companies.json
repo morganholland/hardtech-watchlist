@@ -1,6 +1,29 @@
 {
-  "lastRefresh": "2026-08-20T12:43:59.737Z",
+  "lastRefresh": "2026-08-24T12:44:35.958Z",
   "changelog": [
+    {
+      "date": "2026-08-24",
+      "added": [
+        "Edgerun",
+        "Ethos Space Resources",
+        "Powerus",
+        "Swarmer",
+        "Valinor"
+      ],
+      "updated": [
+        "Castelion → Series C ($1B, Aug 2026)",
+        "Elroy Air → Contract ($46M Army, Aug 2026)",
+        "Smack → Series A ($61M, Aug 2026)",
+        "X-Bow Systems → Contract ($11M MDA, Aug 2026)",
+        "Surtr → YC Spring 2026",
+        "Isengard Industries → YC Summer 2026",
+        "Salem Robotics → YC Summer 2026"
+      ],
+      "pedigree": [
+        "One Robot → weak",
+        "Beyond Reach Labs → strong"
+      ]
+    },
     {
       "date": "2026-08-20",
       "added": [
@@ -777,7 +800,7 @@
       "name": "Castelion",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Series B ($434M total)",
+      "stage": "Series C ($1B, Aug 2026)",
       "oneLiner": "Low-cost hypersonic strike missiles; seed→B in 26 months",
       "investors": [
         "Lightspeed",
@@ -839,7 +862,8 @@
         ],
         "lastVerified": "2026-08-07",
         "flags": []
-      }
+      },
+      "description": "Castelion is developing hypersonic missiles for the US defense market. The $1B Series C values the company at $13B, reflecting strong demand for next-generation strike capabilities."
     },
     {
       "name": "Hermeus",
@@ -1071,7 +1095,7 @@
         "YC"
       ],
       "status": "private",
-      "description": "YC directory confirms Surtr Defense Systems is building a hardware-agnostic operating system for drone defense, now listed under the Spring 2026 batch."
+      "description": "Surtr Defense Systems is building a hardware-agnostic operating system for drone defense, enabling counter-UAS capabilities across multiple hardware platforms."
     },
     {
       "name": "Arlo Industries",
@@ -3393,7 +3417,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/icarus",
       "sourceUrl": "https://www.ycombinator.com/companies/icarus",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-24",
+        "flags": []
+      }
     },
     {
       "name": "One Robot",
@@ -3409,7 +3442,45 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/one-robot",
       "sourceUrl": "https://www.ycombinator.com/companies/one-robot",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "weak",
+        "score": 35,
+        "sourceCompanies": [
+          "tesla"
+        ],
+        "founders": [
+          {
+            "name": "Elton Shon",
+            "roleAtCompany": "Co-founder & CTO",
+            "source": "tesla",
+            "title": "unknown",
+            "ownership": "senior-ic",
+            "years": 5,
+            "yearsPrecision": "reported",
+            "note": "Spent five years at Tesla building robotics and large-scale AI infrastructure for factory automation during the Model 3 production ramp and the Dojo supercomputer team.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Elton spent five years at Tesla, building robotics and large-scale AI infrastructure for factory automation during the Model 3 production ramp and the Dojo supercomputer team.",
+                "url": "https://www.ycombinator.com/companies/one-robot",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-24"
+              },
+              {
+                "claim": "Previously built robot learning and control system at Industrial Next and helped build Dojo at Tesla.",
+                "url": "https://www.ycombinator.com/companies/one-robot",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-24"
+              }
+            ],
+            "score": 35.4
+          }
+        ],
+        "lastVerified": "2026-08-24",
+        "flags": []
+      }
     },
     {
       "name": "Asimov",
@@ -3425,7 +3496,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/asimov",
       "sourceUrl": "https://www.ycombinator.com/companies/asimov",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-24",
+        "flags": []
+      }
     },
     {
       "name": "Beyond Reach Labs",
@@ -3441,7 +3521,45 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/beyond-reach-labs",
       "sourceUrl": "https://www.ycombinator.com/companies/beyond-reach-labs",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "strong",
+        "score": 63,
+        "sourceCompanies": [
+          "spacex"
+        ],
+        "founders": [
+          {
+            "name": "Pele Collins",
+            "roleAtCompany": "Co-founder & CTO",
+            "source": "spacex",
+            "title": "leading the engineering and production teams for the parachutes",
+            "ownership": "program-owner",
+            "years": 6,
+            "yearsPrecision": "reported",
+            "note": "Document states '6 years as SpaceX leading the engineering and production teams for the parachutes'; also notes 'seven years at SpaceX' in company description (slight discrepancy, both from same source page)",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Pele Collins spent 6 years at SpaceX leading the engineering and production teams for the parachutes",
+                "url": "https://www.ycombinator.com/companies/beyond-reach-labs",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-24"
+              },
+              {
+                "claim": "Company description states Pele spent seven years at SpaceX leading Dragon parachute engineering",
+                "url": "https://www.ycombinator.com/companies/beyond-reach-labs",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-24"
+              }
+            ],
+            "score": 63
+          }
+        ],
+        "lastVerified": "2026-08-24",
+        "flags": []
+      }
     },
     {
       "name": "Terranox AI",
@@ -3457,7 +3575,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/terranox-ai",
       "sourceUrl": "https://www.ycombinator.com/companies/terranox-ai",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-24",
+        "flags": []
+      }
     },
     {
       "name": "Seeing Systems",
@@ -3473,7 +3600,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/seeing-systems",
       "sourceUrl": "https://www.ycombinator.com/companies/seeing-systems",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-24",
+        "flags": []
+      }
     },
     {
       "name": "AxionOrbital Space",
@@ -3641,7 +3777,7 @@
       "tier": "seed",
       "stage": "YC Summer 2026",
       "oneLiner": "Mass-produced AI strike systems and counter-UAS",
-      "description": "YC directory confirms Isengard Industries is in the Summer 2026 batch, focused on mass-produced AI strike systems and counter-UAS.",
+      "description": "Isengard Industries is building mass-produced AI strike systems and counter-UAS platforms, appearing in YC Summer 2026 batch with expanded description.",
       "whyListed": "Production scale for autonomous strike systems is the defining defense manufacturing challenge of this decade; Isengard Industries is building the factory capacity that turns promising defense tech into operational capability.",
       "investors": [
         "Y Combinator"
@@ -3673,7 +3809,7 @@
       "tier": "seed",
       "stage": "YC Summer 2026",
       "oneLiner": "Robots for inspections in hazardous spaces including nuclear",
-      "description": "YC directory confirms Salem Robotics is in the Summer 2026 batch, deploying robots for inspections in hazardous spaces including nuclear facilities.",
+      "description": "Salem Robotics deploys inspection robots for hazardous environments including nuclear facilities, appearing in YC Summer 2026 batch.",
       "whyListed": "Nuclear facility robotics is a high-value, safety-critical market that grows directly with the nuclear power renaissance; Salem Robotics sits at the intersection of two strong hard-tech themes — robotics and nuclear.",
       "investors": [
         "Y Combinator"
@@ -4281,7 +4417,7 @@
       "tier": "growth",
       "stage": "Contract ($46M Army, Aug 2026)",
       "oneLiner": "Heavy-lift autonomous VTOL drone for military logistics.",
-      "description": "Elroy Air builds heavy-lift hybrid-electric VTOL uncrewed aircraft systems designed for autonomous logistics in contested environments. The company won a $46M multi-year US Army contract for development of its modular cargo UAS. The platform targets distributed and contested logistics missions where manned aircraft access is limited.",
+      "description": "Elroy Air won a $46M multi-year Army contract for development of an autonomous hybrid-electric VTOL uncrewed aircraft system for modular cargo logistics in distributed and contested environments.",
       "whyListed": "A $46M Army contract validates Elroy Air's technology for a critical and underserved military logistics mission; autonomous heavy-lift cargo drones are a key enabler of contested logistics doctrine.",
       "investors": [],
       "status": "private",
@@ -4295,7 +4431,7 @@
       "tier": "growth",
       "stage": "Series A ($61M, Aug 2026)",
       "oneLiner": "AI inference at the tactical edge for defense applications.",
-      "description": "Smack raised $61M to deploy AI processing capabilities at the tactical edge, enabling autonomous decision-making in communications-degraded environments. The company focuses on edge AI hardware and software for defense use cases where cloud connectivity is unavailable. Its funding underscores growing demand for on-device AI in military platforms.",
+      "description": "Smack raised $61M for AI at the edge, targeting defense applications requiring on-device inference in contested, low-connectivity environments.",
       "whyListed": "Edge AI for defense is a critical enabler of autonomous weapons and ISR systems; $61M raise signals serious institutional backing for this capability.",
       "investors": [],
       "status": "private",
@@ -4309,7 +4445,7 @@
       "tier": "growth",
       "stage": "Contract ($11M MDA, Aug 2026)",
       "oneLiner": "Low-cost solid rocket motors and interceptors for missile defense.",
-      "description": "X-Bow Systems received an $11M Missile Defense Agency contract for low-cost interceptor development targeting Group 3 and larger UAS and cruise missile threats. The company uses additive manufacturing to produce solid rocket motors at scale, reducing cost and lead time. Its approach addresses the critical interceptor cost and production rate gap exposed by recent conflicts.",
+      "description": "The Missile Defense Agency awarded X-Bow $11M for low-cost interceptor development targeting cruise missile and advanced UAS threats beyond Group 3, leveraging X-Bow's solid rocket motor manufacturing.",
       "whyListed": "MDA funding for low-cost interceptors directly addresses one of the most urgent capability gaps in US and allied missile defense; additive manufacturing for propulsion is a key hard-tech thesis.",
       "investors": [],
       "status": "private",
@@ -4452,6 +4588,80 @@
       "website": "",
       "sourceUrl": "https://www.ycombinator.com/companies/skymerse",
       "addedOn": "2026-08-20"
+    },
+    {
+      "name": "Edgerun",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "YC Summer 2026",
+      "oneLiner": "Military exoskeletons for enhanced warfighter performance and logistics.",
+      "description": "Edgerun is building military-grade exoskeletons designed to augment warfighter strength and endurance in combat and logistics scenarios. The company is part of the YC Summer 2026 batch, targeting defense procurement for load-bearing and casualty evacuation use cases. Exoskeletons represent a growing segment of DoD investment in human augmentation.",
+      "whyListed": "Military exoskeletons are a high-priority DoD modernization area, and YC-backed hard-tech defense hardware companies at this stage warrant early monitoring given the defense funding tailwinds.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/edgerun",
+      "addedOn": "2026-08-24"
+    },
+    {
+      "name": "Ethos Space Resources",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "YC Summer 2026",
+      "oneLiner": "In-situ silicon manufacturing on the Moon for space-based semis.",
+      "description": "Ethos Space Resources is developing processes to manufacture silicon on the Moon using in-situ resource utilization (ISRU), targeting the production of photovoltaics and semiconductor materials from lunar regolith. This would reduce dependence on Earth-launched materials for long-duration lunar and cis-lunar infrastructure. The company is part of the YC Summer 2026 batch.",
+      "whyListed": "Lunar ISRU for semiconductor-grade silicon is a foundational capability for sustainable space infrastructure and sits at the intersection of the space and semis themes with long-term strategic value.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/ethos-space-resources",
+      "addedOn": "2026-08-24"
+    },
+    {
+      "name": "Powerus",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Contract ($22.3M, Aug 2026)",
+      "oneLiner": "Protecting energy infrastructure in conflict zones for oil and gas operators.",
+      "description": "Powerus secured a $22.3M contract to protect Middle East energy infrastructure for an oil and gas operator in the Persian Gulf, addressing the growing threat of targeted attacks on critical energy assets. The company provides active protection solutions for energy infrastructure in contested environments. This positions Powerus at the intersection of defense technology and critical energy security.",
+      "whyListed": "Energy infrastructure protection is an emerging defense procurement category as attacks on oil, gas, and power assets proliferate globally; a $22M contract win demonstrates real customer traction.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/powerus-tapped-to-protect-middle-east-energy-infrastructure-under-a-22-3m-contract/",
+      "addedOn": "2026-08-24"
+    },
+    {
+      "name": "Swarmer",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (Aug 2026)",
+      "oneLiner": "Swarming software enabling air defense as a service via drone swarms.",
+      "description": "Swarmer is a Ukrainian-born, Austin-based company developing swarming software for coordinated autonomous drone operations, now co-venturing with Erik Prince on an 'Air Defense as a Service' offering. The company holds a 20% stake in the new air defense venture, which aims to deliver scalable counter-air capabilities without fixed infrastructure. Swarmer's software stack enables heterogeneous UAS coordination for layered defense.",
+      "whyListed": "Swarming software for air defense is one of the most strategically relevant emerging capabilities in modern conflict, and the Erik Prince partnership signals serious commercial and operational ambition.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/erik-prince-launches-air-defense-as-a-service-startup-with-swarmer/",
+      "addedOn": "2026-08-24"
+    },
+    {
+      "name": "Valinor",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Early (Aug 2026)",
+      "oneLiner": "Defense tech holding company building UXV-agnostic autonomous logistics payloads.",
+      "description": "Valinor is a new-age defense tech holding company that develops unmanned vehicle payloads, including the HarborPOD—a UXV-agnostic system designed for unmanned CASEVAC (casualty evacuation) and logistics resupply. The HarborPOD is platform-agnostic, enabling deployment across ground, air, and maritime unmanned vehicles. The company is targeting the critical gap in autonomous medical evacuation and contested logistics.",
+      "whyListed": "Autonomous CASEVAC and unmanned logistics resupply are high-priority DoD capability gaps, and a hardware-agnostic payload approach offers rapid scaling across the growing UAS/UGV ecosystem.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/valinor-unveils-harborpod-for-unmanned-casevac/",
+      "addedOn": "2026-08-24"
     }
   ],
   "sourceCompanies": {
