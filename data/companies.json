@@ -1,6 +1,26 @@
 {
-  "lastRefresh": "2026-08-24T12:44:35.958Z",
+  "lastRefresh": "2026-08-27T21:45:58.361Z",
   "changelog": [
+    {
+      "date": "2026-08-27",
+      "added": [
+        "REGENT Craft",
+        "Firehawk",
+        "Maglut Heavy Industries",
+        "Mara",
+        "Auriga Space"
+      ],
+      "updated": [
+        "Castelion → Navy contract $89.99M (Aug 2026)",
+        "Surtr → YC Spring 2026",
+        "Isengard Industries → YC Summer 2026",
+        "Salem Robotics → YC Summer 2026",
+        "GRU Space → YC Winter 2026"
+      ],
+      "pedigree": [
+        "Dispatch → qualified"
+      ]
+    },
     {
       "date": "2026-08-24",
       "added": [
@@ -800,7 +820,7 @@
       "name": "Castelion",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Series C ($1B, Aug 2026)",
+      "stage": "Navy contract $89.99M (Aug 2026)",
       "oneLiner": "Low-cost hypersonic strike missiles; seed→B in 26 months",
       "investors": [
         "Lightspeed",
@@ -3625,7 +3645,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/axionorbital-space",
       "sourceUrl": "https://www.ycombinator.com/companies/axionorbital-space",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-27",
+        "flags": []
+      }
     },
     {
       "name": "Dispatch",
@@ -3641,7 +3670,71 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/dispatch",
       "sourceUrl": "https://www.ycombinator.com/companies/dispatch",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "qualified",
+        "score": 47,
+        "sourceCompanies": [
+          "astranis"
+        ],
+        "founders": [
+          {
+            "name": "Payton Case",
+            "roleAtCompany": "Co-founder & CEO",
+            "source": "astranis",
+            "title": "office of the CTO engineer driving everything from spacecraft architecture, to production, to their most critical mission operations",
+            "ownership": "senior-ic",
+            "years": 4,
+            "yearsPrecision": "reported",
+            "note": "Document states 'We spent 4 years together at Astranis'",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Formerly Astranis office of the CTO engineer driving everything from spacecraft architecture, to production, to their most critical mission operations",
+                "url": "https://www.ycombinator.com/companies/dispatch",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-27"
+              },
+              {
+                "claim": "We spent 4 years together at Astranis building geostationary communications satellites",
+                "url": "https://www.ycombinator.com/companies/dispatch",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-27"
+              }
+            ],
+            "score": 36.4
+          },
+          {
+            "name": "Andrew Mello",
+            "roleAtCompany": "Co-founder & CTO",
+            "source": "astranis",
+            "title": "leading the Avionics team through multiple generations of satellite designs",
+            "ownership": "functional-head",
+            "years": 4,
+            "yearsPrecision": "reported",
+            "note": "Document states 'We spent 4 years together at Astranis'; led the Avionics team",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "at Astranis leading the Avionics team through multiple generations of satellite designs",
+                "url": "https://www.ycombinator.com/companies/dispatch",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-27"
+              },
+              {
+                "claim": "We spent 4 years together at Astranis building geostationary communications satellites",
+                "url": "https://www.ycombinator.com/companies/dispatch",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-27"
+              }
+            ],
+            "score": 47.2
+          }
+        ],
+        "lastVerified": "2026-08-27",
+        "flags": []
+      }
     },
     {
       "name": "Applied Electrodynamics",
@@ -3657,7 +3750,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/applied-electrodynamics-inc",
       "sourceUrl": "https://www.ycombinator.com/companies/applied-electrodynamics-inc",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-27",
+        "flags": []
+      }
     },
     {
       "name": "Twolabs",
@@ -3673,7 +3775,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/twolabs",
       "sourceUrl": "https://www.ycombinator.com/companies/twolabs",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-27",
+        "flags": []
+      }
     },
     {
       "name": "Discovered Materials",
@@ -3689,7 +3800,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/discovered-materials",
       "sourceUrl": "https://www.ycombinator.com/companies/discovered-materials",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-27",
+        "flags": []
+      }
     },
     {
       "name": "General Instinct",
@@ -3705,7 +3825,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/general-instinct",
       "sourceUrl": "https://www.ycombinator.com/companies/general-instinct",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-27",
+        "flags": []
+      }
     },
     {
       "name": "IMPACT Drones",
@@ -4662,6 +4791,78 @@
       "website": "",
       "sourceUrl": "https://www.tectonicdefense.com/valinor-unveils-harborpod-for-unmanned-casevac/",
       "addedOn": "2026-08-24"
+    },
+    {
+      "name": "REGENT Craft",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Series B ($240M, Aug 2026)",
+      "oneLiner": "Electric seagliders blending hydrofoil, boat, and aircraft for coastal transport.",
+      "description": "REGENT builds wing-in-ground-effect electric seagliders that skim the ocean surface at high speed, combining hydrofoil, boat, and aircraft technologies. The vessels are designed for fast, affordable regional coastal and maritime transport. The $240M Series B signals strong investor conviction in the platform for both commercial and defense maritime applications.",
+      "whyListed": "Wing-in-ground-effect maritime vehicles represent a novel hard-tech platform with clear dual-use defense logistics potential and significant engineering moat.",
+      "investors": [],
+      "status": "private",
+      "website": "https://www.regentcraft.com",
+      "sourceUrl": "https://www.tectonicdefense.com/regent-craft-raises-240m-series-b/",
+      "addedOn": "2026-08-27"
+    },
+    {
+      "name": "Firehawk",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Pentagon contract $24M (Aug 2026)",
+      "oneLiner": "Domestic artillery propellant manufacturer supplying 155mm munitions at scale.",
+      "description": "Firehawk develops and manufactures artillery propellant for 155mm shells under the Pentagon's IBAS program, addressing critical gaps in US domestic munitions production capacity. The company is part of a broader effort to re-shore defense manufacturing for high-demand conventional munitions. The $24M Pentagon contract validates their production approach.",
+      "whyListed": "Domestic propellant and munitions manufacturing is a strategic bottleneck in US defense readiness; Firehawk directly addresses the defense manufacturing theme with a hard-to-replicate production capability.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/firehawk-inks-24m-deal-with-the-pentagons-ibas-program-for-artillery-propellant/",
+      "addedOn": "2026-08-27"
+    },
+    {
+      "name": "Maglut Heavy Industries",
+      "theme": "energy",
+      "tier": "seed",
+      "stage": "Pre-seed ($3.1M, Aug 2026)",
+      "oneLiner": "Chromatography-based platform for domestic rare earth element processing and refining.",
+      "description": "Maglut Heavy Industries is a California-based startup developing a chromatography-based platform to process and refine rare earth elements domestically in the US. The approach aims to reduce dependence on foreign rare earth processing supply chains. They emerged from stealth with $3.1M in pre-seed funding.",
+      "whyListed": "Domestic rare earth processing is a critical minerals bottleneck for defense, energy, and semis supply chains; a novel separation chemistry platform here carries significant strategic and commercial upside.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/exclusive-maglut-heavy-industries-emerges-from-stealth/",
+      "addedOn": "2026-08-27"
+    },
+    {
+      "name": "Mara",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Pre-seed ($7M, Aug 2026)",
+      "oneLiner": "Portable full-stack counter-drone interceptor systems for mass deployment.",
+      "description": "Mara is developing Spike, a portable full-stack counter-drone system designed for mass-deployable interception of hostile UAS threats. The pre-seed round was led by Khosla Ventures, signaling strong early backing for the counter-drone platform. The system targets the growing demand for accessible, scalable cUAS solutions at the tactical edge.",
+      "whyListed": "Counter-drone systems are among the fastest-growing defense hardware categories; a full-stack portable interceptor with Khosla backing at pre-seed is a high-conviction early entry point.",
+      "investors": [
+        "Khosla Ventures"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/exclusive-mara-raises-7m-pre-seed-for-mass-deployable-interceptors/",
+      "addedOn": "2026-08-27"
+    },
+    {
+      "name": "Auriga Space",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Stealth/early (Aug 2026)",
+      "oneLiner": "Containerized electromagnetic launcher for counter-UAS drone interception.",
+      "description": "Auriga Space has unveiled Hermes, a containerized electromagnetic launcher designed to intercept and defeat hostile drones. Unlike solid rocket motor-based systems, Hermes uses electromagnetic launch technology and has already completed open-air testing in the Mojave Desert. The containerized form factor enables rapid deployment in field environments.",
+      "whyListed": "Electromagnetic launch-based cUAS is a differentiated technical approach to a high-priority defense problem, with a working prototype already demonstrated — an unusual milestone for an early-stage company.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/auriga-unveils-hermes-for-cuas-with-successful-open-air-test/",
+      "addedOn": "2026-08-27"
     }
   ],
   "sourceCompanies": {
