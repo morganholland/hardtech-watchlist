@@ -1,6 +1,25 @@
 {
-  "lastRefresh": "2026-08-27T21:45:58.361Z",
+  "lastRefresh": "2026-08-31T18:46:20.977Z",
   "changelog": [
+    {
+      "date": "2026-08-31",
+      "added": [],
+      "updated": [
+        "Heaviside → Series B ($60M) + $99M Army IDIQ (Aug 2026)",
+        "Castelion → Additional $89.99M Navy BOA award (Aug 2026)",
+        "Firehawk → $24M Pentagon IBAS contract (Aug 2026)",
+        "REGENT Craft → Series B ($240M, Aug 2026)",
+        "Maglut Heavy Industries → Pre-seed ($3.1M, Aug 2026)",
+        "Mara → Pre-seed ($7M, Aug 2026)",
+        "Surtr → YC Spring 2026",
+        "Isengard Industries → YC Summer 2026",
+        "Salem Robotics → YC Summer 2026",
+        "GRU Space → YC Winter 2026"
+      ],
+      "pedigree": [
+        "Hop Aero → qualified"
+      ]
+    },
     {
       "date": "2026-08-27",
       "added": [
@@ -820,7 +839,7 @@
       "name": "Castelion",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Navy contract $89.99M (Aug 2026)",
+      "stage": "Additional $89.99M Navy BOA award (Aug 2026)",
       "oneLiner": "Low-cost hypersonic strike missiles; seed→B in 26 months",
       "investors": [
         "Lightspeed",
@@ -883,7 +902,7 @@
         "lastVerified": "2026-08-07",
         "flags": []
       },
-      "description": "Castelion is developing hypersonic missiles for the US defense market. The $1B Series C values the company at $13B, reflecting strong demand for next-generation strike capabilities."
+      "description": "The US Navy awarded Castelion an additional $89.99M against its service-wide basic ordering agreement for engineering, technical, logistics, and manufacturing services."
     },
     {
       "name": "Hermeus",
@@ -1115,7 +1134,7 @@
         "YC"
       ],
       "status": "private",
-      "description": "Surtr Defense Systems is building a hardware-agnostic operating system for drone defense, enabling counter-UAS capabilities across multiple hardware platforms."
+      "description": "Surtr Defense Systems is building a hardware-agnostic operating system for drone defense, enabling interoperability across counter-UAS platforms."
     },
     {
       "name": "Arlo Industries",
@@ -3850,7 +3869,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/impact-drones",
       "sourceUrl": "https://www.ycombinator.com/companies/impact-drones",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-31",
+        "flags": []
+      }
     },
     {
       "name": "Exosat",
@@ -3866,7 +3894,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/exosat",
       "sourceUrl": "https://www.ycombinator.com/companies/exosat",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-31",
+        "flags": []
+      }
     },
     {
       "name": "Greypoint Industries",
@@ -3882,7 +3919,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/greypoint-industries",
       "sourceUrl": "https://www.ycombinator.com/companies/greypoint-industries",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-31",
+        "flags": []
+      }
     },
     {
       "name": "Neuromorphic",
@@ -3898,7 +3944,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/neuromorphic",
       "sourceUrl": "https://www.ycombinator.com/companies/neuromorphic",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-31",
+        "flags": []
+      }
     },
     {
       "name": "Isengard Industries",
@@ -3906,7 +3961,7 @@
       "tier": "seed",
       "stage": "YC Summer 2026",
       "oneLiner": "Mass-produced AI strike systems and counter-UAS",
-      "description": "Isengard Industries is building mass-produced AI strike systems and counter-UAS platforms, appearing in YC Summer 2026 batch with expanded description.",
+      "description": "Isengard Industries is building mass-produced AI strike systems and counter-UAS solutions, now confirmed in YC Summer 2026 batch.",
       "whyListed": "Production scale for autonomous strike systems is the defining defense manufacturing challenge of this decade; Isengard Industries is building the factory capacity that turns promising defense tech into operational capability.",
       "investors": [
         "Y Combinator"
@@ -3914,7 +3969,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/isengard-industries-inc",
       "sourceUrl": "https://www.ycombinator.com/companies/isengard-industries-inc",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-08-31",
+        "flags": []
+      }
     },
     {
       "name": "Hop Aero",
@@ -3930,7 +3994,47 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/hop-aero",
       "sourceUrl": "https://www.ycombinator.com/companies/hop-aero",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "qualified",
+        "score": 54,
+        "sourceCompanies": [
+          "spacex"
+        ],
+        "founders": [
+          {
+            "name": "Jacob Balaj",
+            "roleAtCompany": "Co-founder & CTO",
+            "source": "spacex",
+            "title": "Integration & Test at SpaceX (Falcon 9/Heavy—built booster refurbishment process, cut test time in half)",
+            "ownership": "program-owner",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Built the booster refurbishment process for Falcon 9/Heavy; described as building 'the OG booster refurb program'. No headcount or tenure duration stated in documents.",
+            "confidence": "verified",
+            "evidence": [
+              {
+                "claim": "Integration & Test at Virgin Orbit (LauncherOne) and SpaceX (Falcon 9/Heavy—built booster refurbishment process, cut test time in half)",
+                "url": "https://www.ycombinator.com/companies/hop-aero",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-31"
+              },
+              {
+                "claim": "SpaceX (Falcon 9/Heavy; built the OG booster refurb program)",
+                "url": "https://www.ycombinator.com/companies/hop-aero",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-08-31"
+              }
+            ],
+            "score": 54
+          }
+        ],
+        "lastVerified": "2026-08-31",
+        "flags": [
+          "tenure-estimated"
+        ]
+      }
     },
     {
       "name": "Salem Robotics",
@@ -3938,7 +4042,7 @@
       "tier": "seed",
       "stage": "YC Summer 2026",
       "oneLiner": "Robots for inspections in hazardous spaces including nuclear",
-      "description": "Salem Robotics deploys inspection robots for hazardous environments including nuclear facilities, appearing in YC Summer 2026 batch.",
+      "description": "Salem Robotics is deploying robots for inspections in hazardous environments including nuclear facilities, confirmed in YC Summer 2026 batch.",
       "whyListed": "Nuclear facility robotics is a high-value, safety-critical market that grows directly with the nuclear power renaissance; Salem Robotics sits at the intersection of two strong hard-tech themes — robotics and nuclear.",
       "investors": [
         "Y Combinator"
@@ -4256,9 +4360,9 @@
       "name": "Heaviside",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Series B ($60M, Aug 2026)",
+      "stage": "Series B ($60M) + $99M Army IDIQ (Aug 2026)",
       "oneLiner": "Precision munitions startup partnering with Nammo for warhead integration.",
-      "description": "Heaviside is building precision-guided munitions designed for mass production and battlefield scalability. The company recently partnered with Norwegian defense giant Nammo to integrate a warhead into its system. It raised a $60M Series B at a $600M valuation just three months after emerging from stealth with a $28M Series A.",
+      "description": "Heaviside won a five-year, $99M IDIQ contract with the US Army for a body-worn drone detector system, expanding beyond its precision-munitions core. This follows a $60M Series B at a $600M valuation raised weeks earlier.",
       "whyListed": "Rapid capital formation and early prime-contractor partnerships signal strong product-market fit in the surging precision munitions market; the Nammo deal de-risks warhead development.",
       "investors": [
         "Nammo (strategic)"
@@ -4644,7 +4748,7 @@
       "tier": "seed",
       "stage": "YC Winter 2026",
       "oneLiner": "In-space construction company starting with lunar infrastructure.",
-      "description": "Galactic Resource Utilization Space (GRU Space) is building what it describes as the intergalactic construction company of Earth, starting with lunar hotel and habitat infrastructure. The company aims to develop construction capabilities and resource utilization systems for the Moon and beyond. Lunar infrastructure is a key enabling layer for sustained human presence and cislunar commerce.",
+      "description": "Galactic Resource Utilization Space (GRU Space) is building toward intergalactic-scale construction starting with lunar infrastructure, confirmed in YC Winter 2026 batch.",
       "whyListed": "Cislunar construction and resource utilization is a foundational capability for the emerging space economy; YC Winter 2026 backing signals current momentum.",
       "investors": [
         "Y Combinator"
@@ -4798,7 +4902,7 @@
       "tier": "growth",
       "stage": "Series B ($240M, Aug 2026)",
       "oneLiner": "Electric seagliders blending hydrofoil, boat, and aircraft for coastal transport.",
-      "description": "REGENT builds wing-in-ground-effect electric seagliders that skim the ocean surface at high speed, combining hydrofoil, boat, and aircraft technologies. The vessels are designed for fast, affordable regional coastal and maritime transport. The $240M Series B signals strong investor conviction in the platform for both commercial and defense maritime applications.",
+      "description": "REGENT Craft raised a $240M Series B to scale production of its electric seagliders — hybrid hydrofoil/boat/aircraft — for fast regional maritime transportation.",
       "whyListed": "Wing-in-ground-effect maritime vehicles represent a novel hard-tech platform with clear dual-use defense logistics potential and significant engineering moat.",
       "investors": [],
       "status": "private",
@@ -4810,9 +4914,9 @@
       "name": "Firehawk",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Pentagon contract $24M (Aug 2026)",
+      "stage": "$24M Pentagon IBAS contract (Aug 2026)",
       "oneLiner": "Domestic artillery propellant manufacturer supplying 155mm munitions at scale.",
-      "description": "Firehawk develops and manufactures artillery propellant for 155mm shells under the Pentagon's IBAS program, addressing critical gaps in US domestic munitions production capacity. The company is part of a broader effort to re-shore defense manufacturing for high-demand conventional munitions. The $24M Pentagon contract validates their production approach.",
+      "description": "Firehawk inked a $24M deal with the Pentagon's IBAS program to supply artillery propellant, addressing the US military's challenge in ramping up 155mm munitions production.",
       "whyListed": "Domestic propellant and munitions manufacturing is a strategic bottleneck in US defense readiness; Firehawk directly addresses the defense manufacturing theme with a hard-to-replicate production capability.",
       "investors": [],
       "status": "private",
@@ -4826,7 +4930,7 @@
       "tier": "seed",
       "stage": "Pre-seed ($3.1M, Aug 2026)",
       "oneLiner": "Chromatography-based platform for domestic rare earth element processing and refining.",
-      "description": "Maglut Heavy Industries is a California-based startup developing a chromatography-based platform to process and refine rare earth elements domestically in the US. The approach aims to reduce dependence on foreign rare earth processing supply chains. They emerged from stealth with $3.1M in pre-seed funding.",
+      "description": "Maglut Heavy Industries emerged from stealth with $3.1M in pre-seed funding to develop a chromatography-based platform for domestic rare earth element processing and refining.",
       "whyListed": "Domestic rare earth processing is a critical minerals bottleneck for defense, energy, and semis supply chains; a novel separation chemistry platform here carries significant strategic and commercial upside.",
       "investors": [],
       "status": "private",
@@ -4840,7 +4944,7 @@
       "tier": "seed",
       "stage": "Pre-seed ($7M, Aug 2026)",
       "oneLiner": "Portable full-stack counter-drone interceptor systems for mass deployment.",
-      "description": "Mara is developing Spike, a portable full-stack counter-drone system designed for mass-deployable interception of hostile UAS threats. The pre-seed round was led by Khosla Ventures, signaling strong early backing for the counter-drone platform. The system targets the growing demand for accessible, scalable cUAS solutions at the tactical edge.",
+      "description": "Mara raised a $7M pre-seed led by Khosla Ventures to develop Spike, a portable full-stack counter-drone interceptor system designed for mass-deployable use.",
       "whyListed": "Counter-drone systems are among the fastest-growing defense hardware categories; a full-stack portable interceptor with Khosla backing at pre-seed is a high-conviction early entry point.",
       "investors": [
         "Khosla Ventures"
