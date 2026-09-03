@@ -1,6 +1,29 @@
 {
-  "lastRefresh": "2026-08-31T18:46:20.977Z",
+  "lastRefresh": "2026-09-03T15:47:26.536Z",
   "changelog": [
+    {
+      "date": "2026-09-03",
+      "added": [
+        "Lyte",
+        "Aslan",
+        "Havoc",
+        "Critical Materials Group",
+        "Easy Aerial",
+        "Orca Aerospace",
+        "Thesis"
+      ],
+      "updated": [
+        "Fervo Energy → Partnership / 400 MW PPA with Google (Sep 2026)",
+        "Anduril → Contract — $65M TITAN production (Sep 2026)",
+        "Surtr → YC Spring 2026",
+        "Isengard Industries → YC Summer 2026",
+        "Salem Robotics → YC Summer 2026"
+      ],
+      "pedigree": [
+        "Maritime Fusion → weak",
+        "Basalt → weak"
+      ]
+    },
     {
       "date": "2026-08-31",
       "added": [],
@@ -798,7 +821,7 @@
       "name": "Anduril",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Series H ($5B @ $30.5B+)",
+      "stage": "Contract — $65M TITAN production (Sep 2026)",
       "oneLiner": "Autonomous systems, C2 software, counter-drone — the category king",
       "investors": [
         "Founders Fund",
@@ -806,7 +829,8 @@
         "Valor"
       ],
       "status": "private",
-      "secondaries": true
+      "secondaries": true,
+      "description": "Anduril received a $65M US Army contract to move the TITAN AI-powered mobile ground station from prototype into production. Eight TITAN systems will be built across Anduril and Palantir, totaling $192M combined."
     },
     {
       "name": "Saronic",
@@ -1134,7 +1158,7 @@
         "YC"
       ],
       "status": "private",
-      "description": "Surtr Defense Systems is building a hardware-agnostic operating system for drone defense, enabling interoperability across counter-UAS platforms."
+      "description": "YC directory confirms Surtr Defense Systems as the hardware-agnostic operating system for drone defense, consistent with prior listing."
     },
     {
       "name": "Arlo Industries",
@@ -1254,13 +1278,14 @@
       "name": "Fervo Energy",
       "theme": "energy",
       "tier": "growth",
-      "stage": "Series E/growth",
+      "stage": "Partnership / 400 MW PPA with Google (Sep 2026)",
       "oneLiner": "Enhanced geothermal using fracking techniques",
       "investors": [
         "Breakthrough",
         "Devon"
       ],
-      "status": "private"
+      "status": "private",
+      "description": "Fervo signed a 400 MW enhanced geothermal power purchase agreement with Google, with an option to expand to 1 GW to supply a large AI data center in Utah. This is a major commercial milestone validating Fervo's horizontal drilling geothermal technology at scale."
     },
     {
       "name": "Quaise Energy",
@@ -3961,7 +3986,7 @@
       "tier": "seed",
       "stage": "YC Summer 2026",
       "oneLiner": "Mass-produced AI strike systems and counter-UAS",
-      "description": "Isengard Industries is building mass-produced AI strike systems and counter-UAS solutions, now confirmed in YC Summer 2026 batch.",
+      "description": "YC directory confirms Isengard Industries builds mass-produced AI strike systems and Counter-UAS, consistent with prior listing.",
       "whyListed": "Production scale for autonomous strike systems is the defining defense manufacturing challenge of this decade; Isengard Industries is building the factory capacity that turns promising defense tech into operational capability.",
       "investors": [
         "Y Combinator"
@@ -4042,7 +4067,7 @@
       "tier": "seed",
       "stage": "YC Summer 2026",
       "oneLiner": "Robots for inspections in hazardous spaces including nuclear",
-      "description": "Salem Robotics is deploying robots for inspections in hazardous environments including nuclear facilities, confirmed in YC Summer 2026 batch.",
+      "description": "YC directory confirms Salem Robotics deploys robots for inspections in hazardous spaces including nuclear facilities, consistent with prior listing.",
       "whyListed": "Nuclear facility robotics is a high-value, safety-critical market that grows directly with the nuclear power renaissance; Salem Robotics sits at the intersection of two strong hard-tech themes — robotics and nuclear.",
       "investors": [
         "Y Combinator"
@@ -4050,7 +4075,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/salem-robotics-inc",
       "sourceUrl": "https://www.ycombinator.com/companies/salem-robotics-inc",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-03",
+        "flags": []
+      }
     },
     {
       "name": "Atomarine",
@@ -4066,7 +4100,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/atomarine",
       "sourceUrl": "https://www.ycombinator.com/companies/atomarine",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-03",
+        "flags": []
+      }
     },
     {
       "name": "Maritime Fusion",
@@ -4082,7 +4125,126 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/maritime-fusion",
       "sourceUrl": "https://www.ycombinator.com/companies/maritime-fusion",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "weak",
+        "score": 18,
+        "sourceCompanies": [
+          "spacex",
+          "tesla"
+        ],
+        "founders": [
+          {
+            "name": "Justin Cohen",
+            "roleAtCompany": "Founder/CEO",
+            "source": "spacex",
+            "title": "unknown",
+            "ownership": "ic",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Met co-founder at SpaceX while conducting radiation tests for Starship electronics. No title or tenure duration stated.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Previously Tesla, SpaceX, Columbia University, Princeton Plasma Physics Laboratory, NC State.",
+                "url": "https://www.ycombinator.com/companies/maritime-fusion",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-03"
+              },
+              {
+                "claim": "We first met at SpaceX while conducting radiation tests for Starship electronics, and later worked together at Tesla on Cybertruck and Optimus.",
+                "url": "https://www.ycombinator.com/companies/maritime-fusion",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-03"
+              }
+            ],
+            "score": 18
+          },
+          {
+            "name": "Justin Cohen",
+            "roleAtCompany": "Founder/CEO",
+            "source": "tesla",
+            "title": "unknown",
+            "ownership": "ic",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Worked at Tesla on Cybertruck and Optimus. No title or tenure duration stated.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Previously Tesla, SpaceX, Columbia University, Princeton Plasma Physics Laboratory, NC State.",
+                "url": "https://www.ycombinator.com/companies/maritime-fusion",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-03"
+              },
+              {
+                "claim": "We first met at SpaceX while conducting radiation tests for Starship electronics, and later worked together at Tesla on Cybertruck and Optimus.",
+                "url": "https://www.ycombinator.com/companies/maritime-fusion",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-03"
+              }
+            ],
+            "score": 18
+          },
+          {
+            "name": "Jason Kaufmann",
+            "roleAtCompany": "Founder/CTO",
+            "source": "spacex",
+            "title": "unknown",
+            "ownership": "ic",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Worked on power systems for rockets at SpaceX. Met co-founder at SpaceX while conducting radiation tests for Starship electronics. No title or tenure duration stated.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "With a background in physics and computer engineering from Penn, I've worked on everything from AI hardware at Tesla to power systems for rockets at SpaceX.",
+                "url": "https://www.ycombinator.com/companies/maritime-fusion",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-03"
+              },
+              {
+                "claim": "We first met at SpaceX while conducting radiation tests for Starship electronics, and later worked together at Tesla on Cybertruck and Optimus.",
+                "url": "https://www.ycombinator.com/companies/maritime-fusion",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-03"
+              }
+            ],
+            "score": 18
+          },
+          {
+            "name": "Jason Kaufmann",
+            "roleAtCompany": "Founder/CTO",
+            "source": "tesla",
+            "title": "unknown",
+            "ownership": "ic",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Worked on AI hardware at Tesla; later worked on Cybertruck and Optimus with co-founder. No title or tenure duration stated.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "With a background in physics and computer engineering from Penn, I've worked on everything from AI hardware at Tesla to power systems for rockets at SpaceX.",
+                "url": "https://www.ycombinator.com/companies/maritime-fusion",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-03"
+              },
+              {
+                "claim": "We first met at SpaceX while conducting radiation tests for Starship electronics, and later worked together at Tesla on Cybertruck and Optimus.",
+                "url": "https://www.ycombinator.com/companies/maritime-fusion",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-03"
+              }
+            ],
+            "score": 18
+          }
+        ],
+        "lastVerified": "2026-09-03",
+        "flags": [
+          "tenure-estimated"
+        ]
+      }
     },
     {
       "name": "Pivot Robotics",
@@ -4098,7 +4260,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/pivot-robotics",
       "sourceUrl": "https://www.ycombinator.com/companies/pivot-robotics",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-03",
+        "flags": []
+      }
     },
     {
       "name": "Basalt",
@@ -4114,7 +4285,41 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/basalt",
       "sourceUrl": "https://www.ycombinator.com/companies/basalt",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "weak",
+        "score": 18,
+        "sourceCompanies": [
+          "spacex"
+        ],
+        "founders": [
+          {
+            "name": "Maximillian Bhatti",
+            "roleAtCompany": "Founder/CEO",
+            "source": "spacex",
+            "title": "unknown",
+            "ownership": "ic",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Document states he 'spent stints at The Aerospace Corporation and SpaceX working on distributed space systems and the American moon landing' but provides no title or duration at SpaceX.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Maximillian Bhatti had stints at SpaceX working on distributed space systems and the American moon landing",
+                "url": "https://www.ycombinator.com/companies/basalt",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-03"
+              }
+            ],
+            "score": 18
+          }
+        ],
+        "lastVerified": "2026-09-03",
+        "flags": [
+          "tenure-estimated"
+        ]
+      }
     },
     {
       "name": "Elodin",
@@ -4130,7 +4335,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/elodin",
       "sourceUrl": "https://www.ycombinator.com/companies/elodin",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-03",
+        "flags": []
+      }
     },
     {
       "name": "Theseus",
@@ -4967,6 +5181,119 @@
       "website": "",
       "sourceUrl": "https://www.tectonicdefense.com/auriga-unveils-hermes-for-cuas-with-successful-open-air-test/",
       "addedOn": "2026-08-27"
+    },
+    {
+      "name": "Lyte",
+      "theme": "robotics",
+      "tier": "growth",
+      "stage": "Series C ($165M, Sep 2026)",
+      "oneLiner": "Physical AI sensing and perception technology for robots.",
+      "description": "Lyte, founded by former Apple engineers, builds sensing and perception technology that enables robots to understand and interact with the physical world. The company raised a $165M Series C at a $1.6B post-money valuation led by Maverick Silicon. Its physical AI stack targets broad robotics deployment across industrial and consumer applications.",
+      "whyListed": "A $1.6B valuation Series C for physical AI perception from ex-Apple engineers signals a credible contender in the robotics foundation-model and sensing stack race, directly relevant to the humanoid and industrial automation theme.",
+      "investors": [
+        "Maverick Silicon"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://news.crunchbase.com/venture/robotics-ai-startup-lyte-seriesc-raise-maverick/",
+      "addedOn": "2026-09-03"
+    },
+    {
+      "name": "Aslan",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Pre-seed / Seed ($20.8M, Sep 2026)",
+      "oneLiner": "AI agent-based intelligence collection and spy automation for defense.",
+      "description": "Aslan is a DC-based defense startup that uses AI agents for intelligence collection and surveillance tasks, effectively deploying autonomous software agents for espionage and decision-support missions. The company raised $20.8M in pre-seed and seed funding led by Khosla Ventures and XYZ. It emerged from stealth in September 2026.",
+      "whyListed": "Autonomous AI agents for intelligence and defense decision-support is a core autonomy theme; Khosla and XYZ backing at pre-seed scale signals high-conviction investors in a high-sensitivity national-security niche.",
+      "investors": [
+        "Khosla Ventures",
+        "XYZ Venture Capital"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/aslan-emerges-with-20m-and-a-bunch-of-ai-agent-spies/",
+      "addedOn": "2026-09-03"
+    },
+    {
+      "name": "Havoc",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed (partnership announced Sep 2026)",
+      "oneLiner": "Drones for contested logistics and defense sustainment operations.",
+      "description": "Havoc is a defense drone startup focused on contested logistics, partnering with sustainment startup Rune to deliver supplies in denied or degraded environments. The company is described as a 'drone hotshot' in the defense sustainment space. Details on funding were not disclosed in the announcement.",
+      "whyListed": "Contested logistics drones address a critical and underserved gap in defense autonomy; pairing with a sustainment software layer indicates a systems-level approach to a high-priority DoD problem.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/exclusive-rune-and-havoc-team-up-for-contested-logistics/",
+      "addedOn": "2026-09-03"
+    },
+    {
+      "name": "Critical Materials Group",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed ($10.3M, Sep 2026)",
+      "oneLiner": "US-based energetics and explosives manufacturing for defense munitions.",
+      "description": "Critical Materials Group (CMG) is a Texas-based energetics manufacturing company building domestic supply of explosives and propellant materials for defense munitions. The company raised a $10.3M seed round led by Overmatch Ventures with participation from Victory Six Advisors and Fulcrum Ventures. CMG addresses the critical gap in US energetics industrial base capacity.",
+      "whyListed": "Domestic energetics manufacturing is a national-security bottleneck; seed funding from defense-specialist VCs for a munitions materials company fits squarely in the defense manufacturing theme.",
+      "investors": [
+        "Overmatch Ventures",
+        "Victory Six Advisors",
+        "Fulcrum Ventures"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/cmg-raises-10-3m-seed-led-by-overmatch/",
+      "addedOn": "2026-09-03"
+    },
+    {
+      "name": "Easy Aerial",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Series B ($20M, Sep 2026)",
+      "oneLiner": "Tethered defense drones for persistent surveillance and force protection.",
+      "description": "Easy Aerial is a Brooklyn-based manufacturer of tethered drones designed for defense and security applications, offering persistent aerial surveillance without battery endurance constraints. The company raised a $20M Series B led by Insight Partners to boost production capacity and launch new products. Its tethered UAS systems serve military and critical infrastructure customers.",
+      "whyListed": "Tethered persistent-surveillance drones fill a real operational need for base defense and force protection; Insight Partners' growth-stage check validates commercial traction in the defense drone sector.",
+      "investors": [
+        "Insight Partners"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/drone-maker-easy-aerial-plans-production-boost-and-new-products-after-20m-series-b/",
+      "addedOn": "2026-09-03"
+    },
+    {
+      "name": "Orca Aerospace",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "YC Fall 2026",
+      "oneLiner": "Onboard AI spacecraft operators for autonomous satellite operations.",
+      "description": "Orca Aerospace is building AI agents that live onboard spacecraft to autonomously operate satellites without continuous ground-station intervention. The company is a Fall 2026 YC batch member targeting the growing need for autonomous orbital operations as satellite constellations scale. Its onboard AI reduces latency and ground-segment costs for satellite operators.",
+      "whyListed": "Autonomous onboard spacecraft AI is a key enabler for scaling orbital infrastructure; as constellations grow, onboard autonomy reduces operational bottlenecks and is a compelling investable niche within orbital infra.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/orca-aerospace",
+      "addedOn": "2026-09-03"
+    },
+    {
+      "name": "Thesis",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "YC Fall 2025",
+      "oneLiner": "Intelligent humanoid robots for real-world tasks.",
+      "description": "Thesis is building intelligent humanoid robots, positioning itself in the rapidly expanding market for general-purpose physical AI platforms. The company is a Fall 2025 YC batch member. Specific application domains and funding beyond YC were not disclosed.",
+      "whyListed": "Humanoid robotics is one of the hottest hard-tech investment themes; a YC-backed entrant with a clean 'intelligent humanoid' thesis warrants watchlist placement as the field consolidates.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/thesis",
+      "addedOn": "2026-09-03"
     }
   ],
   "sourceCompanies": {
