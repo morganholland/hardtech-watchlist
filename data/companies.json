@@ -1,6 +1,32 @@
 {
-  "lastRefresh": "2026-09-03T15:47:26.536Z",
+  "lastRefresh": "2026-09-07T17:15:16.625Z",
   "changelog": [
+    {
+      "date": "2026-09-07",
+      "added": [
+        "Seasats",
+        "XDOF",
+        "OS3",
+        "Dreamscale Labs"
+      ],
+      "updated": [
+        "Shield AI → Licensing deal (Sep 2026)",
+        "Hermeus → Partnership (Sep 2026)",
+        "Anduril → Contract + Partnership (Sep 2026)",
+        "Havoc → Partnership (Sep 2026)",
+        "Lyte → Series C ($165M, Sep 2026)",
+        "Crusoe → Financing ($3B, Sep 2026)",
+        "Critical Materials Group → Seed ($10.3M, Sep 2026)",
+        "Surtr → YC Spring 2026",
+        "Isengard Industries → YC Summer 2026",
+        "Salem Robotics → YC Summer 2026",
+        "GRU Space → YC Winter 2026",
+        "Aslan → Pre-seed/Seed ($20.8M, Sep 2026)"
+      ],
+      "pedigree": [
+        "Starcloud → weak"
+      ]
+    },
     {
       "date": "2026-09-03",
       "added": [
@@ -821,7 +847,7 @@
       "name": "Anduril",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Contract — $65M TITAN production (Sep 2026)",
+      "stage": "Contract + Partnership (Sep 2026)",
       "oneLiner": "Autonomous systems, C2 software, counter-drone — the category king",
       "investors": [
         "Founders Fund",
@@ -830,7 +856,7 @@
       ],
       "status": "private",
       "secondaries": true,
-      "description": "Anduril received a $65M US Army contract to move the TITAN AI-powered mobile ground station from prototype into production. Eight TITAN systems will be built across Anduril and Palantir, totaling $192M combined."
+      "description": "Anduril received a $65M Army contract for TITAN mobile ground stations and separately was selected by Hermeus to provide Lattice for Mission Autonomy for the Quarterhorse Mk 2 aircraft."
     },
     {
       "name": "Saronic",
@@ -850,14 +876,15 @@
       "name": "Shield AI",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Series G ($2B, Mar 2026)",
+      "stage": "Licensing deal (Sep 2026)",
       "oneLiner": "Autonomous aviation (Hivemind)",
       "investors": [
         "a16z",
         "Advent",
         "JPMorgan"
       ],
-      "status": "private"
+      "status": "private",
+      "description": "Shield AI licensed its Tracker Counter-UAS software to L3Harris for integration into the VAMPIRE c-UAS platform — the first time Shield AI has licensed the software to a third party."
     },
     {
       "name": "Castelion",
@@ -932,14 +959,15 @@
       "name": "Hermeus",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Series C ($350M)",
+      "stage": "Partnership (Sep 2026)",
       "oneLiner": "High-Mach unmanned aircraft",
       "investors": [
         "Khosla",
         "Canaan",
         "Founders Fund"
       ],
-      "status": "private"
+      "status": "private",
+      "description": "Hermeus selected Anduril's Lattice for Mission Autonomy stack to power its Quarterhorse Mk 2 hypersonic aircraft, enabling autonomous flight operations."
     },
     {
       "name": "Chaos Industries",
@@ -1158,7 +1186,7 @@
         "YC"
       ],
       "status": "private",
-      "description": "YC directory confirms Surtr Defense Systems as the hardware-agnostic operating system for drone defense, consistent with prior listing."
+      "description": "YC directory confirms Surtr Defense Systems as the hardware-agnostic operating system for drone defense."
     },
     {
       "name": "Arlo Industries",
@@ -1530,13 +1558,14 @@
       "name": "Crusoe",
       "theme": "semis",
       "tier": "growth",
-      "stage": "Late",
+      "stage": "Financing ($3B, Sep 2026)",
       "oneLiner": "Energy-first AI datacenter buildout",
       "investors": [
         "Founders Fund",
         "NVIDIA"
       ],
-      "status": "private"
+      "status": "private",
+      "description": "Crusoe raised a $3B financing round, continuing its expansion as a data center and cloud provider focused on AI infrastructure."
     },
     {
       "name": "Sila",
@@ -3986,7 +4015,7 @@
       "tier": "seed",
       "stage": "YC Summer 2026",
       "oneLiner": "Mass-produced AI strike systems and counter-UAS",
-      "description": "YC directory confirms Isengard Industries builds mass-produced AI strike systems and Counter-UAS, consistent with prior listing.",
+      "description": "YC directory confirms Isengard Industries Inc as a developer of mass-produced AI strike systems and Counter-UAS.",
       "whyListed": "Production scale for autonomous strike systems is the defining defense manufacturing challenge of this decade; Isengard Industries is building the factory capacity that turns promising defense tech into operational capability.",
       "investors": [
         "Y Combinator"
@@ -4067,7 +4096,7 @@
       "tier": "seed",
       "stage": "YC Summer 2026",
       "oneLiner": "Robots for inspections in hazardous spaces including nuclear",
-      "description": "YC directory confirms Salem Robotics deploys robots for inspections in hazardous spaces including nuclear facilities, consistent with prior listing.",
+      "description": "YC directory confirms Salem Robotics Inc deploys robots to replace workers in hazardous spaces.",
       "whyListed": "Nuclear facility robotics is a high-value, safety-critical market that grows directly with the nuclear power renaissance; Salem Robotics sits at the intersection of two strong hard-tech themes — robotics and nuclear.",
       "investors": [
         "Y Combinator"
@@ -4360,7 +4389,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/theseus",
       "sourceUrl": "https://www.ycombinator.com/companies/theseus",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-07",
+        "flags": []
+      }
     },
     {
       "name": "Spaceium",
@@ -4376,7 +4414,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/spaceium-inc",
       "sourceUrl": "https://www.ycombinator.com/companies/spaceium-inc",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-07",
+        "flags": []
+      }
     },
     {
       "name": "Ares Industries",
@@ -4392,7 +4439,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/ares-industries",
       "sourceUrl": "https://www.ycombinator.com/companies/ares-industries",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-07",
+        "flags": []
+      }
     },
     {
       "name": "Guardian RF",
@@ -4408,7 +4464,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/guardian-rf",
       "sourceUrl": "https://www.ycombinator.com/companies/guardian-rf",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-07",
+        "flags": []
+      }
     },
     {
       "name": "Starcloud",
@@ -4424,7 +4489,41 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/starcloud",
       "sourceUrl": "https://www.ycombinator.com/companies/starcloud",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "weak",
+        "score": 18,
+        "sourceCompanies": [
+          "spacex"
+        ],
+        "founders": [
+          {
+            "name": "Adi Oltean",
+            "roleAtCompany": "Founder",
+            "source": "spacex",
+            "title": "unknown",
+            "ownership": "unknown",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Document states 'As part of SpaceX and Microsoft I delivered key features in satellite networks, operating systems, cloud and machine learning infra' but does not specify his title or tenure duration at SpaceX.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Adi Oltean worked at SpaceX and delivered key features in satellite networks",
+                "url": "https://www.ycombinator.com/companies/starcloud",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-07"
+              }
+            ],
+            "score": 18
+          }
+        ],
+        "lastVerified": "2026-09-07",
+        "flags": [
+          "tenure-estimated"
+        ]
+      }
     },
     {
       "name": "Apolink",
@@ -4440,7 +4539,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/apolink",
       "sourceUrl": "https://www.ycombinator.com/companies/apolink",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-07",
+        "flags": []
+      }
     },
     {
       "name": "Piggy Robotics",
@@ -4962,7 +5070,7 @@
       "tier": "seed",
       "stage": "YC Winter 2026",
       "oneLiner": "In-space construction company starting with lunar infrastructure.",
-      "description": "Galactic Resource Utilization Space (GRU Space) is building toward intergalactic-scale construction starting with lunar infrastructure, confirmed in YC Winter 2026 batch.",
+      "description": "YC directory confirms Galactic Resource Utilization Space, Inc. (GRU Space) as an intergalactic construction and resource utilization company.",
       "whyListed": "Cislunar construction and resource utilization is a foundational capability for the emerging space economy; YC Winter 2026 backing signals current momentum.",
       "investors": [
         "Y Combinator"
@@ -5188,7 +5296,7 @@
       "tier": "growth",
       "stage": "Series C ($165M, Sep 2026)",
       "oneLiner": "Physical AI sensing and perception technology for robots.",
-      "description": "Lyte, founded by former Apple engineers, builds sensing and perception technology that enables robots to understand and interact with the physical world. The company raised a $165M Series C at a $1.6B post-money valuation led by Maverick Silicon. Its physical AI stack targets broad robotics deployment across industrial and consumer applications.",
+      "description": "Lyte raised a $165M Series C led by Maverick Silicon at a $1.6B post-money valuation to scale its physical AI sensing and perception technology for robots.",
       "whyListed": "A $1.6B valuation Series C for physical AI perception from ex-Apple engineers signals a credible contender in the robotics foundation-model and sensing stack race, directly relevant to the humanoid and industrial automation theme.",
       "investors": [
         "Maverick Silicon"
@@ -5202,13 +5310,14 @@
       "name": "Aslan",
       "theme": "defense",
       "tier": "seed",
-      "stage": "Pre-seed / Seed ($20.8M, Sep 2026)",
-      "oneLiner": "AI agent-based intelligence collection and spy automation for defense.",
-      "description": "Aslan is a DC-based defense startup that uses AI agents for intelligence collection and surveillance tasks, effectively deploying autonomous software agents for espionage and decision-support missions. The company raised $20.8M in pre-seed and seed funding led by Khosla Ventures and XYZ. It emerged from stealth in September 2026.",
-      "whyListed": "Autonomous AI agents for intelligence and defense decision-support is a core autonomy theme; Khosla and XYZ backing at pre-seed scale signals high-conviction investors in a high-sensitivity national-security niche.",
+      "stage": "Pre-seed/Seed ($20.8M, Sep 2026)",
+      "oneLiner": "AI agent platform for intelligence gathering and covert surveillance.",
+      "description": "Aslan is a DC-based defense startup that builds autonomous AI agents designed for intelligence gathering, covert surveillance, and information operations. The company raised $20.8M in pre-seed and seed funding led by Khosla Ventures and XYZ. Its agents are designed to operate in contested information environments where human-speed collection is insufficient.",
+      "whyListed": "AI-powered autonomous intelligence agents represent a new capability layer in the defense stack with significant asymmetric value; Khosla and XYZ backing signals serious hard-tech conviction.",
       "investors": [
         "Khosla Ventures",
-        "XYZ Venture Capital"
+        "XYZ Venture Capital",
+        "XYZ"
       ],
       "status": "private",
       "website": "",
@@ -5219,9 +5328,9 @@
       "name": "Havoc",
       "theme": "defense",
       "tier": "seed",
-      "stage": "Seed (partnership announced Sep 2026)",
+      "stage": "Partnership (Sep 2026)",
       "oneLiner": "Drones for contested logistics and defense sustainment operations.",
-      "description": "Havoc is a defense drone startup focused on contested logistics, partnering with sustainment startup Rune to deliver supplies in denied or degraded environments. The company is described as a 'drone hotshot' in the defense sustainment space. Details on funding were not disclosed in the announcement.",
+      "description": "Havoc partnered with defense sustainment startup Rune to deliver contested logistics solutions, combining drone delivery with sustainment software.",
       "whyListed": "Contested logistics drones address a critical and underserved gap in defense autonomy; pairing with a sustainment software layer indicates a systems-level approach to a high-priority DoD problem.",
       "investors": [],
       "status": "private",
@@ -5235,7 +5344,7 @@
       "tier": "seed",
       "stage": "Seed ($10.3M, Sep 2026)",
       "oneLiner": "US-based energetics and explosives manufacturing for defense munitions.",
-      "description": "Critical Materials Group (CMG) is a Texas-based energetics manufacturing company building domestic supply of explosives and propellant materials for defense munitions. The company raised a $10.3M seed round led by Overmatch Ventures with participation from Victory Six Advisors and Fulcrum Ventures. CMG addresses the critical gap in US energetics industrial base capacity.",
+      "description": "Critical Materials Group raised a $10.3M seed round led by Overmatch Ventures with participation from Victory Six Advisors and Fulcrum Ventures to scale energetics manufacturing.",
       "whyListed": "Domestic energetics manufacturing is a national-security bottleneck; seed funding from defense-specialist VCs for a munitions materials company fits squarely in the defense manufacturing theme.",
       "investors": [
         "Overmatch Ventures",
@@ -5294,6 +5403,66 @@
       "website": "",
       "sourceUrl": "https://www.ycombinator.com/companies/thesis",
       "addedOn": "2026-09-03"
+    },
+    {
+      "name": "Seasats",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Revenue milestone ($24M orders, Aug 2026)",
+      "oneLiner": "Small unmanned surface vehicles for maritime defense and ISR.",
+      "description": "Seasats builds the Lightfish, a small unmanned surface vehicle (USV) designed for maritime defense and intelligence, surveillance, and reconnaissance missions. The company secured over $24M in fully-funded orders in a single month (August 2026), signaling strong demand traction. The Lightfish is positioned for contested maritime environments.",
+      "whyListed": "Rapid order intake in a single month demonstrates product-market fit in the fast-growing autonomous maritime defense sector; USVs are a critical capability gap being urgently addressed by the US military.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/exclusive-seasats-hits-24m-in-usv-orders-in-a-month/",
+      "addedOn": "2026-09-07"
+    },
+    {
+      "name": "XDOF",
+      "theme": "robotics",
+      "tier": "growth",
+      "stage": "Series B (talks, ~$1.2B valuation, Sep 2026)",
+      "oneLiner": "Robot training data platform powering physical AI development.",
+      "description": "XDOF is a robot data startup that exited stealth and is already in talks for a Series B at a $1.2B valuation just three months later. The company collects, curates, and structures training data for physical AI and robotics foundation models. Its rapid fundraising trajectory suggests it has identified a critical data bottleneck in the robotics ecosystem.",
+      "whyListed": "High-quality robot training data is the scarcest input for humanoid and industrial robot development; a $1.2B valuation three months post-stealth reflects extreme investor conviction in this infrastructure layer.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/",
+      "addedOn": "2026-09-07"
+    },
+    {
+      "name": "OS3",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "YC Summer 2026",
+      "oneLiner": "US-built humanoid robots with video-trained action models.",
+      "description": "OS3 deploys US-built humanoid robots and trains video action models to enable general-purpose robotic manipulation and locomotion. The company is part of YC's Summer 2026 batch, positioning it at the intersection of domestic hardware manufacturing and foundation model development for robotics. Its focus on US-built hardware addresses supply chain and national security concerns.",
+      "whyListed": "Combining domestic humanoid hardware manufacturing with proprietary video action model training addresses both geopolitical hardware risk and the data bottleneck in general-purpose robotics.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/os3",
+      "addedOn": "2026-09-07"
+    },
+    {
+      "name": "Dreamscale Labs",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "YC Fall 2026",
+      "oneLiner": "Cloud compute infrastructure for running robot brain models.",
+      "description": "Dreamscale Labs provides cloud-based compute infrastructure specifically designed for running robot foundation models and inference workloads. The company enables robot operators to offload computationally intensive AI inference from edge hardware to the cloud, reducing onboard compute requirements. This is a critical infrastructure layer as humanoid and industrial robots scale.",
+      "whyListed": "Cloud robotics inference infrastructure is a capital-efficient wedge into the massive robot-as-a-service stack; offloading robot brain computation enables faster iteration and lower hardware BOM costs at scale.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/dreamscale-labs",
+      "addedOn": "2026-09-07"
     }
   ],
   "sourceCompanies": {
