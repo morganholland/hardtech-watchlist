@@ -1,6 +1,32 @@
 {
-  "lastRefresh": "2026-09-07T17:15:16.625Z",
+  "lastRefresh": "2026-09-10T15:50:37.474Z",
   "changelog": [
+    {
+      "date": "2026-09-10",
+      "added": [
+        "Maven Robotics",
+        "Poseidon Aerospace",
+        "Covenant",
+        "Bulwark Dynamics",
+        "Ground A",
+        "Iron Grid"
+      ],
+      "updated": [
+        "Mach Industries → Series C extension ($600M, Sep 2026, total round $900M, valuation $3.7B)",
+        "Overland AI → $20M Army EABC contract, Sep 2026",
+        "Shield AI → L3Harris licensing deal for Tracker Counter-UAS software, Sep 2026",
+        "Anduril → Selected with Boeing for IFPC Increment 2 Second Interceptor next phase, Sep 2026",
+        "Crusoe → Debt/equity financing $3B, Sep 2026",
+        "Lyte → Series C ($165M, Sep 2026, valuation $1.6B)",
+        "Surtr → YC Spring 2026",
+        "Isengard Industries → YC Summer 2026",
+        "Salem Robotics → YC Summer 2026",
+        "GRU Space → YC Winter 2026"
+      ],
+      "pedigree": [
+        "Nine Fives → weak"
+      ]
+    },
     {
       "date": "2026-09-07",
       "added": [
@@ -847,7 +873,7 @@
       "name": "Anduril",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Contract + Partnership (Sep 2026)",
+      "stage": "Selected with Boeing for IFPC Increment 2 Second Interceptor next phase, Sep 2026",
       "oneLiner": "Autonomous systems, C2 software, counter-drone — the category king",
       "investors": [
         "Founders Fund",
@@ -876,7 +902,7 @@
       "name": "Shield AI",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Licensing deal (Sep 2026)",
+      "stage": "L3Harris licensing deal for Tracker Counter-UAS software, Sep 2026",
       "oneLiner": "Autonomous aviation (Hivemind)",
       "investors": [
         "a16z",
@@ -985,11 +1011,12 @@
       "name": "Mach Industries",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Series B",
+      "stage": "Series C extension ($600M, Sep 2026, total round $900M, valuation $3.7B)",
       "oneLiner": "VTOL munitions, decentralized manufacturing",
       "investors": [
         "Sequoia",
-        "Bedrock"
+        "Bedrock",
+        "undisclosed"
       ],
       "status": "private"
     },
@@ -1099,7 +1126,7 @@
       "name": "Overland AI",
       "theme": "defense",
       "tier": "seed",
-      "stage": "Series A ($32M)",
+      "stage": "$20M Army EABC contract, Sep 2026",
       "oneLiner": "Autonomous ground vehicles for defense",
       "investors": [
         "8VC"
@@ -1558,7 +1585,7 @@
       "name": "Crusoe",
       "theme": "semis",
       "tier": "growth",
-      "stage": "Financing ($3B, Sep 2026)",
+      "stage": "Debt/equity financing $3B, Sep 2026",
       "oneLiner": "Energy-first AI datacenter buildout",
       "investors": [
         "Founders Fund",
@@ -4564,7 +4591,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/piggy-robotics",
       "sourceUrl": "https://www.ycombinator.com/companies/piggy-robotics",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-10",
+        "flags": []
+      }
     },
     {
       "name": "Degla Inc",
@@ -4580,7 +4616,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/degla-inc",
       "sourceUrl": "https://www.ycombinator.com/companies/degla-inc",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-10",
+        "flags": []
+      }
     },
     {
       "name": "Libra Robotics",
@@ -4596,7 +4641,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/libra-robotics",
       "sourceUrl": "https://www.ycombinator.com/companies/libra-robotics",
-      "addedOn": "2026-08-07"
+      "addedOn": "2026-08-07",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-10",
+        "flags": []
+      }
     },
     {
       "name": "Source Foundry",
@@ -4612,7 +4666,16 @@
       "status": "private",
       "website": "",
       "sourceUrl": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
-      "addedOn": "2026-08-10"
+      "addedOn": "2026-08-10",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-10",
+        "flags": []
+      }
     },
     {
       "name": "Nine Fives",
@@ -4628,7 +4691,47 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/nine-fives",
       "sourceUrl": "https://www.ycombinator.com/companies/nine-fives",
-      "addedOn": "2026-08-10"
+      "addedOn": "2026-08-10",
+      "pedigree": {
+        "screened": true,
+        "tier": "weak",
+        "score": 31,
+        "sourceCompanies": [
+          "spacex"
+        ],
+        "founders": [
+          {
+            "name": "Noah Levy",
+            "roleAtCompany": "Founder/CEO",
+            "source": "spacex",
+            "title": "unknown",
+            "ownership": "senior-ic",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Calibrated largest phased array in SpaceX history, designed Starship primary RF hardware, worked on radar altimeter for Falcon 9 and S-Band Transceiver for Dragon 2 capsule. No specific title or tenure duration stated in documents.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Calibrated largest phased array in SpaceX history, designed Starship primary RF hardware, worked on radar altimeter for Falcon 9 and S-Band Transceiver for Dragon 2 capsule.",
+                "url": "https://www.ycombinator.com/companies/nine-fives",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-10"
+              },
+              {
+                "claim": "Together we have spent a decade at SpaceX designing radio frequency hardware and test systems for multi-million dollar products.",
+                "url": "https://www.ycombinator.com/companies/nine-fives",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-10"
+              }
+            ],
+            "score": 30.6
+          }
+        ],
+        "lastVerified": "2026-09-10",
+        "flags": [
+          "tenure-estimated"
+        ]
+      }
     },
     {
       "name": "Pacific",
@@ -4644,7 +4747,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/pacific",
       "sourceUrl": "https://www.ycombinator.com/companies/pacific",
-      "addedOn": "2026-08-10"
+      "addedOn": "2026-08-10",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-10",
+        "flags": []
+      }
     },
     {
       "name": "Cosmic Robotics",
@@ -5294,7 +5406,7 @@
       "name": "Lyte",
       "theme": "robotics",
       "tier": "growth",
-      "stage": "Series C ($165M, Sep 2026)",
+      "stage": "Series C ($165M, Sep 2026, valuation $1.6B)",
       "oneLiner": "Physical AI sensing and perception technology for robots.",
       "description": "Lyte raised a $165M Series C led by Maverick Silicon at a $1.6B post-money valuation to scale its physical AI sensing and perception technology for robots.",
       "whyListed": "A $1.6B valuation Series C for physical AI perception from ex-Apple engineers signals a credible contender in the robotics foundation-model and sensing stack race, directly relevant to the humanoid and industrial automation theme.",
@@ -5463,6 +5575,99 @@
       "website": "",
       "sourceUrl": "https://www.ycombinator.com/companies/dreamscale-labs",
       "addedOn": "2026-09-07"
+    },
+    {
+      "name": "Maven Robotics",
+      "theme": "robotics",
+      "tier": "growth",
+      "stage": "Series A ($100M, Sep 2026)",
+      "oneLiner": "Robot deployment platform with active enterprise deployments at scale",
+      "description": "Maven Robotics provides end-to-end robot deployment solutions for enterprise customers, emerging from stealth with $100M Series A and active production deployments already in place. The company targets the gap between robot manufacturers and end-users by handling integration, deployment, and ongoing operations. Their approach competes directly with in-house robot deployment programs at large enterprises.",
+      "whyListed": "A $100M Series A with active deployments signals Maven has cracked early commercialization in industrial robotics deployment — a critical bottleneck for the sector's growth.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
+      "addedOn": "2026-09-10"
+    },
+    {
+      "name": "Poseidon Aerospace",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Series A ($60M, Sep 2026)",
+      "oneLiner": "Large cargo drones and autonomous maritime logistics platforms for defense",
+      "description": "Poseidon Aerospace is developing Egret, a large-format cargo drone, alongside a maritime autonomous platform, targeting contested logistics for defense customers. The Bay Area startup raised $60M to fund flight testing, production scaling, and acceleration of its seafaring system. Their focus on large-payload autonomous logistics fills a critical gap in military supply chain resilience.",
+      "whyListed": "Contested logistics is an urgent DoD priority; large cargo drones with maritime variants address a dual-domain gap that smaller drone startups cannot fill.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/poseidon-raises-60m-to-build-big-ol-cargo-drones/",
+      "addedOn": "2026-09-10"
+    },
+    {
+      "name": "Covenant",
+      "theme": "defense",
+      "tier": "growth",
+      "stage": "Seed/Stealth exit ($250M, Sep 2026)",
+      "oneLiner": "Deep precision strike systems for long-range lethal effects",
+      "description": "Covenant emerged from stealth with $250M in funding from a16z, Founders Fund, Lux Capital, 8VC, Aleph, and Lightspeed to develop deep precision strike capabilities. The company is focused on long-range strike munitions or systems designed for high-priority, contested target sets. The all-star investor syndicate suggests strong conviction in Covenant's technology differentiation and defense contract pipeline.",
+      "whyListed": "Deep precision strike is a top Pentagon investment priority; a $250M stealth raise backed by every major defense-tech investor signals Covenant has serious hardware and a credible path to large DoD programs.",
+      "investors": [
+        "a16z",
+        "Founders Fund",
+        "Lux Capital",
+        "8VC",
+        "Aleph",
+        "Lightspeed"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/covenant-emerges-from-stealth-with-250m-for-long-range-strike/",
+      "addedOn": "2026-09-10"
+    },
+    {
+      "name": "Bulwark Dynamics",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Seed ($6.8M, Sep 2026)",
+      "oneLiner": "Unmanned surface vessels for contested maritime logistics",
+      "description": "Bulwark Dynamics builds unmanned surface vessels (USVs) purpose-built for contested logistics, enabling resupply and maritime operations in denied or high-threat environments. The California-based startup raised $6.8M in seed funding to ramp development and early deployments. Their laser focus on the logistics mission set differentiates them from ISR-first maritime drone competitors.",
+      "whyListed": "Maritime autonomy for contested logistics is an urgent and underfunded DoD need; Bulwark's mission-specific USV approach targets a clear capability gap with a lean seed-stage entry point.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/exclusive-bulwark-dynamics-raises-6-8m-seed-round-for-maritime-logistics/",
+      "addedOn": "2026-09-10"
+    },
+    {
+      "name": "Ground A",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Pre-seed (€9.1M / ~$10M, Sep 2026)",
+      "oneLiner": "Laser-based counter-UAS systems for drone defense",
+      "description": "Ground A is a German directed-energy startup developing laser-based counter-UAS (cUAS) systems, raising €9.1M just eight months after founding. Their flagship system targets the growing threat of low-cost drone swarms with a high-capacity, low-cost-per-shot directed-energy solution. The European defense market and NATO partners represent their primary near-term customer base.",
+      "whyListed": "Directed-energy cUAS is a top-priority capability gap across NATO; a European laser startup raising pre-seed at this speed signals strong government customer pull and technical credibility.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/ground-a-raises-e9-1m-pre-seed-for-laser-weapons/",
+      "addedOn": "2026-09-10"
+    },
+    {
+      "name": "Iron Grid",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "YC Summer 2025",
+      "oneLiner": "Foundation models for physical systems and industrial automation",
+      "description": "Iron Grid is building foundation models specifically designed for physical systems, targeting industrial automation and robotics applications. Their approach adapts the large-model paradigm from software AI to the sensing, control, and actuation challenges of real-world physical environments. The YC-backed company is positioned at the intersection of AI and hard-tech manufacturing.",
+      "whyListed": "Foundation models for physical systems are a prerequisite for general industrial automation; a YC-backed team attacking this layer could become infrastructure for the broader robotics stack.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "https://www.irongrid.ai",
+      "sourceUrl": "https://www.ycombinator.com/companies/iron-grid",
+      "addedOn": "2026-09-10"
     }
   ],
   "sourceCompanies": {
