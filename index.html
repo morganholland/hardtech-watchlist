@@ -44,6 +44,13 @@
   /* Delta ledger — signature element */
   .delta{margin:22px 0 6px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--orange);padding:14px 18px}
   .delta h2{font-family:'IBM Plex Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--orange);margin-bottom:8px}
+  .delta h2 button{all:unset;cursor:pointer;display:flex;align-items:center;gap:8px;width:100%}
+  .delta h2 button::before{content:"▾";font-size:11px;transition:transform .12s}
+  .delta h2 button[aria-expanded="false"]::before{transform:rotate(-90deg)}
+  .delta h2 button:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+  .delta h2 .n{color:var(--steel);letter-spacing:0}
+  .delta.collapsed h2{margin-bottom:0}
+  .delta.collapsed ul{display:none}
   .delta ul{list-style:none}
   .delta li{font-family:'IBM Plex Mono',monospace;font-size:13px;padding:3px 0;display:flex;gap:10px}
   .delta li .d{color:var(--steel);flex:none}
@@ -181,7 +188,7 @@
   </header>
 
   <section class="delta" id="delta" aria-label="New since last refresh">
-    <h2>Δ New since last refresh</h2>
+    <h2><button type="button" id="deltaToggle" aria-expanded="true" aria-controls="deltaList">Δ New since last refresh <span class="n" id="deltaCount"></span></button></h2>
     <ul id="deltaList"></ul>
   </section>
 
@@ -355,6 +362,17 @@ function init(){
     for (const p of (e.pedigree||[])){ dl.insertAdjacentHTML("beforeend", `<li><span class="d">${e.date}</span> ↑ ${esc(p)} (pedigree)</li>`); any = true; }
   }
   if (!any) dl.innerHTML = '<li class="empty">No changes in the last refresh cycles.</li>';
+  document.getElementById("deltaCount").textContent = any ? `(${dl.children.length})` : "";
+
+  // Collapsible; the choice persists per browser.
+  const delta = document.getElementById("delta"), deltaToggle = document.getElementById("deltaToggle");
+  const setCollapsed = (c) => { delta.classList.toggle("collapsed", c); deltaToggle.setAttribute("aria-expanded", String(!c)); };
+  setCollapsed(localStorage.getItem("deltaCollapsed") === "1");
+  deltaToggle.addEventListener("click", () => {
+    const c = !delta.classList.contains("collapsed");
+    setCollapsed(c);
+    localStorage.setItem("deltaCollapsed", c ? "1" : "0");
+  });
 
   // Theme chips with counts
   const chips = document.getElementById("themeChips");
