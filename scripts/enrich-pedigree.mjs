@@ -98,10 +98,18 @@ If nothing can be extracted, return [].`;
   if (!res.ok) throw new Error(`Anthropic API ${res.status}: ${(await res.text()).slice(0, 500)}`);
   const data = await res.json();
   const text = (data.content ?? []).filter((b) => b.type === "text").map((b) => b.text).join("\n");
+  // The model occasionally wraps the array in prose despite the instruction.
+  // Take the outermost [...] and parse that; a company whose output still
+  // won't parse is skipped this run (it stays unscreened and is retried next
+  // time) rather than aborting the whole refresh before the commit step.
+  const cleaned = text.replace(/```json|```/g, "").trim();
+  const start = cleaned.indexOf("["), end = cleaned.lastIndexOf("]");
+  const candidate = start !== -1 && end > start ? cleaned.slice(start, end + 1) : cleaned;
   try {
-    return JSON.parse(text.replace(/```json|```/g, "").trim());
+    return JSON.parse(candidate);
   } catch {
-    throw new Error(`pedigree extractor returned unparseable output for ${company.name}:\n` + text.slice(0, 500));
+    console.log(`  ! ${company.name}: extractor returned unparseable output, skipping this run`);
+    return null;
   }
 }
 
@@ -151,6 +159,7 @@ async function main() {
 
     const prevTier = company.pedigree?.tier ?? "unscreened";
     const results = await extract(company, docs, registryKeys);
+    if (results === null) continue;
 
     const founders = [];
     for (const r of Array.isArray(results) ? results : []) {

@@ -27,6 +27,18 @@
   h1 .sl{color:var(--orange)}
   .meta{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--steel);margin-left:auto}
   .meta b{color:var(--ink)}
+  .meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+  .meta .chip{padding:4px 10px;font-size:12px}
+  .meta .chip:disabled{opacity:.5;cursor:default}
+  .rstatus{color:var(--steel)}
+  .rstatus a{color:var(--orange)}
+  .rstatus.err{color:#B0262A}
+  .tokenbox{
+    width:100%;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--steel);
+    background:var(--card);border:1px solid var(--line);padding:10px 12px;margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;align-items:center
+  }
+  .tokenbox input{font-family:inherit;font-size:12px;padding:5px 8px;border:1px solid var(--ink);border-radius:2px;flex:1;min-width:200px}
+  .tokenbox a{color:var(--orange)}
 
   /* Delta ledger — signature element */
   .delta{margin:22px 0 6px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--orange);padding:14px 18px}
@@ -154,7 +166,17 @@
 <div class="wrap">
   <header>
     <h1>Hard Tech<span class="sl">/</span>Watchlist</h1>
-    <div class="meta">LAST REFRESH <b id="refreshed">—</b></div>
+    <div class="meta">
+      <span>LAST REFRESH <b id="refreshed">—</b></span>
+      <button class="chip" id="refreshBtn" type="button">↻ Refresh now</button>
+      <span class="rstatus" id="refreshStatus" role="status" aria-live="polite"></span>
+    </div>
+    <form class="tokenbox" id="tokenBox" hidden>
+      <span>Refresh runs the GitHub Action. Paste a <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">fine-grained token</a> (this repo, Actions: read &amp; write). Stored only in this browser.</span>
+      <input id="tokenInput" type="password" autocomplete="off" placeholder="github_pat_…" aria-label="GitHub token">
+      <button class="chip" type="submit">Save &amp; run</button>
+      <a id="actionsLink" href="#" target="_blank" rel="noopener">or run it on GitHub</a>
+    </form>
   </header>
 
   <section class="delta" id="delta" aria-label="New since last refresh">
@@ -240,6 +262,81 @@ fetch("./data/companies.json").then(r => { if (!r.ok) throw 0; return r.json(); 
     document.getElementById("fail").innerHTML =
       '<div class="err">Could not load data/companies.json. If you opened this file directly, serve it instead: <b>python3 -m http.server</b> in the repo folder, then open localhost:8000.</div>';
   });
+
+// ---- Refresh button -------------------------------------------------------
+// The site is static; refreshing means dispatching the GitHub Action and
+// waiting for Pages to redeploy. Needs a fine-grained PAT scoped to this repo
+// with Actions read/write, kept in localStorage.
+const REPO = "morganholland/hardtech-watchlist", WORKFLOW = "refresh.yml";
+const GH = `https://api.github.com/repos/${REPO}/actions/workflows/${WORKFLOW}`;
+const ACTIONS_URL = `https://github.com/${REPO}/actions/workflows/${WORKFLOW}`;
+const refreshBtn = document.getElementById("refreshBtn");
+const refreshStatus = document.getElementById("refreshStatus");
+const tokenBox = document.getElementById("tokenBox");
+document.getElementById("actionsLink").href = ACTIONS_URL;
+
+function setStatus(html, err){ refreshStatus.innerHTML = html; refreshStatus.classList.toggle("err", !!err); }
+const ghHeaders = t => ({ Authorization: `Bearer ${t}`, Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" });
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+refreshBtn.addEventListener("click", () => {
+  const token = localStorage.getItem("ghToken");
+  if (!token) { tokenBox.hidden = false; document.getElementById("tokenInput").focus(); return; }
+  runRefresh(token);
+});
+tokenBox.addEventListener("submit", e => {
+  e.preventDefault();
+  const t = document.getElementById("tokenInput").value.trim();
+  if (!t) return;
+  localStorage.setItem("ghToken", t);
+  tokenBox.hidden = true;
+  runRefresh(t);
+});
+
+async function runRefresh(token){
+  refreshBtn.disabled = true;
+  setStatus("starting…");
+  try {
+    const startedAt = Date.now();
+    const res = await fetch(`${GH}/dispatches`, { method: "POST", headers: ghHeaders(token), body: JSON.stringify({ ref: "main" }) });
+    if (res.status === 401 || res.status === 403 || res.status === 404) {
+      localStorage.removeItem("ghToken");
+      throw new Error("token rejected — paste a new one");
+    }
+    if (!res.ok) throw new Error(`GitHub ${res.status}`);
+
+    // Find the run this dispatch created (it can take a few seconds to appear), then wait for it.
+    let run = null;
+    for (let i = 0; i < 12 && !run; i++) {
+      await sleep(5000);
+      const r = await fetch(`${GH}/runs?event=workflow_dispatch&per_page=1`, { headers: ghHeaders(token) });
+      const latest = (await r.json()).workflow_runs?.[0];
+      if (latest && new Date(latest.created_at).getTime() > startedAt - 60000) run = latest;
+    }
+    if (!run) throw new Error("run did not start");
+    setStatus(`running <a href="${run.html_url}" target="_blank" rel="noopener">#${run.run_number}</a>… (~2 min)`);
+
+    const deadline = Date.now() + 15 * 60000;
+    while (run.status !== "completed" && Date.now() < deadline) {
+      await sleep(15000);
+      run = await (await fetch(run.url, { headers: ghHeaders(token) })).json();
+    }
+    if (run.conclusion !== "success") throw new Error(`run <a href="${run.html_url}" target="_blank" rel="noopener">#${run.run_number}</a> ${run.conclusion || "timed out"}`);
+
+    // Pages redeploys after the commit; wait until the served JSON is newer than what we loaded.
+    setStatus("run finished, waiting for deploy…");
+    for (let i = 0; i < 20; i++) {
+      await sleep(15000);
+      const fresh = await (await fetch(`./data/companies.json?t=${Date.now()}`, { cache: "no-store" })).json();
+      if (fresh.lastRefresh !== db.lastRefresh) { setStatus(`new data ready — <a href="javascript:location.reload()">reload</a>`); return; }
+    }
+    setStatus(`done — <a href="javascript:location.reload()">reload</a> in a minute`);
+  } catch (e) {
+    setStatus(e.message, true);
+  } finally {
+    refreshBtn.disabled = false;
+  }
+}
 
 function init(){
   document.getElementById("refreshed").textContent = new Date(db.lastRefresh).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
