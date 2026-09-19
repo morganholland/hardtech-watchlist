@@ -1,6 +1,32 @@
 {
-  "lastRefresh": "2026-09-10T15:50:37.474Z",
+  "lastRefresh": "2026-09-19T13:22:50.895Z",
   "changelog": [
+    {
+      "date": "2026-09-19",
+      "added": [
+        "Rune Technologies",
+        "Inflection Space Systems",
+        "Aviern",
+        "Micora",
+        "Darwin",
+        "Deploy"
+      ],
+      "updated": [
+        "Impulse Space → Series C ($308M, Sep 2026)",
+        "Saronic → Contract (Navy landing craft award, Sep 2026)",
+        "Hermeus → Contract (Pratt & Whitney F100 licensing deal, Sep 2026)",
+        "Castelion → Contract (Navy MACE, up to $200M, Sep 2026)",
+        "Swarm Aero → Program (Air Force MMA bid, Sep 2026)",
+        "Surtr → seed",
+        "Isengard Industries → seed",
+        "Salem Robotics → seed",
+        "GRU Space → seed"
+      ],
+      "pedigree": [
+        "Cosmic Robotics → weak",
+        "Cambridge Aerospace → weak"
+      ]
+    },
     {
       "date": "2026-09-10",
       "added": [
@@ -347,7 +373,7 @@
       "name": "Impulse Space",
       "theme": "space",
       "tier": "growth",
-      "stage": "Series C",
+      "stage": "Series C ($308M, Sep 2026)",
       "oneLiner": "In-space transportation / orbital transfer vehicles",
       "investors": [
         "Founders Fund",
@@ -888,7 +914,7 @@
       "name": "Saronic",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Series D ($1.75B, 2026)",
+      "stage": "Contract (Navy landing craft award, Sep 2026)",
       "oneLiner": "Autonomous surface vessels; building Port Alpha shipyard",
       "investors": [
         "Kleiner",
@@ -896,7 +922,8 @@
         "a16z",
         "Elad Gil"
       ],
-      "status": "private"
+      "status": "private",
+      "description": "Saronic awarded a Navy contract alongside Conrad Shipyard and Master Boat Builders to produce conventional landing craft, demonstrating the company's expanded shipbuilding capacity and workforce beyond its autonomous surface vessel roots."
     },
     {
       "name": "Shield AI",
@@ -916,7 +943,7 @@
       "name": "Castelion",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Additional $89.99M Navy BOA award (Aug 2026)",
+      "stage": "Contract (Navy MACE, up to $200M, Sep 2026)",
       "oneLiner": "Low-cost hypersonic strike missiles; seed→B in 26 months",
       "investors": [
         "Lightspeed",
@@ -979,13 +1006,13 @@
         "lastVerified": "2026-08-07",
         "flags": []
       },
-      "description": "The US Navy awarded Castelion an additional $89.99M against its service-wide basic ordering agreement for engineering, technical, logistics, and manufacturing services."
+      "description": "Castelion's Blackbeard missile has moved into production under the Navy's MACE program, with a contract worth up to $200M."
     },
     {
       "name": "Hermeus",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Partnership (Sep 2026)",
+      "stage": "Contract (Pratt & Whitney F100 licensing deal, Sep 2026)",
       "oneLiner": "High-Mach unmanned aircraft",
       "investors": [
         "Khosla",
@@ -993,7 +1020,7 @@
         "Founders Fund"
       ],
       "status": "private",
-      "description": "Hermeus selected Anduril's Lattice for Mission Autonomy stack to power its Quarterhorse Mk 2 hypersonic aircraft, enabling autonomous flight operations."
+      "description": "Hermeus signed a licensing deal with Pratt & Whitney to produce the F100 jet engine, which powers its Quarterhorse supersonic unmanned aircraft, marking a major step toward in-house propulsion manufacturing."
     },
     {
       "name": "Chaos Industries",
@@ -1207,7 +1234,7 @@
       "name": "Surtr",
       "theme": "defense",
       "tier": "seed",
-      "stage": "YC Spring 2026",
+      "stage": "seed",
       "oneLiner": "Hardware-agnostic operating system for drone defense",
       "investors": [
         "YC"
@@ -4040,7 +4067,7 @@
       "name": "Isengard Industries",
       "theme": "defense",
       "tier": "seed",
-      "stage": "YC Summer 2026",
+      "stage": "seed",
       "oneLiner": "Mass-produced AI strike systems and counter-UAS",
       "description": "YC directory confirms Isengard Industries Inc as a developer of mass-produced AI strike systems and Counter-UAS.",
       "whyListed": "Production scale for autonomous strike systems is the defining defense manufacturing challenge of this decade; Isengard Industries is building the factory capacity that turns promising defense tech into operational capability.",
@@ -4121,7 +4148,7 @@
       "name": "Salem Robotics",
       "theme": "robotics",
       "tier": "seed",
-      "stage": "YC Summer 2026",
+      "stage": "seed",
       "oneLiner": "Robots for inspections in hazardous spaces including nuclear",
       "description": "YC directory confirms Salem Robotics Inc deploys robots to replace workers in hazardous spaces.",
       "whyListed": "Nuclear facility robotics is a high-value, safety-critical market that grows directly with the nuclear power renaissance; Salem Robotics sits at the intersection of two strong hard-tech themes — robotics and nuclear.",
@@ -4772,7 +4799,47 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/cosmic-robotics",
       "sourceUrl": "https://www.ycombinator.com/companies/cosmic-robotics",
-      "addedOn": "2026-08-10"
+      "addedOn": "2026-08-10",
+      "pedigree": {
+        "screened": true,
+        "tier": "weak",
+        "score": 11,
+        "sourceCompanies": [
+          "spacex"
+        ],
+        "founders": [
+          {
+            "name": "Lewis Jones",
+            "roleAtCompany": "Co-founder & CTO",
+            "source": "spacex",
+            "title": "prior experience at SpaceX",
+            "ownership": "ic",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Document states 'prior experience at SpaceX' without specifying title, duration, or ownership level; also lists NASA JPL, NASA JSC, and Relativity Space experience",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Lewis Jones had prior experience at SpaceX",
+                "url": "https://www.ycombinator.com/companies/cosmic-robotics",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-19"
+              },
+              {
+                "claim": "Lewis Jones had prior experience at SpaceX",
+                "url": "https://www.ycombinator.com/companies/cosmic-robotics",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-19"
+              }
+            ],
+            "score": 10.8
+          }
+        ],
+        "lastVerified": "2026-09-19",
+        "flags": [
+          "tenure-estimated"
+        ]
+      }
     },
     {
       "name": "Nori",
@@ -4788,7 +4855,16 @@
       "status": "private",
       "website": "https://www.ycombinator.com/companies/noril1",
       "sourceUrl": "https://www.ycombinator.com/companies/noril1",
-      "addedOn": "2026-08-10"
+      "addedOn": "2026-08-10",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-19",
+        "flags": []
+      }
     },
     {
       "name": "Heaviside",
@@ -4804,21 +4880,39 @@
       "status": "private",
       "website": "",
       "sourceUrl": "https://www.tectonicdefense.com/heaviside-raises-60m-at-a-600m-valuation/",
-      "addedOn": "2026-08-13"
+      "addedOn": "2026-08-13",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-19",
+        "flags": []
+      }
     },
     {
       "name": "Swarm Aero",
       "theme": "defense",
       "tier": "seed",
-      "stage": "AFRL Contract ($10M, Aug 2026)",
+      "stage": "Program (Air Force MMA bid, Sep 2026)",
       "oneLiner": "Mass-manufacturable Group 5 autonomous drone for swarm operations.",
-      "description": "Swarm Aero is building a Reaper-sized Group 5 drone designed for swarm operations with in-house autonomy software and mass manufacturability. Unlike traditional large drones, it is engineered from the ground up to be produced at scale and operate cooperatively. The California-based startup just won a $10M Air Force Research Lab contract.",
+      "description": "Swarm Aero unveiled Gamera, its entry for the Air Force's Massed Modular Aircraft program targeting a fleet of at least 180 drones.",
       "whyListed": "Large autonomous UAS with organic swarm autonomy addresses a critical DoD capability gap; AFRL contract validates the technical approach and provides non-dilutive development funding.",
       "investors": [],
       "status": "private",
       "website": "",
       "sourceUrl": "https://www.tectonicdefense.com/exclusive-swarm-aero-wins-10m-air-force-research-lab-contract/",
-      "addedOn": "2026-08-13"
+      "addedOn": "2026-08-13",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-19",
+        "flags": []
+      }
     },
     {
       "name": "Cambridge Aerospace",
@@ -4839,7 +4933,41 @@
       "status": "private",
       "website": "",
       "sourceUrl": "https://www.tectonicdefense.com/cambridge-aerospace-raises-300m-at-a-3-4b-valuation/",
-      "addedOn": "2026-08-13"
+      "addedOn": "2026-08-13",
+      "pedigree": {
+        "screened": true,
+        "tier": "weak",
+        "score": 17,
+        "sourceCompanies": [
+          "anduril"
+        ],
+        "founders": [
+          {
+            "name": "Chris Sylvan",
+            "roleAtCompany": "Co-founder & CCO",
+            "source": "anduril",
+            "title": "Anduril and UK MoD alum",
+            "ownership": "unknown",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Document describes Sylvan as an 'Anduril and UK MoD alum' but provides no title or tenure duration at Anduril",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Chris Sylvan described as 'Anduril and UK MoD alum'",
+                "url": "https://www.tectonicdefense.com/cambridge-aerospace-raises-300m-at-a-3-4b-valuation/",
+                "publisher": "tectonicdefense.com",
+                "retrievedAt": "2026-09-19"
+              }
+            ],
+            "score": 17.5
+          }
+        ],
+        "lastVerified": "2026-09-19",
+        "flags": [
+          "tenure-estimated"
+        ]
+      }
     },
     {
       "name": "Helion Energy",
@@ -4856,7 +4984,16 @@
       "status": "private",
       "website": "https://www.helionenergy.com",
       "sourceUrl": "https://www.ycombinator.com/companies/helion-energy",
-      "addedOn": "2026-08-13"
+      "addedOn": "2026-08-13",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-19",
+        "flags": []
+      }
     },
     {
       "name": "Relativity Space",
@@ -5180,7 +5317,7 @@
       "name": "GRU Space",
       "theme": "space",
       "tier": "seed",
-      "stage": "YC Winter 2026",
+      "stage": "seed",
       "oneLiner": "In-space construction company starting with lunar infrastructure.",
       "description": "YC directory confirms Galactic Resource Utilization Space, Inc. (GRU Space) as an intergalactic construction and resource utilization company.",
       "whyListed": "Cislunar construction and resource utilization is a foundational capability for the emerging space economy; YC Winter 2026 backing signals current momentum.",
@@ -5668,6 +5805,100 @@
       "website": "https://www.irongrid.ai",
       "sourceUrl": "https://www.ycombinator.com/companies/iron-grid",
       "addedOn": "2026-09-10"
+    },
+    {
+      "name": "Rune Technologies",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Contract ($4.1M Army AAL, Sep 2026)",
+      "oneLiner": "Defense logistics OS for Army unit operations and supply chains.",
+      "description": "Rune Technologies builds TyrOS, a logistics operating system for military units. The company just secured a $4.1M Army contract through the Army Applications Laboratory to expand TyrOS deployment across the 1st Cavalry Division. It targets the unglamorous but critical software layer that keeps military formations supplied and coordinated.",
+      "whyListed": "Defense logistics software with proven Army adoption and contract revenue is a durable wedge into military operations tech — an underserved niche in the defense startup ecosystem.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/rune-scores-4-1m-contract-with-1st-cav/",
+      "addedOn": "2026-09-19"
+    },
+    {
+      "name": "Inflection Space Systems",
+      "theme": "space",
+      "tier": "seed",
+      "stage": "seed (YC Fall 2026)",
+      "oneLiner": "Hyperscale manufacturing infrastructure for the space economy.",
+      "description": "Inflection Space Systems is building manufacturing infrastructure designed to scale production for the space industry. The company is part of YC's Fall 2026 batch, targeting the emerging need for high-throughput, low-cost space hardware fabrication. Few details are public, but the thesis mirrors terrestrial contract manufacturing applied to orbital hardware.",
+      "whyListed": "Space manufacturing capacity is a hard bottleneck on the entire new space economy; a company purpose-built to hyperscale that process addresses a critical infrastructure gap.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/inflection-space-systems",
+      "addedOn": "2026-09-19"
+    },
+    {
+      "name": "Aviern",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "seed (YC Fall 2026)",
+      "oneLiner": "Unmanned fixed-wing aircraft for geospatial intelligence collection.",
+      "description": "Aviern builds unmanned airplanes optimized for geospatial intelligence (GEOINT) missions. The company is in YC's Fall 2026 batch, targeting the growing demand for persistent ISR from autonomous fixed-wing platforms. Its focus on GEOINT aligns with both defense and intelligence community procurement priorities.",
+      "whyListed": "Autonomous ISR platforms are among the fastest-growing segments of the defense drone market, and fixed-wing endurance aircraft fill a persistent gap between satellites and short-range quadcopters.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/aviern",
+      "addedOn": "2026-09-19"
+    },
+    {
+      "name": "Micora",
+      "theme": "energy",
+      "tier": "seed",
+      "stage": "seed (YC Fall 2026)",
+      "oneLiner": "Rapidly deployable modular microgrids built anywhere in days.",
+      "description": "Micora packages microgrid infrastructure into deployable units that can be installed anywhere within days. The company targets the growing demand for resilient, distributed power at the edge — from military forward operating bases to remote industrial sites. Its 'microgrid in a box' approach compresses the typical months-long deployment timeline.",
+      "whyListed": "Rapidly deployable distributed energy is both a defense logistics enabler and a critical infrastructure resilience play — two converging tailwinds that make this a compelling hard-tech bet.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/micora",
+      "addedOn": "2026-09-19"
+    },
+    {
+      "name": "Darwin",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "seed (YC Fall 2025)",
+      "oneLiner": "Humanoid robots for real-world physical labor tasks.",
+      "description": "Darwin is building humanoid robots, competing in the rapidly expanding market for general-purpose bipedal machines. The company came through YC's Fall 2025 batch. Details on its hardware architecture and target deployment verticals are limited, but it is positioned in the foundational humanoid platform race.",
+      "whyListed": "Humanoid robots represent one of the highest-conviction hardware bets of the decade; early-stage entrants with differentiated approaches to locomotion or manipulation are worth tracking closely.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/darwin",
+      "addedOn": "2026-09-19"
+    },
+    {
+      "name": "Deploy",
+      "theme": "robotics",
+      "tier": "seed",
+      "stage": "seed (YC Fall 2026)",
+      "oneLiner": "Generalist robot deployment company for real-world environments.",
+      "description": "Deploy is building the infrastructure and operations layer to deploy generalist robots at scale across real-world environments. The company is in YC's Fall 2026 batch and focuses on the deployment side of the robotics stack — the integration, management, and scaling challenge that often outlasts the hardware problem. Its generalist positioning suggests a horizontal play across industrial and commercial verticals.",
+      "whyListed": "The bottleneck in robotics is increasingly deployment and fleet management, not hardware; a company that cracks generalist robot deployment at scale could become critical infrastructure for the autonomy economy.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/deploy",
+      "addedOn": "2026-09-19"
     }
   ],
   "sourceCompanies": {
