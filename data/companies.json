@@ -1,6 +1,28 @@
 {
-  "lastRefresh": "2026-09-19T13:22:50.895Z",
+  "lastRefresh": "2026-09-21T17:52:46.623Z",
   "changelog": [
+    {
+      "date": "2026-09-21",
+      "added": [
+        "Magnet",
+        "Viraj Aero",
+        "Invertix"
+      ],
+      "updated": [
+        "Impulse Space → Series C ($308M, Sep 2026)",
+        "Saronic → Navy landing craft contract awarded",
+        "Hermeus → F100 engine production licensing deal with Pratt & Whitney",
+        "Castelion → Navy MACE contract up to $200M, production phase",
+        "Rune Technologies → $4.1M Army AAL contract with 1st Cavalry Division",
+        "Surtr → YC Spring 2026 confirmed",
+        "Isengard Industries → YC Summer 2026 confirmed",
+        "Salem Robotics → YC Summer 2026 confirmed",
+        "GRU Space → YC Winter 2026 confirmed"
+      ],
+      "pedigree": [
+        "Singularity → weak"
+      ]
+    },
     {
       "date": "2026-09-19",
       "added": [
@@ -914,7 +936,7 @@
       "name": "Saronic",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Contract (Navy landing craft award, Sep 2026)",
+      "stage": "Navy landing craft contract awarded",
       "oneLiner": "Autonomous surface vessels; building Port Alpha shipyard",
       "investors": [
         "Kleiner",
@@ -943,7 +965,7 @@
       "name": "Castelion",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Contract (Navy MACE, up to $200M, Sep 2026)",
+      "stage": "Navy MACE contract up to $200M, production phase",
       "oneLiner": "Low-cost hypersonic strike missiles; seed→B in 26 months",
       "investors": [
         "Lightspeed",
@@ -1012,7 +1034,7 @@
       "name": "Hermeus",
       "theme": "defense",
       "tier": "growth",
-      "stage": "Contract (Pratt & Whitney F100 licensing deal, Sep 2026)",
+      "stage": "F100 engine production licensing deal with Pratt & Whitney",
       "oneLiner": "High-Mach unmanned aircraft",
       "investors": [
         "Khosla",
@@ -1234,7 +1256,7 @@
       "name": "Surtr",
       "theme": "defense",
       "tier": "seed",
-      "stage": "seed",
+      "stage": "YC Spring 2026 confirmed",
       "oneLiner": "Hardware-agnostic operating system for drone defense",
       "investors": [
         "YC"
@@ -4067,7 +4089,7 @@
       "name": "Isengard Industries",
       "theme": "defense",
       "tier": "seed",
-      "stage": "seed",
+      "stage": "YC Summer 2026 confirmed",
       "oneLiner": "Mass-produced AI strike systems and counter-UAS",
       "description": "YC directory confirms Isengard Industries Inc as a developer of mass-produced AI strike systems and Counter-UAS.",
       "whyListed": "Production scale for autonomous strike systems is the defining defense manufacturing challenge of this decade; Isengard Industries is building the factory capacity that turns promising defense tech into operational capability.",
@@ -4148,7 +4170,7 @@
       "name": "Salem Robotics",
       "theme": "robotics",
       "tier": "seed",
-      "stage": "seed",
+      "stage": "YC Summer 2026 confirmed",
       "oneLiner": "Robots for inspections in hazardous spaces including nuclear",
       "description": "YC directory confirms Salem Robotics Inc deploys robots to replace workers in hazardous spaces.",
       "whyListed": "Nuclear facility robotics is a high-value, safety-critical market that grows directly with the nuclear power renaissance; Salem Robotics sits at the intersection of two strong hard-tech themes — robotics and nuclear.",
@@ -5011,7 +5033,16 @@
       "status": "private",
       "website": "https://www.relativityspace.com",
       "sourceUrl": "https://www.ycombinator.com/companies/relativity-space",
-      "addedOn": "2026-08-13"
+      "addedOn": "2026-08-13",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-21",
+        "flags": []
+      }
     },
     {
       "name": "Astranis",
@@ -5028,7 +5059,16 @@
       "status": "private",
       "website": "https://www.astranis.com",
       "sourceUrl": "https://www.ycombinator.com/companies/astranis",
-      "addedOn": "2026-08-13"
+      "addedOn": "2026-08-13",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-21",
+        "flags": []
+      }
     },
     {
       "name": "Maple Materials",
@@ -5042,7 +5082,16 @@
       "status": "private",
       "website": "",
       "sourceUrl": "https://www.ycombinator.com/companies/maple-materials",
-      "addedOn": "2026-08-13"
+      "addedOn": "2026-08-13",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-21",
+        "flags": []
+      }
     },
     {
       "name": "Wyvern",
@@ -5056,7 +5105,16 @@
       "status": "private",
       "website": "https://www.wyvern.space",
       "sourceUrl": "https://www.ycombinator.com/companies/wyvern",
-      "addedOn": "2026-08-13"
+      "addedOn": "2026-08-13",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-21",
+        "flags": []
+      }
     },
     {
       "name": "Orangewood Labs",
@@ -5070,7 +5128,16 @@
       "status": "private",
       "website": "https://www.orangewood.co",
       "sourceUrl": "https://www.ycombinator.com/companies/orangewood-labs",
-      "addedOn": "2026-08-13"
+      "addedOn": "2026-08-13",
+      "pedigree": {
+        "screened": true,
+        "tier": "unscreened",
+        "score": null,
+        "sourceCompanies": [],
+        "founders": [],
+        "lastVerified": "2026-09-21",
+        "flags": []
+      }
     },
     {
       "name": "Singularity",
@@ -5086,7 +5153,41 @@
       "status": "private",
       "website": "",
       "sourceUrl": "https://www.ycombinator.com/companies/singularity",
-      "addedOn": "2026-08-13"
+      "addedOn": "2026-08-13",
+      "pedigree": {
+        "screened": true,
+        "tier": "weak",
+        "score": 18,
+        "sourceCompanies": [
+          "spacex"
+        ],
+        "founders": [
+          {
+            "name": "Jack Oswald",
+            "roleAtCompany": "Founder",
+            "source": "spacex",
+            "title": "Propulsion @ SpaceX",
+            "ownership": "ic",
+            "years": null,
+            "yearsPrecision": "unknown",
+            "note": "Listed as 'Propulsion @ SpaceX' with no further detail on role seniority or tenure duration. Also listed as 'Analysis @ Tesla' but Tesla is not on the approved source list for that entry.",
+            "confidence": "single-source",
+            "evidence": [
+              {
+                "claim": "Jack Oswald listed as Founder with 'Propulsion @ SpaceX' in his bio",
+                "url": "https://www.ycombinator.com/companies/singularity",
+                "publisher": "ycombinator.com",
+                "retrievedAt": "2026-09-21"
+              }
+            ],
+            "score": 18
+          }
+        ],
+        "lastVerified": "2026-09-21",
+        "flags": [
+          "tenure-estimated"
+        ]
+      }
     },
     {
       "name": "Voxel Energy",
@@ -5317,7 +5418,7 @@
       "name": "GRU Space",
       "theme": "space",
       "tier": "seed",
-      "stage": "seed",
+      "stage": "YC Winter 2026 confirmed",
       "oneLiner": "In-space construction company starting with lunar infrastructure.",
       "description": "YC directory confirms Galactic Resource Utilization Space, Inc. (GRU Space) as an intergalactic construction and resource utilization company.",
       "whyListed": "Cislunar construction and resource utilization is a foundational capability for the emerging space economy; YC Winter 2026 backing signals current momentum.",
@@ -5810,7 +5911,7 @@
       "name": "Rune Technologies",
       "theme": "defense",
       "tier": "seed",
-      "stage": "Contract ($4.1M Army AAL, Sep 2026)",
+      "stage": "$4.1M Army AAL contract with 1st Cavalry Division",
       "oneLiner": "Defense logistics OS for Army unit operations and supply chains.",
       "description": "Rune Technologies builds TyrOS, a logistics operating system for military units. The company just secured a $4.1M Army contract through the Army Applications Laboratory to expand TyrOS deployment across the 1st Cavalry Division. It targets the unglamorous but critical software layer that keeps military formations supplied and coordinated.",
       "whyListed": "Defense logistics software with proven Army adoption and contract revenue is a durable wedge into military operations tech — an underserved niche in the defense startup ecosystem.",
@@ -5899,6 +6000,52 @@
       "website": "",
       "sourceUrl": "https://www.ycombinator.com/companies/deploy",
       "addedOn": "2026-09-19"
+    },
+    {
+      "name": "Magnet",
+      "theme": "defense",
+      "tier": "seed",
+      "stage": "Early-stage (partnership announced Sep 2026)",
+      "oneLiner": "Maritime autonomy company building medium unmanned surface vessels.",
+      "description": "Magnet is a stealth American maritime autonomy company that has partnered with Hanwha Defense USA to produce Medium Unmanned Surface Vessels (MUSVs). The partnership is set to kick off production in fall 2026, combining Hanwha's shipbuilding scale with Magnet's autonomy technology. The company operates with a low public profile despite the significance of the teaming arrangement.",
+      "whyListed": "Autonomous surface vessels are a high-priority DoD investment area; this partnership with a major defense prime signals serious production intent and near-term revenue.",
+      "investors": [],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.tectonicdefense.com/hanwha-and-magnet-set-to-kick-off-musv-production-this-fall/",
+      "addedOn": "2026-09-21"
+    },
+    {
+      "name": "Viraj Aero",
+      "theme": "energy",
+      "tier": "seed",
+      "stage": "YC Fall 2026",
+      "oneLiner": "Next-generation turbine engines for aircraft and data centers.",
+      "description": "Viraj Aero is developing advanced engine technology targeting both aviation and data center power generation markets. The company aims to bring high-efficiency turbine solutions to two of the fastest-growing power demand sectors. As a YC Fall 2026 company, they are in the earliest stages of development.",
+      "whyListed": "Dual-market engine technology addressing the acute data center power crisis and aviation decarbonization represents a high-leverage hard-tech bet at the intersection of energy and aerospace.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/viraj-aero",
+      "addedOn": "2026-09-21"
+    },
+    {
+      "name": "Invertix",
+      "theme": "energy",
+      "tier": "seed",
+      "stage": "YC Fall 2026",
+      "oneLiner": "AI that autonomously operates and optimizes critical energy infrastructure.",
+      "description": "Invertix is building AI-driven autonomy systems for critical energy infrastructure operations, positioning itself as 'energy superintelligence.' The platform is designed to make real-time operational decisions across grid and energy systems. As a YC Fall 2026 company, they are at the earliest stage.",
+      "whyListed": "Grid automation and AI-driven operations of critical infrastructure is a growing national security and energy transition priority, making this a compelling early-stage hard-tech watch.",
+      "investors": [
+        "Y Combinator"
+      ],
+      "status": "private",
+      "website": "",
+      "sourceUrl": "https://www.ycombinator.com/companies/invertix",
+      "addedOn": "2026-09-21"
     }
   ],
   "sourceCompanies": {
